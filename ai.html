@@ -13950,7 +13950,7 @@ Location:
 // ========================================================= NOTHING TO CHANGE BELOW =================================================
 ];
 // =====================================
-// THE OMNI-ENGINE (v83.0 - The Hierarchy Engine)
+// THE OMNI-ENGINE (v83.2 - The Hierarchy Engine - Smart Auto-Detect)
 // =====================================
 const ignoreWords = ["if","then","else","or","give","and","when","what","where","how","to","a","the","is","are","do","i","you","?","!",".",",","of","find","tell","me","about","can","please","just","any","all"];
 
@@ -14104,21 +14104,175 @@ for (let i = 100; i <= 2000; i++) {
     };
 }
 
+// ==========================================
+// PARSED TEXT FILE EXPERIENCES DATASET
+// ==========================================
+const itemXpData = [
+    { name: "copper ore", xp: 15 }, { name: "tin ore", xp: 15 }, { name: "iron ore", xp: 30 },
+    { name: "coal ore", xp: 80 }, { name: "mithril ore", xp: 150 }, { name: "gold ore", xp: 350 },
+    { name: "gold dust", xp: 350 }, { name: "bronze bar", xp: 15 }, { name: "iron bar", xp: 30 },
+    { name: "steel bar", xp: 55 }, { name: "mithril bar", xp: 155 }, { name: "gold bar", xp: 800 },
+    { name: "bronze platelegs", xp: 120 }, { name: "bronze sword", xp: 90 }, { name: "bronze platebody", xp: 60 },
+    { name: "bronze helmet", xp: 60 }, { name: "iron platelegs", xp: 240 }, { name: "iron sword", xp: 180 },
+    { name: "iron platebody", xp: 300 }, { name: "iron helmet", xp: 120 }, { name: "mining gloves", xp: 165 },
+    { name: "steel platelegs", xp: 440 }, { name: "steel sword", xp: 330 }, { name: "steel platebody", xp: 550 },
+    { name: "steel helmet", xp: 220 }, { name: "mithril platelegs", xp: 1240 }, { name: "mithril sword", xp: 930 },
+    { name: "mithril platebody", xp: 1550 }, { name: "mithril helmet", xp: 620 },
+    { name: "minnow catch", xp: 8 }, { name: "rare minnow catch", xp: 8 }, { name: "common trout catch", xp: 75 },
+    { name: "rare trout catch", xp: 75 }, { name: "perch catch", xp: 225 }, { name: "rare perch catch", xp: 225 },
+    { name: "bass catch", xp: 200 }, { name: "rare bass catch", xp: 200 }, { name: "blue gill catch", xp: 75 },
+    { name: "rare blue gill catch", xp: 75 }, { name: "elder trout catch", xp: 500 }, { name: "rare elder trout catch", xp: 500 },
+    { name: "tiny fish bait", xp: 1 }, { name: "small fish bait", xp: 3 }, { name: "medium fish bait", xp: 3 },
+    { name: "large fish bait", xp: 3 }, { name: "minnow cutting", xp: 10 }, { name: "common trout cutting", xp: 10 },
+    { name: "perch cutting", xp: 30 }, { name: "bass cutting", xp: 20 }, { name: "blue gill cutting", xp: 40 },
+    { name: "elder trout cutting", xp: 70 }, { name: "fish scales crushing", xp: 30 }, { name: "mud root crushing", xp: 35 },
+    { name: "plain fish flesh crushing", xp: 40 }, { name: "small fang crushing", xp: 45 }, { name: "hearty fish flesh crushing", xp: 80 },
+    { name: "small essence gland reduction", xp: 4 }, { name: "essence gland reduction", xp: 10 }, { name: "rare minnow reduction", xp: 50 },
+    { name: "hearty fish mash reduction", xp: 90 }, { name: "weak health potion brew", xp: 500 }, { name: "fishing potion brew", xp: 500 },
+    { name: "mining potion brew", xp: 1000 }, { name: "shields potion brew", xp: 1500 }, { name: "health potion brew", xp: 1500 },
+    { name: "attack potion brew", xp: 1500 }, { name: "strong health potion brew", xp: 3250 }, { name: "small vial bottling", xp: 10 },
+    { name: "large vial bottling", xp: 20 }
+];
+
 function processInput(text, isAutomatic = false) {
     const rawInput = text.trim();
     let cleanInput = rawInput.toLowerCase().replace(/[^\w\s-]/g, ' ').replace(/\s+/g, ' ').trim();
     
-// ==========================================
+    // 1. ========TYPO CORRECTIONS========
+    const corrections = { 
+        // Greetings
+        "helo": "hello", 
+        "hellow": "hello", 
+        "hekko": "hello",
+        "heyo": "hello", 
+        "yo": "hello", 
+
+        // ========Stats / RPG Terms========
+        "atk": "attack", 
+        "atatck": "attack", 
+        "def": "defence", 
+        "defense": "defence", 
+        "lvl": "level", 
+        "levl": "level",
+        "experiance": "experience", 
+        "experiense": "experience",
+        "magik": "magic", 
+        "magick": "magic",
+
+        //========Question words========
+        "wath": "what", 
+        "wat": "what", 
+        "wehre": "where", 
+        "hwo": "how", 
+        "sel": "sell", 
+        "byu": "buy", 
+        "fnd": "find", 
+        "blaksmith": "blacksmith", 
+        "allice": "alice", 
+        "alise": "alice",
+     
+        //========Item words========
+        "bwo": "bow", 
+        "staf": "staff",
+        "sowrd": "sword",
+        "amullet": "amulet",
+        "rign": "ring",
+        "armor": "armour",
+    };
+    let wordsToFix = cleanInput.split(/\s+/);
+    cleanInput = wordsToFix.map(w => corrections[w] || w).join(' ');
+
+    // ==================================================
+    // EXTRA STEP: DYNAMIC QUANTITY SYSTEM INTERCEPT
+    // ==================================================
+    // FIX: Enhanced regex to detect level strings placed anywhere (front, middle, or end of string)
+    const quantityRangeMatch = cleanInput.match(/(?:from\s+)?(?:level\s+|lvl\s+)?(\d+)(?:\s+to\s+|\s*-\s*)(?:level\s+|lvl\s+)?(\d+)/) || 
+                              cleanInput.match(/(?:till\s+|to\s+|level\s+|lvl\s+)(\d+)/);
+
+    if (quantityRangeMatch) {
+        const lvlStart = quantityRangeMatch[2] ? parseInt(quantityRangeMatch[1]) : 1;
+        const lvlEnd = quantityRangeMatch[2] ? parseInt(quantityRangeMatch[2]) : parseInt(quantityRangeMatch[1]);
+
+        if (xpTableData[lvlStart] && xpTableData[lvlEnd] && lvlEnd > lvlStart) {
+            const xpNeeded = xpTableData[lvlEnd].total - xpTableData[lvlStart].total;
+            
+            // Clean out context noise words and numbers to isolate the item description cleanly
+            let isolatedItemStr = cleanInput
+                .replace(/(?:from\s+)?(?:level\s+|lvl\s+)?\d+(?:\s+to\s+|\s*-\s*)(?:level\s+|lvl\s+)?\d+/, '')
+                .replace(/(?:till\s+|to\s+|level\s+|lvl\s+)?\d+/, '')
+                .replace(/how\s+(?:much|many)/, '')
+                .replace(/do\s+i\s+need|need|to\s+get|get|from|of/, '')
+                .replace(/\s+/g, ' ').trim();
+
+            // Plural fallback stripper
+            isolatedItemStr = isolatedItemStr.split(' ').map(normalize).join(' ');
+
+            if (isolatedItemStr.length > 0) {
+                let bestItemMatch = null;
+
+                // Absolute Sniper Match for Item Selector
+                for (let i = 0; i < itemXpData.length; i++) {
+                    const itemNorm = itemXpData[i].name.split(' ').map(normalize).join(' ');
+                    if (isolatedItemStr === itemNorm) {
+                        bestItemMatch = itemXpData[i];
+                        break;
+                    }
+                }
+
+                // Fallback scoring engine if no exact matching text name string was paired
+                if (!bestItemMatch) {
+                    let highestScore = -1;
+                    itemXpData.forEach(item => {
+                        const itemNorm = item.name.split(' ').map(normalize).join(' ');
+                        let matchScore = 0;
+
+                        if (itemNorm.includes(isolatedItemStr)) {
+                            matchScore += 5000;
+                        }
+
+                        const inputWords = isolatedItemStr.split(' ');
+                        const itemWords = itemNorm.split(' ');
+                        let wordMatches = 0;
+
+                        inputWords.forEach(w => {
+                            if (itemWords.includes(w)) wordMatches++;
+                        });
+
+                        matchScore += (wordMatches * 1000);
+
+                        if (matchScore > highestScore && wordMatches > 0) {
+                            highestScore = matchScore;
+                            bestItemMatch = item;
+                        }
+                    });
+                }
+
+                // --- CRITICAL REPAIR: AUTO-INTENT DETECT DISCOVERY ---
+                if (bestItemMatch) {
+                    const amountNeeded = Math.ceil(xpNeeded / bestItemMatch.xp);
+                    const capitalizedName = bestItemMatch.name.replace(/\b\w/g, c => c.toUpperCase());
+                    
+                    return {
+                        type: 'text',
+                        content: `<strong>Item Requirement Calculator</strong><br><br>To get from <strong>Level ${lvlStart >= 100 ? 'Unknown' : lvlStart}</strong> to <strong>Level ${lvlEnd >= 100 ? 'Unknown' : lvlEnd}</strong> requires <strong>${xpNeeded.toLocaleString()} XP</strong>.<br><br>You will need to make/catch exactly <strong>${amountNeeded.toLocaleString()}x ${capitalizedName}</strong> (yielding ${bestItemMatch.xp} XP each).`
+                    };
+                }
+            }
+        }
+    }
+
+    // ==========================================
     // EXTRA STEP: DYNAMIC EXP SYSTEM INTERCEPT
     // ==========================================
     if (!cleanInput.includes("how to level")) {
         if (cleanInput.includes("level") || cleanInput.includes("lvl") || cleanInput.includes("exp") || cleanInput.includes("xp")) {
             
             // Handle level range queries (e.g., "from level 1 to level 20", "level 1 to 20", "82-83")
-            const rangeMatch = cleanInput.match(/(?:from\s+)?(?:level\s+|lvl\s+)?(\d+)(?:\s+to\s+|\s*-\s*)(?:level\s+|lvl\s+)?(\d+)/);
+            const rangeMatch = cleanInput.match(/(?:from\s+)?(?:level\s+|lvl\s+)?(\d+)(?:\s+to\s+|\s*-\s*)(?:level\s+|lvl\s+)?(\d+)/) || 
+                               cleanInput.match(/(?:till\s+|to\s+|level\s+|lvl\s+)(\d+)/);
             if (rangeMatch) {
-                const lvlStart = parseInt(rangeMatch[1]);
-                const lvlEnd = parseInt(rangeMatch[2]);
+                const lvlStart = rangeMatch[2] ? parseInt(rangeMatch[1]) : 1;
+                const lvlEnd = rangeMatch[2] ? parseInt(rangeMatch[2]) : parseInt(rangeMatch[1]);
                 if (xpTableData[lvlStart] && xpTableData[lvlEnd]) {
                     if (lvlEnd > lvlStart) {
                         const xpNeeded = xpTableData[lvlEnd].total - xpTableData[lvlStart].total;
@@ -14205,50 +14359,6 @@ function processInput(text, isAutomatic = false) {
     if (chatMatch) {
         return { type: 'text', content: `<strong>${chatMatch.title}</strong><br><br>${chatMatch.answer}` };
     }
-
-    // 1. ========TYPO CORRECTIONS========
-const corrections = { 
-    // Greetings
-    "helo": "hello", 
-    "hellow": "hello", 
-    "hekko": "hello",
-    "heyo": "hello", 
-    "yo": "hello", 
-
-    // ========Stats / RPG Terms========
-    "atk": "attack", 
-    "atatck": "attack", 
-    "def": "defence", 
-    "defense": "defence", // Converts US to UK English
-    "lvl": "level", 
-    "levl": "level",
-    "experiance": "experience", 
-    "experiense": "experience",
-    "magik": "magic", 
-    "magick": "magic",
-
-    //========Question words========
-    "wath": "what", 
-    "wat": "what", 
-    "wehre": "where", 
-    "hwo": "how", 
-    "sel": "sell", 
-    "byu": "buy", 
-    "fnd": "find", 
-    "blaksmith": "blacksmith", 
-    "allice": "alice", 
-    "alise": "alice",
- 
-    //========Item words========
-    "bwo": "bow", 
-    "staf": "staff",
-    "sowrd": "sword",
-    "amullet": "amulet",
-    "rign": "ring",
-    "armor": "armour",
-};
-    let wordsToFix = cleanInput.split(/\s+/);
-    cleanInput = wordsToFix.map(w => corrections[w] || w).join(' ');
 
     // 2. FUZZY GREETING STRIPPER
     const greetingWords = ["hi", "hello", "hey", "heya", "yo", "hiya"];
