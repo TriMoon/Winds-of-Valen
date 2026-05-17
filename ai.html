@@ -14017,14 +14017,14 @@ function processInput(text, isAutomatic = false) {
     const rawInput = text.trim();
     let cleanInput = rawInput.toLowerCase().replace(/[^\w\s-]/g, ' ').replace(/\s+/g, ' ').trim();
     
-    // ==========================================
+// ==========================================
     // EXTRA STEP: DYNAMIC EXP SYSTEM INTERCEPT
     // ==========================================
     if (!cleanInput.includes("how to level")) {
         if (cleanInput.includes("level") || cleanInput.includes("lvl") || cleanInput.includes("exp") || cleanInput.includes("xp")) {
             
-            // Handle level range queries (e.g., "from level 1 to level 20", "level 1 to 20")
-            const rangeMatch = cleanInput.match(/(?:from\s+)?(?:level\s+|lvl\s+)?(\d+)\s+to\s+(?:level\s+|lvl\s+)?(\d+)/);
+            // Handle level range queries (e.g., "from level 1 to level 20", "level 1 to 20", "82-83")
+            const rangeMatch = cleanInput.match(/(?:from\s+)?(?:level\s+|lvl\s+)?(\d+)(?:\s+to\s+|\s*-\s*)(?:level\s+|lvl\s+)?(\d+)/);
             if (rangeMatch) {
                 const lvlStart = parseInt(rangeMatch[1]);
                 const lvlEnd = parseInt(rangeMatch[2]);
