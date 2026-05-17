@@ -14090,7 +14090,7 @@ function processInput(text, isAutomatic = false) {
         "wath": "what", "wat": "what", "were": "where", "wear": "where", 
         "hwo": "how", "sel": "sell", "byu": "buy", "fnd": "find", 
         "blaksmith": "blacksmith", "helo": "hello", "hellow": "hello",
-        "allice": "alice", "alise": "alice" , "heyo": "hello", "yo": "hello"
+        "allice": "alice", "alise": "alice" , "heyo": "hello", "yo": "hello", "defense": "defence", "atatck": "attack", "atk": "attack", "def": "defence", "lvl": "level"
     };
     let wordsToFix = cleanInput.split(/\s+/);
     cleanInput = wordsToFix.map(w => corrections[w] || w).join(' ');
