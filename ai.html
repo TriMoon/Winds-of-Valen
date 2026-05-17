@@ -14013,6 +14013,21 @@ const xpTableData = {
   99: { total: 397335504, prev: 51434922, range: "397335504 → MAX", hp: 1080 }
 };
 
+// Dynamically generate math for levels 100 to 2000 based on previous growth curves
+for (let i = 100; i <= 2000; i++) {
+    const prev = Math.floor((i === 100 ? 51434922 : xpTableData[i - 1].prev) * (51434922 / 44776600));
+    const total = (i === 100 ? 397335504 : xpTableData[i - 1].total) + prev;
+    if (i > 100) {
+        xpTableData[i - 1].range = `${xpTableData[i - 1].total} → ${total}`;
+    }
+    xpTableData[i] = {
+        total: total,
+        prev: prev,
+        range: `${total} → MAX`,
+        hp: 1080 + (i - 99) * 10
+    };
+}
+
 function processInput(text, isAutomatic = false) {
     const rawInput = text.trim();
     let cleanInput = rawInput.toLowerCase().replace(/[^\w\s-]/g, ' ').replace(/\s+/g, ' ').trim();
@@ -14033,12 +14048,12 @@ function processInput(text, isAutomatic = false) {
                         const xpNeeded = xpTableData[lvlEnd].total - xpTableData[lvlStart].total;
                         return {
                             type: 'text',
-                            content: `<strong>XP Calculator - Level ${lvlStart} to ${lvlEnd}</strong><br><br>To advance from <strong>Level ${lvlStart}</strong> to <strong>Level ${lvlEnd}</strong>, you need to earn a total of <strong>${xpNeeded.toLocaleString()} XP</strong>.`
+                            content: `<strong>XP Calculator - Level ${lvlStart >= 100 ? 'Unknown' : lvlStart} to ${lvlEnd >= 100 ? 'Unknown' : lvlEnd}</strong><br><br>To advance from <strong>Level ${lvlStart >= 100 ? 'Unknown' : lvlStart}</strong> to <strong>Level ${lvlEnd >= 100 ? 'Unknown' : lvlEnd}</strong>, you need to earn a total of <strong>${xpNeeded.toLocaleString()} XP</strong>.`
                         };
                     } else if (lvlEnd === lvlStart) {
                         return {
                             type: 'text',
-                            content: `<strong>XP Calculator - Level ${lvlStart} to ${lvlEnd}</strong><br><br>You are already at <strong>Level ${lvlStart}</strong>! No additional XP is needed.`
+                            content: `<strong>XP Calculator - Level ${lvlStart >= 100 ? 'Unknown' : lvlStart} to ${lvlEnd >= 100 ? 'Unknown' : lvlEnd}</strong><br><br>You are already at <strong>Level ${lvlStart >= 100 ? 'Unknown' : lvlStart}</strong>! No additional XP is needed.`
                         };
                     }
                 }
@@ -14061,7 +14076,7 @@ function processInput(text, isAutomatic = false) {
                 const parsedValue = customParsedValue !== null ? customParsedValue : parseInt(numberMatches[0]);
                 
                 // If it's a massive number or the context implies an XP value rather than a target level
-                const isXpQuery = customParsedValue !== null || parsedValue > 99 || cleanInput.includes("point") || cleanInput.includes("amount") || (cleanInput.includes("at") && (cleanInput.includes("exp") || cleanInput.includes("xp")));
+                const isXpQuery = customParsedValue !== null || (parsedValue > 99 && !cleanInput.includes("level") && !cleanInput.includes("lvl")) || parsedValue > 2000 || cleanInput.includes("point") || cleanInput.includes("amount") || (cleanInput.includes("at") && (cleanInput.includes("exp") || cleanInput.includes("xp")));
                 
                 if (isXpQuery) {
                     let currentLevel = 1;
@@ -14081,18 +14096,18 @@ function processInput(text, isAutomatic = false) {
                     let nextInfo = "";
                     if (nextLvlData) {
                         const remaining = nextLvlData.total - parsedValue;
-                        nextInfo = `<br>You need <strong>${remaining.toLocaleString()} more XP</strong> to reach Level ${currentLevel + 1}.`;
+                        nextInfo = `<br>You need <strong>${remaining.toLocaleString()} more XP</strong> to reach Level ${currentLevel + 1 >= 100 ? 'Unknown' : currentLevel + 1}.`;
                     }
                     
                     return {
                         type: 'text',
-                        content: `<strong>Level Finder - ${parsedValue.toLocaleString()} XP</strong><br><br>With <strong>${parsedValue.toLocaleString()} XP</strong>, your skill is <strong>Level ${currentLevel}</strong>.${nextInfo} Your active XP Range is <strong>${data.range}</strong>, and your Total HP is <strong>${data.hp} HP</strong>.`
+                        content: `<strong>Level Finder - ${parsedValue.toLocaleString()} XP</strong><br><br>With <strong>${parsedValue.toLocaleString()} XP</strong>, your skill is <strong>Level ${currentLevel >= 100 ? 'Unknown' : currentLevel}</strong>.${nextInfo} Your active XP Range is <strong>${data.range}</strong>, and your Total HP is <strong>${currentLevel >= 100 ? 'Unknown' : data.hp + ' HP'}</strong>.`
                     };
                 } else if (xpTableData[parsedValue]) {
                     const data = xpTableData[parsedValue];
                     return { 
                         type: 'text', 
-                        content: `<strong>Experience Table - Level ${parsedValue}</strong><br><br>To reach <strong>Level ${parsedValue}</strong>, you need a Total of <strong>${data.total.toLocaleString()} XP</strong>. (XP needed from previous level: <em>${data.prev.toLocaleString()}</em>). Your active XP Range is <strong>${data.range}</strong>, and your Total HP will be <strong>${data.hp} HP</strong>.` 
+                        content: `<strong>Experience Table - Level ${parsedValue >= 100 ? 'Unknown' : parsedValue}</strong><br><br>To reach <strong>Level ${parsedValue >= 100 ? 'Unknown' : parsedValue}</strong>, you need a Total of <strong>${data.total.toLocaleString()} XP</strong>. (XP needed from previous level: <em>${data.prev.toLocaleString()}</em>). Your active XP Range is <strong>${data.range}</strong>, and your Total HP will be <strong>${parsedValue >= 100 ? 'Unknown' : data.hp + ' HP'}</strong>.` 
                     };
                 }
             }
