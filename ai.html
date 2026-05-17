@@ -14174,10 +14174,13 @@ function processInput(text, isAutomatic = false) {
         //========Item words========
         "bwo": "bow", 
         "staf": "staff",
+        "swodr": "sword",
         "sowrd": "sword",
         "amullet": "amulet",
         "rign": "ring",
         "armor": "armour",
+        "armuor": "armour",
+        "stave": "staff",
     };
     let wordsToFix = cleanInput.split(/\s+/);
     cleanInput = wordsToFix.map(w => corrections[w] || w).join(' ');
