@@ -521,7 +521,7 @@ const knowledge = [
   {
     title: "Chat Commands",
     keywords: ["how to","block","unblock","unstuck","stuck","ingame commands","commands","chat","kill death ratio","info","help"],
-    answer: "Type these in the chat window:<br>• <strong>/commands</strong> - Show all commands.<br>• <strong>/unstuck</strong> - Move to nearest town (30m cooldown).<br>• <strong>/kd</strong> - Show kill/death stats.<br>• <strong>/block \"name\"</strong> - Block a player."
+    answer: "Type these in the chat window:<br>• <strong>/commands</strong> - Show all commands.<br>• <strong>/unstuck</strong> - Move to nearest town (30m cooldown).<br>• <strong>/kd</strong> - Show kill/death stats.<br>• <strong>/block \"name\"</strong> - Block a player.<br>• <strong>/unblockblock \"name\"</strong> - Unblock a player."
   },
   {
     title: "Trading",
@@ -535,7 +535,7 @@ const knowledge = [
   },
   {
     title: "Sell",
-    keywords: ["sell","selling","shop","economy","stall","sell items","items","income","money","gold","coins","cash","info","help"],
+    keywords: ["sell","selling","shop","economy","stall","sell items","items","income","money","gold","coins","cash","info","help","How to sell items"],
     answer: "Go to any shop stall and switch to the <strong>Sell tab</strong>. You can <strong>Right-Click</strong> items to move them to the selling window instantly! <br><img src='https://static.wikitide.net/windsofvalenwiki/thumb/9/99/Buy_and_Sell.png/150px-Buy_and_Sell.png' alt='Sell Tab'>",
   },
   {
@@ -659,12 +659,6 @@ const knowledge = [
     Potion stacking is intentionally disabled to limit the amount of healing available during boss fights and to encourage the strategic need for resupplying. This ensures combat remains challenging and inventory management stays a core part of the gameplay.`
   },
   {
-    title: "Jewelry Stacking FAQ",
-    keywords: ["stack","jewelry","bank stacking","inventory limit","gem slots","jewel stack","jewellery stacking","ring stack","amulet stack","faq"],
-    answer: `<strong>Why can’t rings and amulets stack in the bank?</strong><br><br>
-    Rings and amulets currently do not stack due to technical limitations related to how gem slots are handled. The developers plan to fix this once it becomes a higher priority in the development cycle.`
-  },
-  {
     title: "Two-Handed Weapons FAQ",
     keywords: ["two-handed","2h","equip","2 handed and shield","2h sword and shield","greatsword shield","two handed shield","faq"],
     answer: `<strong>Why can’t I equip an elven sword with a shield?</strong><br><br>
@@ -745,68 +739,68 @@ const knowledge = [
 // ==================================== TOWNS AND AREAS ====================================
   {
     title: "Broken Village",
-    keywords: ["broken village","village","starter","location","map"],
+    keywords: ["broken village","village","starter","location"],
     answer: "the <strong>Broken Village</strong> is a ruined part of Valen Gate lies across the bridge, <strong>just south of Valen Gate</strong>. The area is currently occupied by <strong>Goblins</strong> level 1, along with the <strong>Goblin Berserker</strong> (Boss) level 9. Along the nearby riverbanks, <strong>Minnows</strong> can be fished. Following the riverbank will lead directly to the <strong>Farmlands</strong>, providing a clear route onward.<br><img src='https://static.wikitide.net/windsofvalenwiki/c/cf/Broken_Village.png' alt='broken village Tab'>"
   },
   {
     title: "Valen Gate",
-    keywords: ["valengate","valen gate","valen","town 1","gate","starter town","starter","beginner","location","map"],
+    keywords: ["valengate","valen gate","valen","town 1","gate","starter town","starter","beginner","location"],
     answer: "<strong>Valen Gate</strong>, also known as Town 1, is the starter town where the game begins. Located adjacent to the main castle, it serves as the central hub for new adventurers, offering access to basic stalls where starter equipment can be purchased, as well as nearby training areas. Just outside the town lies the Town Mine, where players can mine copper and tin ore for early resource gathering. The town also functions as a key waypoint, connecting routes to the Broken Village and the entrance to the Forest Alcove. At the center of Valen Gate stands Lady Valen beside a green <strong>healing crystal</strong>, providing a reliable point for recovery.<br><img src='https://static.wikitide.net/windsofvalenwiki/c/ce/Town_1_Vieuw_1.png' alt='valen gate Tab'>"
   },
   {
     title: "Grave Town",
-    keywords: ["gravetown","grave town","Grave","town 2","location","map"],
+    keywords: ["gravetown","grave town","Grave","town 2","location"],
     answer: "<strong>Grave Town</strong>, also known as Town 2, is a town located south of the starter town and serves as a key hub for <strong>mining</strong>. It offers a wide selection of mining supplies, including advanced <strong>pickaxes</strong> and <strong>ores</strong>, making it a popular location for <strong>smithing</strong> leveling and resource gathering. The town also provides an alternative entrance to the Skeleton Cave and is situated near a volcanic zone designated as a PvP area. Located near Grave Town are 3 specific locations : <br>• The Grave Town graveyard inhabited by <strong>Skeleton Miners</strong> level 13 and the <strong>Fire lich</strong> (Boss) level 120. <br>• The West Mine inhabited by <strong>Skeleton Knights</strong> level 26 and the <strong>Skeleton Pioneer</strong> (Boss) level 90. <br>• The Darklands PvP zone, enter at your own risk !<br><img src='https://static.wikitide.net/windsofvalenwiki/f/f9/Town_2_Vieuw_2.png' alt='grave town Tab'>"
   },
   {
     title: "Goblin Village",
-    keywords: ["goblin village","village","location","map"],
+    keywords: ["goblin village","village","location"],
     answer: "The <strong>Goblin Village</strong> is a fortified settlement located <strong>southwest</strong> of Valen Gate, serving as the primary base of operations for the local goblin population. Despite its name, it functions more like a small, aggressive stronghold than a traditional village. It is inhabited by <strong>Goblin Villagers</strong> level 15 and the <strong>Goblin Chieftain</strong> (Boss) level 40. The village can be found directly north of the West Mine and behind the Broken Village, tucked behind smaller cliffs, making it a notable landmark in the southwestern region. These goblins drop alot of iron bars and even some steel bars, making it a useful location for starting players to level skills while also gaining smithing materials.<br><img src='https://static.wikitide.net/windsofvalenwiki/f/ff/Goblin_Village.png' alt='goblin village Tab'>"
   },
   {
     title: "Elven Haven",
-    keywords: ["elven haven","elven","haven","forest","woods","location","map"],
+    keywords: ["elven haven","elven","haven","forest","woods","location"],
     answer: "The <strong>Elven Haven</strong> is a secluded and mysterious settlement deep in the <strong>Forest Alcove</strong>, far east of <strong>Valen Gate</strong>. Despite its peaceful name, it is a highly guarded territory where the elven people maintain a strict and formidable presence. The area is inhabited by <strong>Elf</strong> level 37, <strong>Elf Scholar</strong> level 37, and the <strong>Warden</strong> (Boss) level 120. They guard rich clusters of <strong>Mithril Rocks</strong>, making it an ideal location for mining <strong>Mithril Ore</strong>. The haven can be reached by following the path to the lake junction near the Mercenary Camp—one path leads to the camp, while the other continues toward this settlement, placing it within the wooded region not far from the main castle near the Starter Town.<br><img src='https://static.wikitide.net/windsofvalenwiki/9/9b/Elven_Haven_Vieuw_1.png' alt='elven haven Tab'>"
   },
   {
     title: "Forest Alcove",
-    keywords: ["forest alcove","forest","woods","location","map"],
+    keywords: ["forest alcove","forest","woods","location"],
     answer: "The <strong>Forest Alcove</strong> is a secluded and dangerous section of the eastern forest, located east of the Starter Town. Known as a haven for criminals, it contains multiple bandit camps and hidden clearings. At the junction leading into the area, one path leads to the bandits, while others connect to the Elven Haven and the Mercenary Camp. Before entering, a cliffside cluster of <strong>Coal Rock</strong> and <strong>Iron Rocks</strong> provides coal and iron ore. Nearby riverbanks allow players to catch <strong>Trout</strong>. Inside the forest, a bandit camp occupies a clearing, inhabited by <strong>Bandits</strong> level 10 and the <strong>Bandit Leader</strong> (Boss) level 25. Following the path northeast leads to a fishing dock where <strong>Bass</strong> can be fished.<br><img src='https://static.wikitide.net/windsofvalenwiki/8/87/Forest_Alcove_Vieuw_1.png' alt='forest alcove Tab'>"
   },
   {
     title: "Mercenary Camp",
-    keywords: ["mercenary camp","mercenary","forest","woods","settlement","location","map"],
+    keywords: ["mercenary camp","mercenary","forest","woods","settlement","location"],
     answer: "The <strong>Mercenary Camp</strong> is a heavily fortified stronghold located deep within the eastern forest near the lake junction. It serves as the main base of operations for elite and organized criminal mercenaries in the region. At the lake junction before the entrance, a <strong>Bank Wagon</strong> allows players to deposit or withdraw items before combat. This area is also a fishing spot where <strong>Bass</strong> and <strong>Blue Gill</strong> can be found. Inside the camp, players will encounter <strong>Bandit Mercenary</strong> level 30 and the <strong>Bandit Mercenary Boss</strong> (Boss) level 74. Following the path northeast along the lake past the camp leads toward the <strong>Elven Haven</strong>.<br><img src='https://static.wikitide.net/windsofvalenwiki/0/06/Mercenary_Camp.png' alt='mercenary camp Tab'>"
   },
   {
     title: "Valen Gate Town Mine",
-    keywords: ["valengate town mine","town mine","starter","location","map"],
+    keywords: ["valengate town mine","town mine","starter","location"],
     answer: "The <strong>Town Mine</strong> is a collapsed industrial site located just west of Valen Gate, set against a cliffside landscape that makes its entrance easy to identify. Once a primary source of resources for the region, it has since become a hazardous ruin haunted by the spirits of those who worked there. Near the entrance, rich veins of <strong>Copper Ore</strong> and <strong>Tin Ore</strong> can be found, making it a valuable early-game gathering location. The mine itself is heavily damaged from a major collapse, with tunnels filled with rubble, abandoned tools, and remnants of its former operations. Outside the entrance, several graves mark the fallen workers, explaining the presence of the undead. The area is now inhabited by <strong>Skeleton Miners</strong> level 13.<br><img src='https://static.wikitide.net/windsofvalenwiki/0/0a/Town_Mine.png' alt='valen gate town mine Tab'>"
   },
   {
     title: "West Mine",
-    keywords: ["west mine","west cave","western mountains","underground mine","wooden bridge","location","map"],
+    keywords: ["west mine","west cave","western mountains","underground mine","wooden bridge","location"],
     answer: "<img src='https://static.wikitide.net/windsofvalenwiki/3/3a/West_Mine_Vieuw_1.png' alt='west mine Tab'><br>The <strong>West Mine</strong> is a large underground mine in the western mountains, guarded by <strong>Skeleton Knights</strong> level 26. It is a high-value exploration and mining location for adventurers. The West Mine is located deep in the western mountain range, further west and slightly south of <strong>Valen Gate</strong>. There are two main entrances to the mine. The primary entrance is located next to the <strong>Path at West Mine</strong> and is marked by a wooden bridge built over stone spikes. A nearby <strong>Bank Wagon</strong> serves as a convenient waypoint for travelers. A secondary entrance can be seen from <strong>Grave Town</strong> to the north, offering an alternative approach into the mine and visibility over the surrounding terrain. To reach either entrance, players must pass through the <strong>Wheat Fields</strong> and the <strong>Graveyard</strong> before ascending into the mountainous region. The West Mine contains multiple valuable ores that can be gathered from specific rock types. Mithril Rocks, Gold Rocks, Iron Rocks and Coal Rocks can be found here.<br><img src='https://static.wikitide.net/windsofvalenwiki/thumb/6/69/WestCaveLayout.png/1900px-WestCaveLayout.png' alt='West Mine Map'>",
   },
   {
     title: "Goblin Cave",
-    keywords: ["goblin cave","cave","farm","underground cave","stone tunnels","tunnel","starter","location","map"],
+    keywords: ["goblin cave","cave","farm","underground cave","stone tunnels","tunnel","starter","location"],
     answer: "The <strong>Goblin Cave</strong> is a dark cavern hidden among the hills of the <strong>Farmlands</strong>. The cave serves as a nesting ground for hostile <strong>Goblins</strong> level 1 that frequently roam the surrounding countryside. The Goblin Cave is located within the <strong>Farmlands</strong>, southeast of <strong>Valen Gate</strong>. To reach it, travelers must cross the bridge located south of <strong>Valen Gate</strong> and then head east across the farmland paths. The deeper chambers of the cave act as gathering points for goblin groups. Due to the confined space and twisting passages.The <strong>Goblin Watcher</strong> (Boss) level 9 is more vigilant enemy that keeps watch over the cave.<br><img src='https://static.wikitide.net/windsofvalenwiki/b/b9/Goblin_Cave_Entrance.png' alt='goblin cave Tab'>"
   },
   {
     title: "Farmlands",
-    keywords: ["farmlands","starter","farm","fields","livestock","bridge","training area","location","map"],
+    keywords: ["farmlands","starter","farm","fields","livestock","bridge","training area","location"],
     answer: "The <strong>Farmlands</strong> are a large agricultural area located just southeast of the starter town <strong>Valen Gate</strong>. With wide open fields and roaming livestock, the region serves as one of the safest training areas for new adventurers beginning their journey. Within the Farmlands, players can also find the entrance to the <strong>Goblin Cave</strong>, a darker area hidden among the hills where goblins have established a nest. Livestock roam freely throughout the area, making the Farmlands feel far more peaceful than the dangerous forests and caves found elsewhere in the world. Because of the low threat level, the region is commonly used by new players to practice combat and gather basic resources. The Farmlands are populated mostly by farm animals that wander across the open fields. <strong>Cow</strong> level 5 is a passive livestock commonly found grazing in the fields. <strong>Hen</strong> level 1 and <strong>Rooster</strong> level 1 are small farm birds that roam the farmland paths. After following the path through the farmlands you will eventually reach a fishing town named <strong>Valen Port</strong>.<br><img src='https://static.wikitide.net/windsofvalenwiki/2/2a/Farmlands.png' alt='farmlands Tab'>"
   },
   {
     title: "Path at West Mine",
-    keywords: ["path at west mine","west","mine","western mountains","abandoned house","criminals","mine path","location","map"],
+    keywords: ["path at west mine","west","mine","western mountains","abandoned house","criminals","mine path","location"],
     // Fixed the typo: <strong\West Mine</strong> to <strong>West Mine</strong>
     answer: "The <strong>Path at West Mine</strong> is a long stretch of road that serves as the primary connection between <strong>Grave town</strong> and <strong>Valen gate</strong>. The path is situated in the terrain surrounding the <strong>West Mine</strong>. Travelers using this route will also find an entrance to the <strong>West Mine</strong> along the path, providing access into the crystal-filled caverns. The most notable feature being a small abandoned house that has been repurposed as a headquarters for <strong>Highwayman</strong> level 28. They actively patrol the routes between the <strong>Wheat Fields</strong> and <strong>Grave Town</strong>.<br><img src='https://static.wikitide.net/windsofvalenwiki/f/ff/Path_at_West_Mine_Vieuw_2.png' alt='path at west mine Tab'>"
   },
   {
     title: "Darklands",
-    keywords: ["darklands","player versus player","pvp","pvp zone","border","items loss","inventory loss","volcano","location","map"],
+    keywords: ["darklands","player versus player","pvp","pvp zone","border","items loss","inventory loss","volcano","location"],
     answer: "<img src='https://static.wikitide.net/windsofvalenwiki/thumb/9/93/Pvppop.png/800px-Pvppop.png' alt='pvp warning Tab'><br>The <strong>Darklands</strong> is a dangerous region designed for player-versus-player combat. Before entering the Darklands, players receive a PvP warning. This warning reminds players that entering a PvP zone carries significant risk. PvP takes place exclusively within the Darklands. Players can freely attack each other, and combat uses the same mechanics as PvE, but opponents are adaptive players. Death results in the loss of equipped items and inventory. PvP encourages gear experimentation and learning through defeats. PvP is primarily decided by countering rather than raw stats. A lower-level player using the correct shield and weapon can defeat a higher-level player with an ineffective setup. Key strategies include understanding damage types, using the correct shield, targeting enemy weaknesses, and proper use of potions. Several restrictions apply within PvP: <br>•Logging out is disabled while in combat. <br>•Force-closing the game does not immediately remove the character; it remains in the world for 60 seconds and can still be attacked.<br>• The /unstuck command cannot be used during PvP combat.<br><br>These rules prevent combat avoidance and ensure fair encounters. Players should always equip the correct shield and weapon for their opponent’s weaknesses, stock up on potions before entering, and stay aware of their surroundings. PvP success is knowledge-based, where understanding mechanics and countering enemies matters more than raw stats.<br><img src='https://static.wikitide.net/windsofvalenwiki/thumb/0/04/Darklands_Layout_Upscale.png/901px-Darklands_Layout_Upscale.png' alt='darklands Tab'>"
   },
   {
@@ -816,98 +810,98 @@ const knowledge = [
   },
   {
     title: "Wheat Fields Graveyard",
-    keywords: ["wheat fields graveyard","starter","angel statue","graves","location","map"],
+    keywords: ["wheat fields graveyard","starter","angel statue","graves","location"],
     answer: "The <strong>Wheat Fields Graveyard</strong> is a haunted point of interest located just past the <strong>Broken Village</strong> and the <strong>Wheat Fields</strong>, south of the <strong>Valen Gate</strong>. It acts as a transition zone between the peaceful farming lands and more areas further south. To reach the Graveyard from <strong>Valen Gate</strong>, travelers must head south, passing through the <strong>Broken Village</strong> and the surrounding <strong>Wheat Fields</strong> until reaching the burial grounds immediately beyond them. The area is filled with scattered graves and marked by a small angel statue at its center. The Graveyard is inhabited by <strong>Skeletons</strong> Level 6.<br><img src='https://static.wikitide.net/windsofvalenwiki/d/d5/Graveyard.png' alt='wheat fields graveyard Tab'>"
   },
   {
     title: "Grave Town Graveyard",
-    keywords: ["grave town graveyard","grave","graveyard","tombstones","resting place","location","map"],
+    keywords: ["grave town graveyard","grave","graveyard","tombstones","resting place","location"],
     answer: "The <strong>Grave Town Graveyard</strong> lies directly west of <strong>Grave Town</strong> and is accessible via a short path from the town’s western side. Its proximity to the <strong>West Mine</strong> suggests historical ties between miners and those buried here. The area is filled with weathered tombstones and has a quiet, somber atmosphere. Despite its calm appearance, it is considered dangerous due to roaming undead within its grounds. The graveyard is inhabited by hostile <strong>Skeleton Miners</strong> level 13, who wander among the graves and make the area hazardous. In addition, a powerful boss, the <strong>Fire Lich</strong> level 120 roams the crypt here.<br><img src='https://static.wikitide.net/windsofvalenwiki/1/18/Town_2_Graveyard.png' alt='grave town graveyard Tab'>"
   },
   {
     title: "Valen Port",
-    keywords: ["valenport","valen port","fishing town","port","docks","sea","location","map"],
+    keywords: ["valenport","valen port","fishing town","port","docks","sea","location"],
     answer: "The <strong>Valen Port</strong> is a fishing town located behind the <strong>Farmlands</strong>, southeast of <strong>Valen Gate</strong>. It is a coastal settlement focused on fishing and maritime defence, but its operations have been disrupted by a recent pirate invasion of the docks. <strong>Valen Port</strong> lies beyond the <strong>Farmlands</strong> and can be reached by traveling southeast from <strong>Valen Gate</strong> after crossing the bridge. Its position along the coastline makes it an important hub for fishing activity and trade, as well as a strategic defensive location against sea threats. The area is inhabited by hostile enemies including <strong>Pirate Deckhand</strong> level 10, <strong>Pirate Rigger</strong> level 10, and <strong>Pirate Corsair</strong> level 10. At the center of the invasion is the <strong>Pirate Captain</strong> level 25, who leads the assault on the port.<br><img src='https://static.wikitide.net/windsofvalenwiki/1/18/Valen_Port.png' alt='valen port graveyard Tab'>"
   },
 // ========= TOWNS AND AREAS WHERE TO FIND QUESTIONS =========
   {
     title: "Where to find Broken Village",
-    keywords: ["find broken village","broken village location","map","location","where is the broken village"],
+    keywords: ["find broken village","broken village location","location","where is the broken village"],
     answer: "The <strong>Broken Village</strong> is located directly <strong>south of Valen Gate</strong> across the main bridge. The ruined village sits along the riverbank and acts as the first major area outside the starter town. Following the river south will eventually lead toward the <strong>Farmlands</strong>."
   },
   {
     title: "Where to find Valen Gate",
-    keywords: ["find valen gate","starter town","town 1","valen gate location","map","location","where is valen gate"],
+    keywords: ["find valen gate","starter town","town 1","valen gate location","location","where is valen gate"],
     answer: "<strong>Valen Gate</strong> is the main starter town located beside the central castle. It acts as the primary hub for new players and connects directly to the <strong>Broken Village</strong>, <strong>Farmlands</strong>, <strong>Town Mine</strong>, and <strong>Forest Alcove</strong>. You can also press <strong>M</strong> for a map ingame."
   },
   {
     title: "Where to find Grave Town",
-    keywords: ["find grave town","town 2","grave town location","mining town","map","location","where is grave town"],
+    keywords: ["find grave town","town 2","grave town location","mining town","location","where is grave town"],
     answer: "<strong>Grave Town</strong> is located far south of <strong>Valen Gate</strong> beyond the <strong>Wheat Fields Graveyard</strong> and the western mountain paths. The town is positioned near the <strong>West Mine</strong> and the entrance to the <strong>Darklands</strong>. You can also press <strong>M</strong> for a map ingame."
   },
   {
     title: "Where to find Goblin Village",
-    keywords: ["find goblin village","goblin settlement","map","location","where is the goblin village"],
+    keywords: ["find goblin village","goblin settlement","location","where is the goblin village"],
     answer: "The <strong>Goblin Village</strong> is located <strong>southwest of Valen Gate</strong>, behind the <strong>Broken Village</strong> and north of the <strong>West Mine</strong>. The settlement is hidden behind rocky cliffs in the southwestern region."
   },
   {
     title: "Where to find Elven Haven",
-    keywords: ["find elven haven","elf area","map","location","where is the elven haven"],
+    keywords: ["find elven haven","elf area","location","where is the elven haven"],
     answer: "The <strong>Elven Haven</strong> is located deep inside the <strong>Forest Alcove</strong> east of <strong>Valen Gate</strong>. Travelers must follow the forest paths past the lake junction near the <strong>Mercenary Camp</strong> to reach the secluded settlement."
   },
   {
     title: "Where to find Forest Alcove",
-    keywords: ["find forest alcove","alcove","forest","woods","map","location","where is the forest alcove"],
+    keywords: ["find forest alcove","alcove","forest","woods","location","where is the forest alcove"],
     answer: "The <strong>Forest Alcove</strong> is located east of <strong>Valen Gate</strong>. The forest contains several branching paths leading toward the <strong>Mercenary Camp</strong>, <strong>Elven Haven</strong>, and nearby fishing areas."
   },
   {
     title: "Where to find Mercenary Camp",
-    keywords: ["find mercenary camp","forest camp","lake camp","map","location","where is the mercenary camp"],
+    keywords: ["find mercenary camp","forest camp","lake camp","location","where is the mercenary camp"],
     answer: "The <strong>Mercenary Camp</strong> is located deep within the eastern forest near the lake junction inside the <strong>Forest Alcove</strong>. A nearby <strong>Bank Wagon</strong> marks the route leading toward the camp entrance."
   },
   {
     title: "Where to find Town Mine",
-    keywords: ["find town mine","starter mining","map","location","where is the town mine"],
+    keywords: ["find town mine","starter mining","location","where is the town mine"],
     answer: "The <strong>Town Mine</strong> is located directly west of <strong>Valen Gate</strong> along the cliffside outside the starter town. The collapsed mine entrance is easy to recognize due to the surrounding rocky terrain."
   },
   {
     title: "Where to find West Mine",
-    keywords: ["find west mine","western mine","map","location","where is the west mine"],
+    keywords: ["find west mine","western mine","location","where is the west mine"],
     answer: "The <strong>West Mine</strong> is located deep within the western mountain range southwest of <strong>Grave Town</strong>. The primary entrance can be reached through the <strong>Path at West Mine</strong> near the wooden bridge."
   },
   {
     title: "Where to find Goblin Cave",
-    keywords: ["find goblin cave","goblin tunnels","cave with goblins","map","location","where is the goblin cave"],
+    keywords: ["find goblin cave","goblin tunnels","cave with goblins","location","where is the goblin cave"],
     answer: "The <strong>Goblin Cave</strong> is hidden within the hills of the <strong>Farmlands</strong> southeast of <strong>Valen Gate</strong>. Cross the southern bridge from town and continue east along the farmland paths to locate the cave entrance."
   },
   {
     title: "Where to find Farmlands",
-    keywords: ["find farmlands","farm area","starter fields","map","location","where is the farmlands"],
+    keywords: ["find farmlands","farm area","starter fields","location","where is the farmlands"],
     answer: "The <strong>Farmlands</strong> are located southeast of <strong>Valen Gate</strong> after crossing the main southern bridge. The region contains open farming fields, livestock areas, and the road leading toward <strong>Valen Port</strong>."
   },
   {
     title: "Where to find Path at West Mine",
-    keywords: ["find path at west mine","western road","mountain path","path uphill cave","map","location","where is the path to west mine"],
+    keywords: ["find path at west mine","western road","mountain path","path uphill cave","location","where is the path to west mine"],
     answer: "The <strong>Path at West Mine</strong> is the western mountain road connecting <strong>Valen Gate</strong> to <strong>Grave Town</strong>. The route passes directly beside the main entrance to the <strong>West Mine</strong>."
   },
   {
     title: "Where to find Darklands",
-    keywords: ["find darklands","pvp zone","where is volcano","map","location","where is darklands"],
+    keywords: ["find darklands","pvp zone","where is volcano","location","where is darklands"],
     answer: "The <strong>Darklands</strong> are located south of <strong>Grave Town</strong> within the volcanic region. The area acts as the main PvP zone and is accessed through the southern routes near the town."
   },
   {
     title: "Where to find Wheat Fields Graveyard",
-    keywords: ["find wheat fields graveyard","starter graveyard","wheat fields grave","map","location","where is the wheat fields graveyard"],
+    keywords: ["find wheat fields graveyard","starter graveyard","wheat fields grave","location","where is the wheat fields graveyard"],
     answer: "The <strong>Wheat Fields Graveyard</strong> is located south of <strong>Valen Gate</strong> beyond the <strong>Broken Village</strong> and surrounding wheat fields. The graveyard marks the transition toward the southern regions."
   },
   {
     title: "Where to find Grave Town Graveyard",
-    keywords: ["find grave town graveyard","graveyard town","map","location","where is the grave town graveyard"],
+    keywords: ["find grave town graveyard","graveyard town","location","where is the grave town graveyard"],
     answer: "The <strong>Grave Town Graveyard</strong> is located directly west of <strong>Grave Town</strong>. A short path from the western side of town leads into the graveyard area."
   },
   {
     title: "Where to find Valen Port",
-    keywords: ["find valen port","fishing town","docks","where is fishing town","map","location","where is valen port"],
+    keywords: ["find valen port","fishing town","docks","where is fishing town","location","where is valen port"],
     answer: "The <strong>Valen Port</strong> is located southeast of <strong>Valen Gate</strong> beyond the <strong>Farmlands</strong>. Following the farmland road toward the coastline will eventually lead to the fishing town and docks. You can also press <strong>M</strong> for a map ingame."
   },
 // ==================================== FISHING SPOTS ====================================
@@ -1650,7 +1644,7 @@ const knowledge = [
         <td style="padding: 5px; border: 1px solid #444;">N/A</td>
       </tr>
     </table>
-
+The Seasonal stall is only available during the christmas season<br>
         <!-- Economy Table -->
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
@@ -1699,7 +1693,7 @@ const knowledge = [
         <td style="padding: 5px; border: 1px solid #444;">N/A</td>
       </tr>
     </table>
-
+This drop is a Seasonal drop only, and is only available during the easter season<br>
         <!-- Economy Table -->
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
@@ -7356,7 +7350,7 @@ const knowledge = [
         <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
       </tr>
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;"><span style="color: #888;">(Untradable)</span></td>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">9g</td>
       </tr>
     </table>
@@ -7400,7 +7394,7 @@ const knowledge = [
         <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
       </tr>
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;"><span style="color: #888;">(Untradable)</span></td>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">24g</td>
       </tr>
     </table>
@@ -7534,7 +7528,7 @@ const knowledge = [
         <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
       </tr>
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;"><span style="color: #888;">(Untradable)</span></td>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">32g</td>
       </tr>
     </table>
@@ -7578,7 +7572,7 @@ const knowledge = [
         <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
       </tr>
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;"><span style="color: #888;">(Untradable)</span></td>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">70g</td>
       </tr>
     </table>
@@ -7712,7 +7706,7 @@ const knowledge = [
         <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
       </tr>
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;"><span style="color: #888;">(Untradable)</span></td>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">32g</td>
       </tr>
     </table>
@@ -7756,7 +7750,7 @@ const knowledge = [
         <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
       </tr>
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;"><span style="color: #888;">(Untradable)</span></td>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">70g</td>
       </tr>
     </table>
@@ -8000,7 +7994,7 @@ const knowledge = [
         <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
       </tr>
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;"><span style="color: #888;">(Untradable)</span></td>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">70g</td>
       </tr>
     </table>
@@ -8051,7 +8045,7 @@ const knowledge = [
         <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
       </tr>
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;"><span style="color: #888;">(Untradable)</span></td>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">245g</td>
       </tr>
     </table>
@@ -8098,7 +8092,7 @@ const knowledge = [
         <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
       </tr>
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;"><span style="color: #888;">(Untradable)</span></td>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">840g</td>
       </tr>
     </table>
@@ -8153,7 +8147,7 @@ const knowledge = [
         <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
       </tr>
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;"><span style="color: #888;">(Untradable)</span></td>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">70g</td>
       </tr>
     </table>
@@ -8208,7 +8202,7 @@ const knowledge = [
         <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
       </tr>
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;"><span style="color: #888;">(Untradable)</span></td>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">350g</td>
       </tr>
     </table>
@@ -8318,7 +8312,7 @@ const knowledge = [
         <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
       </tr>
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;"><span style="color: #888;">(Untradable)</span></td>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">1,400g</td>
       </tr>
     </table>
@@ -8373,7 +8367,7 @@ const knowledge = [
         <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
       </tr>
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;"><span style="color: #888;">(Untradable)</span></td>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">245g</td>
       </tr>
     </table>
@@ -8428,7 +8422,7 @@ const knowledge = [
         <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
       </tr>
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;"><span style="color: #888;">(Untradable)</span></td>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">1,400g</td>
       </tr>
     </table>
@@ -8483,7 +8477,7 @@ const knowledge = [
         <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
       </tr>
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;"><span style="color: #888;">(Untradable)</span></td>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">3,500g</td>
       </tr>
     </table>
@@ -8504,7 +8498,7 @@ const knowledge = [
     </div>
     <strong>Small Essence Gland</strong> glows with magical essence and is used in Potion Making.<br><br>
     <strong>Source:</strong><br>
-    • Obtained from <strong>Common Trout</strong> at the <strong>Cutting Table</strong>.<br><br>
+    • Obtained from <strong>Minnow</strong> at the <strong>Cutting Table</strong>.<br>• Obtained from <strong>Common Trout</strong> at the <strong>Cutting Table</strong>.<br>• Obtained from <strong>Perch</strong> at the <strong>Cutting Table</strong>.<br>• Obtained from <strong>Bass</strong> at the <strong>Cutting Table</strong>.<br><br><br><br>
     <strong>Used for:</strong><br>
     • 2x Essence`
   },
@@ -9136,7 +9130,7 @@ const knowledge = [
   },
   {
     title: "List of Locations",
-    keywords: ["location","map","areas","towns","villages","list","destination","give me a list of locations","all locations"],
+    keywords: ["location","areas","towns","villages","list","destination","give me a list of locations","all locations"],
     answer: "Various regions can be explored throughout the world, each containing unique resources and enemies. My database contains information on:<br><br>\
 • Broken Village<br>\
 • Valen Gate<br>\
@@ -12889,6 +12883,11 @@ const knowledge = [
     answer: `The <strong>Bank Stall</strong> is spread around the world of <strong>Valen</strong>. It comes in 2 variants:<br>• The <strong>Bank Stall</strong> variant<br>• The <strong>Bank Wagon</strong> variant<br><br>The bank wagon variant is spread across the world while the bank stall variant is located mostly in towns.<br><img src='https://static.wikitide.net/windsofvalenwiki/b/b5/Schermafbeelding_2026-01-12_000025.png' alt='bank Tab'>`
   },
   {
+    title: "Cooking stall",
+    keywords: ["Can i cook","cooking","cooking skill"],
+    answer: "Short answer ? <strong>No</strong> cooking is not yet implemented."
+  },
+  {
     title: "Stall Locations",
     keywords: ["where are the stalls","where are the shops","shops","stalls","merchant","buying","buy","sell","selling"],
     answer: "here is a full list of all stalls and its locations:<br><strong>Valen Gate</strong>:<br>•Character Creator<br>•Jewellery Stall<br>•Bank Stall<br>•Archery Stall<br>•Wands Stall<br>•Potion Stall<br>•Mining Stall<br>•Blacksmithing Stall<br>•Fishing Stall<br>•Armour Stall<br>•Sword Stall<br><br><strong>Valenport</strong>:<br>•Potion Stall<br>•Shield Stall<br>•Fishing Stall<br>•Bank Stall<br><br><strong>Grave Town</strong>:<br>•Mining Stall<br>•Potion Stall<br>•Bank Stall<br><br><strong>Path at West Mine</strong><br>•Bank Wagon<br><br><strong>Mercenary Camp</strong>:<br>•Bank Wagon <br><span style='color: #4ade80;'>(Ask about a specific one for details !)</span>"
@@ -13436,29 +13435,34 @@ Different defence choices lead to different playstyles, making matchups more tac
 `
 },
 {
-  title: "How to charge wands",
-  keywords: ["how to charge wands","charge wands","wand charging","recharge wands"],
+  title: "How to charge wands and staffs",
+  keywords: ["how to charge wands","how to charge staff","charge wands","charge staff","wand charging","staff charging","recharge wands","recharge staff","discharge wands","discharge staff","remove essence"],
   answer: `
-<h2>How to Charge Wands</h2>
+<h2>How to Charge and Discharge Wands/Staffs</h2>
 <p>
-Wands are charged using <strong>essence</strong>.
+Wands/staffs are charged using <strong>essence</strong>, which can also be reclaimed if needed.
 </p>
-<h2>Charging Method</h2>
 
+<h2>Charging Method</h2>
 <ul>
-  <li>Open your <strong>inventory</strong></li>
-  <li>Make sure the <strong>wand is NOT equipped and inside the inventory</strong></li>
-  <li><strong>Drag essence onto the wand</strong></li>
+  <li>Open your <strong>inventory</strong>.</li>
+  <li>Make sure the <strong>wand or staff is NOT equipped and is inside the inventory</strong>.</li>
+  <li><strong>Drag essence onto the wand or staff</strong> to charge it.</li>
 </ul>
+
+<h2>Discharging Method (Removing Essence)</h2>
+<ul>
+  <li>Open your <strong>inventory</strong>.</li>
+  <li>Ensure the wand or staff is unequipped.</li>
+  <li><strong>Right-click the wand or staff</strong> while it is in its inventory slot to open a window to extract the essence.</li>
+</ul>
+
 <h2>Important Rule</h2>
 <p>
-Wands <strong>cannot be recharged while equipped</strong>.
+Wands or Staffs <strong>cannot be charged or discharged while equipped</strong>.
 </p>
 <p>
-The same rule applies to <strong>staffs</strong>.
-</p>
-<p>
-To recharge them, they must first be unequipped and placed in your inventory.
+To modify their essence, they must always be unequipped and placed in your inventory first.
 </p>
 `
 },
@@ -13654,7 +13658,46 @@ Location:
     keywords: ["what do you need for mithril"],
     answer: "In order to get mithril you first need 3 things:<br>• Mining level 30 to mine for mithril<br>• Smithing level 32 wich is the first item you can craft for steel<br>• Pickaxe"
   },
-
+{
+    title: "How to open map",
+    keywords: ["open map","open the map","how to open the map","is there a map","ingame map"],
+    answer: "To open the ingame map you press the <strong>M</strong> key."
+  },
+{
+    title: "What is combat level",
+    keywords: ["stats","combat level","combat stats","total overal level","total level","combat level calculated","calculate combat level","combat level counted"],
+    answer: "The combat is the total level of all your crafting/gathering skills together + the strongest defensive skill (block,evasion,warding) + the strongest offensive skill (attack,archery,magic)."
+  },
+{
+    title: "Stats",
+    keywords: ["stats"],
+    answer: "The player stats can be found on the left side of the screen. Search and click on this icon :<br> <img src='https://static.wikitide.net/windsofvalenwiki/thumb/1/15/HUDstatistics.png/70px-HUDstatistics.png'</img>"
+  },
+{
+    title: "Training stances",
+    keywords: ["Training stance","Combat stance","attack stance","defence stance","switching stances"],
+    answer: "The combat stances can be found in the UI on the left side of the screen using this icon :<br> <img src='https://static.wikitide.net/windsofvalenwiki/thumb/e/ec/HUDstance.png/70px-HUDstance.png'</img><br><br>During or before combat, you can choose your stance to determine which skill is being trained. Here is what they exactly do:<br><br>• Attack stance – trains Attack (melee) , Archery or Magic<br>• Defensive stance – trains Block, Evasion, or Warding depending on the equipped shield"
+  },
+{
+    title: "When do I unlock the skills in hotbar",
+    keywords: ["skills hotbar","q w e","unlock skills","what is q w e used for"],
+    answer: "The hotbar is not made for skills. The slots are reserverd for weapons/shields/potions to make u able to change gear quickly, since this game is based on gear swapping. The keybinds for '<strong>q w e</strong>' keys can be changed in the settings menu of the game"
+  },
+{
+    title: "Are there active skills",
+    keywords: ["active skills","usable skills"],
+    answer: "This game's entire focus is on unlocking stronger gear. The skills are the gear itself."
+  },
+{
+    title: "Agility",
+    keywords: ["What is agility","how does agility work","what bonus does agility give","what is agility for"],
+    answer: "Agility is the base character <strong>Animation Speed</strong>. This does <strong>NOT</strong> make u attack anny faster, this is pure for the sake of pvp combat and faking attack animations to make another player swap gear"
+  },
+{
+    title: "Leaderboard",
+    keywords: ["max score","mvp","leaderboard","total score","update leaderboard","how to update leaderboard","where to find leaderboard"],
+    answer: "The leaderboard can be found by entering the game menu by pressing the gear icon on the top right or by pressing ESC. Your scores only get updated the moment you log out of the game."
+  },
 
 
 // ==================================== STUPID CHATBOT FOR PEOPLE WHO FEEL LONELY ====================================
@@ -13781,13 +13824,23 @@ Location:
   },
   {
     title: "response :",
-    keywords: ["fuck","shit","fuck that shit","fuck this shit"],
+    keywords: ["fuck","fuck that shit","fuck this shit"],
     answer: "Oi ! No swearing in here 💀 ! Respect my autoritaah !"
+  },
+  {
+    title: "response :",
+    keywords: ["shit"],
+    answer: "Did you mean 'UNKO' 😂 hahaha. Here is what i found <a href='https://unkomuseum.com/en/tokyo/' target='_blank' style='color:#4fc3ff;'>Click Here</a>"
   },
   {
     title: "response :",
     keywords: ["fuck you","fuck u","fu"],
     answer: "I like you to ❤️ haha."
+  },
+  {
+    title: "response :",
+    keywords: ["are you retarded","retard","retarded"],
+    answer: "Did you mean 'I am retarted' ? 😁"
   },
   {
     title: "response :",
