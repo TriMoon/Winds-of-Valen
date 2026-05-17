@@ -13702,7 +13702,16 @@ Location:
     keywords: ["max score","mvp","leaderboard","total score","update leaderboard","how to update leaderboard","where to find leaderboard"],
     answer: "The leaderboard can be found by entering the game menu by pressing the gear icon on the top right or by pressing ESC. Your scores only get updated the moment you log out of the game."
   },
-
+{
+    title: "Kick timer",
+    keywords: ["nerd timer","kick timer","6 hour timer","kicked while playing","timer"],
+    answer: "The devs implemented a 'health' system that kicks a player after playing for 6 hours straight. After beeing kicked you can instantly log back in and the 6 hour timer resets."
+  },
+{
+    title: "Aggro",
+    keywords: ["boss aggro","tank aggro","tanking","tank","threath","aggro calculations"],
+    answer: "This has never been shared by devs but speculation is that its tied to dps."
+  },
 
 // ==================================== STUPID CHATBOT FOR PEOPLE WHO FEEL LONELY ====================================
 
@@ -14085,13 +14094,47 @@ function processInput(text, isAutomatic = false) {
         return { type: 'text', content: `<strong>${chatMatch.title}</strong><br><br>${chatMatch.answer}` };
     }
 
-    // 1. TYPO CORRECTIONS (Ensures 'hello' and 'alice' are fixed before stripping)
-    const corrections = { 
-        "wath": "what", "wat": "what", "were": "where", "wear": "where", 
-        "hwo": "how", "sel": "sell", "byu": "buy", "fnd": "find", 
-        "blaksmith": "blacksmith", "helo": "hello", "hellow": "hello",
-        "allice": "alice", "alise": "alice" , "heyo": "hello", "yo": "hello", "defense": "defence", "atatck": "attack", "atk": "attack", "def": "defence", "lvl": "level"
-    };
+    // 1. ========TYPO CORRECTIONS========
+const corrections = { 
+    // Greetings
+    "helo": "hello", 
+    "hellow": "hello", 
+    "hekko": "hello",
+    "heyo": "hello", 
+    "yo": "hello", 
+
+    // ========Stats / RPG Terms========
+    "atk": "attack", 
+    "atatck": "attack", 
+    "def": "defence", 
+    "defense": "defence", // Converts US to UK English
+    "lvl": "level", 
+    "levl": "level",
+    "experiance": "experience", 
+    "experiense": "experience",
+    "magik": "magic", 
+    "magick": "magic",
+
+    //========Question words========
+    "wath": "what", 
+    "wat": "what", 
+    "wehre": "where", 
+    "hwo": "how", 
+    "sel": "sell", 
+    "byu": "buy", 
+    "fnd": "find", 
+    "blaksmith": "blacksmith", 
+    "allice": "alice", 
+    "alise": "alice",
+ 
+    //========Item words========
+    "bwo": "bow", 
+    "staf": "staff",
+    "sowrd": "sword",
+    "amullet": "amulet",
+    "rign": "ring",
+    "armor": "armour",
+};
     let wordsToFix = cleanInput.split(/\s+/);
     cleanInput = wordsToFix.map(w => corrections[w] || w).join(' ');
 
