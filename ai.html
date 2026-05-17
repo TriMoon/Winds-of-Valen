@@ -14023,6 +14023,27 @@ function processInput(text, isAutomatic = false) {
     if (!cleanInput.includes("how to level")) {
         if (cleanInput.includes("level") || cleanInput.includes("lvl") || cleanInput.includes("exp") || cleanInput.includes("xp")) {
             
+            // Handle level range queries (e.g., "from level 1 to level 20", "level 1 to 20")
+            const rangeMatch = cleanInput.match(/(?:from\s+)?(?:level\s+|lvl\s+)?(\d+)\s+to\s+(?:level\s+|lvl\s+)?(\d+)/);
+            if (rangeMatch) {
+                const lvlStart = parseInt(rangeMatch[1]);
+                const lvlEnd = parseInt(rangeMatch[2]);
+                if (xpTableData[lvlStart] && xpTableData[lvlEnd]) {
+                    if (lvlEnd > lvlStart) {
+                        const xpNeeded = xpTableData[lvlEnd].total - xpTableData[lvlStart].total;
+                        return {
+                            type: 'text',
+                            content: `<strong>XP Calculator - Level ${lvlStart} to ${lvlEnd}</strong><br><br>To advance from <strong>Level ${lvlStart}</strong> to <strong>Level ${lvlEnd}</strong>, you need to earn a total of <strong>${xpNeeded.toLocaleString()} XP</strong>.`
+                        };
+                    } else if (lvlEnd === lvlStart) {
+                        return {
+                            type: 'text',
+                            content: `<strong>XP Calculator - Level ${lvlStart} to ${lvlEnd}</strong><br><br>You are already at <strong>Level ${lvlStart}</strong>! No additional XP is needed.`
+                        };
+                    }
+                }
+            }
+
             // Check for explicit value abbreviations (e.g., 80m, 150k) anywhere in raw input
             let customParsedValue = null;
             const shortMatch = rawInput.toLowerCase().match(/(\d+(?:\.\d+)?)\s*([kmb])/);
