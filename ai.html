@@ -14534,13 +14534,19 @@ function processInput(text, isAutomatic = false) {
         "magik": "magic", 
         "magick": "magic",
         "mith": "mithril",
+        "myth": "mithril",
         "copr": "copper",
         "bronse": "bronze",
         "oron": "iron",
         "stel": "steel",
+        "gobln": "goblin",
+        "gblin": "goblin",
+        "brserker": "berserker",
+        "pierate": "pirate",
 
         //========Question words========
         "wath": "what", 
+        "waht": "what", 
         "wat": "what", 
         "wehre": "where", 
         "hwo": "how", 
@@ -14559,9 +14565,13 @@ function processInput(text, isAutomatic = false) {
         "amullet": "amulet",
         "ammy": "amulet",
         "rign": "ring",
+        "trinkt": "trinket",
+        "trnket": "trinket",
         "armor": "armour",
         "armuor": "armour",
         "stave": "staff",
+        "fng": "fang",
+        "roto": "root",
     };
     let wordsToFix = cleanInput.split(/\s+/);
     cleanInput = wordsToFix.map(w => corrections[w] || w).join(' ');
