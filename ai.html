@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The All-Knowing Alice Bot - Winds of Valen Digital Wiki</title>
+<title>Winds of Valen Wiki Bot - Alice's Digital Wiki</title>
+<meta name="title" content="Winds of Valen Wiki Bot - Guides, Database & AI Bot">
+<meta name="description" content="The ultimate fan-made wiki, database, and AI assistant for the MMORPG Winds of Valen. Discover beginner guides, gear optimizers, crafting recipes, and more.">
+<meta name="keywords" content="Winds of Valen, wiki, guide, database, MMO, Winds of Valen Wiki, items, crafting">
 
 <style>
 :root {
@@ -15,6 +18,80 @@
     --border-color: #78350f;
     --text-main: #fef3c7;
     --gem-slot: #1a120b;
+}
+
+#fullscreen-btn {
+    display: none; 
+    background: none;
+    border: 1px solid var(--highlight);
+    color: var(--highlight);
+    cursor: pointer;
+    padding: 5px 15px; /* Added a bit more side padding */
+    margin-right: 10px;
+    
+    /* New styles for alignment */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adds space between the icon and the text */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* Optional: Make the icon slightly larger */
+.btn-icon {
+    font-size: 18px;
+}
+
+@media (min-width: 951px) {
+    #fullscreen-btn {
+        display: block;
+    }
+}
+
+/* Windowed Fullscreen Layout */
+.windowed-fullscreen {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: 100vw !important;
+    z-index: 9998 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    margin: 0 !important;
+}
+
+/* Force chat-box to use all space */
+.windowed-fullscreen #chat-box {
+    flex-grow: 1 !important;
+    height: 100% !important; 
+    width: 100% !important;
+    padding: 2vw !important; /* Scale padding with screen width */
+    overflow-y: auto !important;
+}
+
+/* SCALE THE CONTENT: Use Viewport Units */
+.windowed-fullscreen .message {
+    max-width: 90% !important;
+    width: 90% !important;
+    line-height: 1.6 !important;
+}
+
+/* Force tables to be big and scalable */
+.windowed-fullscreen .message table {
+    width: 100% !important;
+}
+
+.windowed-fullscreen .message table td, 
+.windowed-fullscreen .message table th {
+    padding: 1vw !important; /* Scales cell size */
+}
+
+.windowed-fullscreen .input-area {
+    width: 100% !important;
+    box-sizing: border-box !important;
 }
 
 body {
@@ -378,7 +455,8 @@ button:hover {
     }
 }
 /* --- SIDEBAR & LAYOUT END --- */</style>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+</script>
 </head>
 <body>
 
@@ -386,7 +464,7 @@ button:hover {
     <img id="modal-img" src="" alt="Enlarged view">
 </div>
 
-<div class="title">The All-Knowing Alice V1.12 </div>
+<div class="title">The All-Knowing Alice V1.2 </div>
 
 <div class="main-layout">
     <div class="sidebar">
@@ -402,10 +480,15 @@ button:hover {
     <div class="main-content">
         
         <div class="chat-container">
-    <div class="chat-header">
-        <h2>Your Assistant AI Alice</h2>
-        <span id="status-indicator" style="color: #2ecc71; font-size: 12px;">STATUS: ONLINE 🟢</span>
+<div class="chat-header">
+    <h2>Your Assistant AI Alice</h2>
+    <div style="display: flex; align-items: center; gap: 10px;">
+        <label style="font-size: 12px; color: var(--highlight);">Text Size:</label>
+        <input type="range" id="font-slider" min="12" max="24" value="15" oninput="changeFontSize(this.value)" style="cursor: pointer; width: 80px;">
+        <button id="fullscreen-btn" onclick="toggleWindowedFullscreen()">⛶</button>
     </div>
+    <span id="status-indicator" style="color: #2ecc71; font-size: 12px;">STATUS: ONLINE 🟢</span>
+</div>
 
     <div id="chat-box">
         <div class="message alice-msg">
@@ -446,6 +529,21 @@ button:hover {
 </div> 
 </div> 
 <script>
+
+function toggleWindowedFullscreen() {
+    const chatContainer = document.querySelector('.chat-container');
+    const btn = document.getElementById('fullscreen-btn');
+    
+    // Toggle the class
+    chatContainer.classList.toggle('windowed-fullscreen');
+    btn.textContent = chatContainer.classList.contains('windowed-fullscreen') ? '✕' : '⛶';
+
+    // --- ADD THIS LINE ---
+    // This forces all messages to re-read the slider value the moment you click Fullscreen
+    const currentSliderValue = document.getElementById('font-slider').value;
+    changeFontSize(currentSliderValue);
+    // ---------------------
+}
 
 function downloadFile() {
     // This captures the current state of your HTML file
@@ -14909,7 +15007,7 @@ function addMessage(payload, type){
   const chatBox = document.getElementById('chat-box');
   let div = document.createElement('div');
   div.className = `message ${type === 'user' ? 'user-msg' : 'alice-msg'}`;
-  
+  applyCurrentFontSize(div);
   if(type === 'alice') {
     let html = `<span class="alice-name">ALICE</span>`;
     
@@ -15017,6 +15115,30 @@ async function registerSubPageVisit() {
 }
 registerSubPageVisit();
 // END PASTE
+
+// --- FONT SIZE LOGIC ---
+function changeFontSize(size) {
+    const messages = document.querySelectorAll('.message');
+    messages.forEach(msg => {
+        msg.style.fontSize = size + 'px';
+        const table = msg.querySelector('table');
+        if (table) table.style.fontSize = size + 'px';
+    });
+    localStorage.setItem('aliceFontSize', size);
+}
+
+function applyCurrentFontSize(element) {
+    const slider = document.getElementById('font-slider');
+    if (slider) element.style.fontSize = slider.value + 'px';
+}
+
+window.addEventListener('load', () => {
+    const savedSize = localStorage.getItem('aliceFontSize');
+    if (savedSize) {
+        document.getElementById('font-slider').value = savedSize;
+        changeFontSize(savedSize);
+    }
+});
 
 </script>
 </body>
