@@ -464,7 +464,7 @@ button:hover {
     <img id="modal-img" src="" alt="Enlarged view">
 </div>
 
-<div class="title">The All-Knowing Alice V1.21 </div>
+<div class="title">The All-Knowing Alice V1.22 </div>
 
 <div class="main-layout">
     <div class="sidebar">
@@ -11169,7 +11169,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
 },
 {
     title: "Highwayman",
-    keywords: ["highwayman","highway","highwayman stats"],
+    keywords: ["highwaymen","highwayman","highwayman stats"],
     answer: `
     <div style="display: flex; align-items: flex-start; gap: 15px;">
       <div style="flex-shrink: 0;">
@@ -14933,7 +14933,15 @@ function processInput(text, isAutomatic = false) {
         const tRaw = entry.title.toLowerCase().replace(/[^\w\s-]/g, ' ').replace(/\s+/g, ' ').trim();
         const tClean = stripFillers(tRaw);
         const tWords = tClean.split(/\s+/).map(normalize);
-        const kWords = entry.keywords.map(k => k.toLowerCase().replace(/[^\w\s-]/g, ' ').replace(/\s+/g, ' ').trim());
+        const kWords = entry.keywords.map(k =>
+    k.toLowerCase()
+     .replace(/[^\w\s-]/g, ' ')
+     .replace(/\s+/g, ' ')
+     .trim()
+     .split(/\s+/)
+     .map(normalize)
+     .join(' ')
+);
 
         // --- THE SNIPER LOCK ---
         if (tRaw === cleanInput || tClean === searchNoFillers || kWords.some(k => k === cleanInput)) {
@@ -14946,7 +14954,11 @@ function processInput(text, isAutomatic = false) {
 
         let hasMatch = anchors.some(a => {
             const syn = synonymMap[a];
-            return tWords.includes(a) || (syn && tWords.includes(syn)) || kWords.some(k => k.split(/\s+/).includes(a)) || tWords.some(tw => getDistance(a, tw) <= 1);
+            return tWords.some(tw => tw.includes(a) || a.includes(tw)) || (syn && tWords.includes(syn)) || kWords.some(k =>
+    k.split(/\s+/).some(word =>
+        word === a || getDistance(word, a) <= 1
+    )
+) || tWords.some(tw => getDistance(a, tw) <= 1);
         });
         if (anchors.length > 0 && !hasMatch) return;
 
@@ -14955,7 +14967,11 @@ function processInput(text, isAutomatic = false) {
             const syn = synonymMap[a];
             if (tWords.includes(a)) score += 20000;
             else if (tWords.some(tw => getDistance(a, tw) <= 1)) score += 12000;
-            if (kWords.some(k => k.split(/\s+/).includes(a))) score += 4000;
+            if (kWords.some(k =>
+    k.split(/\s+/).some(word =>
+        word.includes(a) || a.includes(word)
+    )
+)) score += 4000;
         });
 
         // HUGE BONUS
