@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Tutorial Gallery - Winds of Valen</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <style>
+        :root {
+            --accent: #b45309; 
+            --highlight: #fbbf24; 
+            --bg-dark: #0f172a; 
+            --panel-bg: rgba(30, 20, 10, 0.85); 
+            --gold: #f59e0b;
+            --border-color: #78350f;
+            --text-main: #fef3c7;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('https://img.itch.zone/aW1hZ2UvMzk1ODQ1Ny8yNDI2NjgzOC5wbmc=/original/2vOCRa.png');
+            background-size: cover;
+            background-attachment: fixed;
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .main-layout {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            width: 95%;
+            max-width: 1400px;
+            margin: 20px auto;
+            align-items: flex-start;
+        }
+
+        .sidebar {
+            flex: 1 1 240px;
+            background: var(--panel-bg);
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            backdrop-filter: blur(5px);
+        }
+
+        .sidebar h3 {
+            color: var(--highlight);
+            text-transform: uppercase;
+            font-size: 18px;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .sidebar-nav { display: flex; flex-direction: column; gap: 12px; }
+
+        .sidebar-nav button {
+            width: 100%;
+            background: rgba(0,0,0,0.4);
+            border: 1px solid var(--highlight);
+            color: var(--highlight);
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 4px;
+            transition: 0.2s;
+        }
+
+        .sidebar-nav button:hover { background: var(--accent); color: white; }
+
+        .main-content {
+            flex: 3 1 700px;
+            background: var(--panel-bg);
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+        }
+
+        h1 { color: var(--highlight); text-align: center; border-bottom: 2px solid var(--accent); padding-bottom: 10px; }
+
+        .input-group { display: flex; flex-direction: column; gap: 10px; margin-bottom: 30px; }
+        
+        input, select {
+            background: var(--bg-dark);
+            border: 1px solid var(--border-color);
+            color: white;
+            padding: 12px;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .input-group button {
+            background: var(--accent);
+            border: 1px solid var(--highlight);
+            color: white;
+            padding: 12px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .category-nav { margin-bottom: 30px; text-align: center; padding: 15px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.2); }
+        .category-nav a { color: var(--gold); margin: 0 10px; text-decoration: none; font-weight: bold; font-size: 18px; }
+
+        .video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+
+        .video-card { background: var(--bg-dark); border: 1px solid var(--border-color); padding: 15px; border-radius: 5px; text-align: center; }
+        .video-card img { width: 100%; border: 1px solid var(--gold); margin-bottom: 10px; }
+        .video-card h3 { color: var(--highlight); margin: 5px 0; }
+        .video-card p { font-size: 0.9em; opacity: 0.8; }
+
+        /* INFO WINDOW STYLES - IDENTICAL TO EQUIPPER.HTML */
+        .info-container { width: 100%; margin-top: 30px; }
+        .info-panel {
+            background: rgba(15, 23, 42, 0.9);
+            border: 2px solid var(--gold);
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.8);
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+        .info-card {
+            background: rgba(120, 53, 15, 0.1);
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            border-radius: 6px;
+        }
+        .info-card h4 {
+            margin: 0 0 10px 0;
+            color: var(--highlight);
+            text-transform: uppercase;
+            font-size: 16px;
+            border-bottom: 1px solid var(--accent);
+            padding-bottom: 5px;
+        }
+        .info-card p {
+            font-size: 13px;
+            line-height: 1.6;
+            margin: 0;
+            color: #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-layout">
+    <div class="sidebar">
+        <h3>Navigation</h3>
+        <div class="sidebar-nav">
+            <a href="index.html" style="text-decoration: none;"><button>🏠 Back to Mainpage</button></a>
+            <a href="ai.html" style="text-decoration: none;"><button>🤖 AI Wiki</button></a>
+            <a href="equipper.html" style="text-decoration: none;"><button>⚔️ Go to Equipper</button></a>
+            <a href="checklist.html" style="text-decoration: none;"><button>✅ Go to Starter Checklist</button></a>
+            <a href="combat-practice.html" style="text-decoration: none;"><button>🗡️ Go to Combat Practice</button></a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>Community Video Gallery</h1>
+        
+        <div class="input-group">
+            <input type="text" id="video-title" placeholder="Video Title">
+            <input type="text" id="player-name" placeholder="Your Name">
+            <input type="text" id="video-url" placeholder="YouTube Link">
+            <label style="font-size: 0.8em; color: var(--highlight);">Select Category:</label>
+            <select id="video-category">
+                <option value="Combat">Combat</option>
+                <option value="Skills">Skills</option>
+                <option value="Gameplay">Gameplay</option>
+                <option value="Guides">Guides</option>
+                <option value="Other">Other</option>
+            </select>
+            <button onclick="postVideo()">Post/Share Video</button>
+        </div>
+
+        <div class="category-nav">
+            <strong>Quick Jump:</strong> 
+            <a href="#Combat">Combat</a> | <a href="#Skills">Skills</a> | 
+            <a href="#Gameplay">Gameplay</a> | <a href="#Guides">Guides</a> | 
+            <a href="#Other">Other</a>
+        </div>
+
+        <div id="video-grid" class="video-grid"></div>
+
+        <div class="info-container">
+            <div class="info-panel">
+                <h2 style="font-size: 20px; color: var(--highlight); margin: 0 0 15px 0;">Gallery Guide & Features</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h4>Sharing Tutorials</h4>
+                        <p>Use the form above to submit your own guides. Simply enter the video title, your player name, and the direct YouTube link to have it displayed in our gallery.</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Categorization</h4>
+                        <p>Videos are automatically organized into categories: Combat, Skills, Gameplay, Guides, and Other. Use the "Quick Jump" navigation bar to filter and find specific content quickly.</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Real-time Gallery</h4>
+                        <p>The gallery fetches content directly from the community database. As soon as a video is posted, it appears in the grid sorted by the most recent submissions.</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Community Contributions</h4>
+                        <p>This gallery is built by players, for players. By sharing your footage, you help others master specific mechanics, locate hard-to-find drops, or optimize their builds.</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Video Thumbnails</h4>
+                        <p>Each entry automatically generates a high-quality thumbnail from the YouTube link provided, ensuring the gallery remains visual and easy to browse.</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Direct Access</h4>
+                        <p>Every video card features a "Watch" button that opens the tutorial in a new tab, allowing you to follow along with the guide while keeping your place in the gallery.</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Safe Posting</h4>
+                        <p>Only valid YouTube links are processed. Ensure you copy the full link or the video ID correctly to guarantee that your tutorial is successfully added to the database.</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Feedback & Support</h4>
+                        <p>Stuck on a mechanic? Browse the "Combat" or "Guides" sections first. If you have questions about specific videos, reach out to the player listed under "By:" in the video card.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const SUPABASE_URL = 'https://qiwstqpznabemqttivoa.supabase.co'; 
+    const SUPABASE_KEY = 'sb_publishable_cDOxkol6uWGhuAg564EmdQ_v3uhSeYQ';
+    const _supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+    async function postVideo() {
+        const title = document.getElementById('video-title').value.trim();
+        const author = document.getElementById('player-name').value.trim();
+        const url = document.getElementById('video-url').value.trim();
+        const category = document.getElementById('video-category').value;
+        
+        if (!title || !author || !url) return alert("Fill all fields!");
+
+        let videoId = url.includes("v=") ? url.split("v=")[1].substring(0, 11) : url.split("youtu.be/")[1]?.substring(0, 11);
+        if (!videoId) return alert("Invalid Link!");
+
+        // Check if video already exists
+        const { data: existingVideo } = await _supabase
+            .from('video_gallery')
+            .select('video_id')
+            .eq('video_id', videoId);
+
+        if (existingVideo && existingVideo.length > 0) {
+            return alert("This video has already been posted!");
+        }
+
+        const { error } = await _supabase.from('video_gallery').insert([
+            { title, player_name: author, link: url, video_id: videoId, category: category }
+        ]);
+        
+        if (error) alert("Database Error: " + error.message);
+        else {
+            document.getElementById('video-title').value = '';
+            document.getElementById('player-name').value = '';
+            document.getElementById('video-url').value = '';
+            loadVideos();
+        }
+    }
+
+    async function loadVideos() {
+        const grid = document.getElementById('video-grid');
+        const { data } = await _supabase.from('video_gallery').select('*').order('created_at', { ascending: false });
+        
+        const categories = ["Combat", "Skills", "Gameplay", "Guides", "Other"];
+        grid.innerHTML = '';
+        
+        if (data) {
+            categories.forEach(cat => {
+                const filtered = data.filter(v => v.category === cat);
+                if (filtered.length > 0) {
+                    grid.innerHTML += `<h2 id="${cat}" style="grid-column: 1/-1; border-top: 2px solid var(--accent); margin-top: 30px; padding-top: 10px; color: var(--gold);">${cat}</h2>`;
+                    filtered.forEach(v => {
+                        grid.innerHTML += `
+                            <div class="video-card">
+                                <img src="https://img.youtube.com/vi/${v.video_id}/0.jpg">
+                                <h3>${v.title}</h3>
+                                <p>By: ${v.player_name}</p>
+                                <button onclick="window.open('${v.link}', '_blank')">Watch</button>
+                            </div>`;
+                    });
+                }
+            });
+        }
+    }
+
+    loadVideos();
+</script>
+
+</body>
+</html>
