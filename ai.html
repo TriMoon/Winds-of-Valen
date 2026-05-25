@@ -476,7 +476,9 @@ button:hover {
         flex-grow: 1;
     }
 }
-/* --- SIDEBAR & LAYOUT END --- */</style>
+// ==================================== Sidebar & Layout End ====================================
+// ==================================== Buttons & bottom page info ====================================
+</style>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
 </script>
 </head>
@@ -550,41 +552,37 @@ button:hover {
     </div>
 </div> 
 </div> 
+// ==================================== END OF Buttons & bottom page info ====================================
+// ==================================== Fullscreen ====================================
 <script>
 
 function toggleWindowedFullscreen() {
     const chatContainer = document.querySelector('.chat-container');
     const btn = document.getElementById('fullscreen-btn');
     
-    // Toggle the class
     chatContainer.classList.toggle('windowed-fullscreen');
     btn.textContent = chatContainer.classList.contains('windowed-fullscreen') ? '✕' : '⛶';
 
-    // --- ADD THIS LINE ---
-    // This forces all messages to re-read the slider value the moment you click Fullscreen
     const currentSliderValue = document.getElementById('font-slider').value;
     changeFontSize(currentSliderValue);
-    // ---------------------
 }
 
 function downloadFile() {
-    // This captures the current state of your HTML file
     const htmlContent = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
     const blob = new Blob([htmlContent], { type: 'text/html' });
     const url = URL.createObjectURL(blob);
     
-    // Creates a temporary link to trigger the download
     const a = document.createElement('a');
     a.href = url;
     a.download = 'Alice_Wiki_Bot.html'; 
     document.body.appendChild(a);
     a.click();
     
-    // Clean up
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
 }
-
+// ==================================== END OF Fullscreen ====================================
+// ==================================== START OF WIKI INFORMATION TABLE ====================================
 const knowledge = [
 // ==================================== DEVS & DISCORD & STEAM & PATCHES & ROADMAP UPCOMING AND RELEASED ====================================
 {
@@ -13860,7 +13858,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
     keywords: ["vial filling recipes","bottling liquids","flasks alchemy","potion bottling","vial filling","alchemy flasks","potion storage","fill vials","bottle potions","cauldron bottling","vials","small vial","large vial","gilded vial","potion vial types","alchemy containers"],
     answer: "<div class='craft-table-wrapper'><table class='craft-data-table'><thead><tr><th style='min-width:160px'>Vial Type</th><th style='min-width:80px'>Capacity</th><th style='min-width:140px'>Buy</th><th style='min-width:140px'>Sell</th><th style='min-width:260px'>Details</th></tr></thead><tbody><tr><td>Small Vial</td><td>50ml</td><td>1g</td><td>1g</td><td>• Used for Small Potions<br>• Can be purchased at Potion Stall<br>• Dropped by Bandit / Bandit Leader</td></tr><tr><td>Large Vial</td><td>100ml</td><td>10g</td><td>7g</td><td>• Used for Large Potions<br>• Can be purchased at Potion Stall<br>• Dropped by Bandit Mercenary / Boss</td></tr><tr><td>Gilded Vial</td><td>150ml</td><td>50g</td><td>35g</td><td>• Not yet available<br>• Planned for Potion Stall purchase</td></tr></tbody></table></div>"
   },
-// ==================================== BASIC AND STUPID QUESTIONS ====================================
+// ==================================== BASIC QUESTIONS ====================================
   {
   title: "What does smithing power do",
   keywords: ["smithing power","what smithing power do","how does smithing power work","smithing power"],
@@ -14293,7 +14291,7 @@ Location:
 },
 
 
-// ==================================== STUPID CHATBOT FOR PEOPLE WHO FEEL LONELY ====================================
+// ==================================== CHATBOT FOR RANDOM CONVERSATION ====================================
 
 {
     title: "response :",
@@ -14461,10 +14459,10 @@ Location:
     answer: "That does not sound so convincing. Want to play some Winds of Valen and forget about the rest for a while 😉?"
   },
 
-// ========================================================= NOTHING TO CHANGE BELOW =================================================
+// ========================================================= BEGINNING OF SEARCH BOT LOGIC =================================================
 ];
 // =====================================
-// THE OMNI-ENGINE (v83.2 - The Hierarchy Engine - Smart Auto-Detect)
+// THE OMNI-ENGINE
 // =====================================
 const ignoreWords = ["if","then","else","or","give","and","when","what","where","how","to","a","the","is","are","do","i","you","?","!",".",",","of","find","tell","me","about","can","please","just","any","all"];
 
@@ -14619,7 +14617,7 @@ for (let i = 100; i <= 2000; i++) {
 }
 
 // ==========================================
-// PARSED TEXT FILE EXPERIENCES DATASET
+// ITEM AND SKILL EXPOINT VALUES
 // ==========================================
 const itemXpData = [
     { name: "copper ore", xp: 15 }, { name: "tin ore", xp: 15 }, { name: "iron ore", xp: 30 },
@@ -14721,7 +14719,6 @@ function processInput(text, isAutomatic = false) {
     // ==================================================
     // EXTRA STEP: DYNAMIC QUANTITY SYSTEM INTERCEPT
     // ==================================================
-    // FIX: Enhanced regex to detect level strings placed anywhere (front, middle, or end of string)
     const quantityRangeMatch = cleanInput.match(/(?:from\s+)?(?:level\s+|lvl\s+)?(\d+)(?:\s+to\s+|\s*-\s*)(?:level\s+|lvl\s+)?(\d+)/) || 
                               cleanInput.match(/(?:till\s+|to\s+|level\s+|lvl\s+)(\d+)/);
 
@@ -15043,6 +15040,7 @@ function processInput(text, isAutomatic = false) {
 }
 
 // ===================================== END OF BOT =====================================
+// ===================================== ANSWERING LOGIC =====================================
 
 function addMessage(payload, type){
   const chatBox = document.getElementById('chat-box');
@@ -15113,7 +15111,7 @@ function handleKeyPress(e) {
   if(e.key === 'Enter') sendMessage();
 }
 
-// LIGHTBOX LOGIC
+// --- LIGHTBOX LOGIC ---
 function openModal(src) {
     const modal = document.getElementById('image-modal');
     const modalImg = document.getElementById('modal-img');
@@ -15142,7 +15140,6 @@ window.addEventListener('offline', updateOnlineStatus);
 
 updateOnlineStatus();
 
-// START PASTE: BACKGROUND VISITOR TRACKER
 const SUPABASE_URL = 'https://qiwstqpznabemqttivoa.supabase.co'; 
 const SUPABASE_KEY = 'sb_publishable_cDOxkol6uWGhuAg564EmdQ_v3uhSeYQ';
 const _supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
@@ -15155,7 +15152,6 @@ async function registerSubPageVisit() {
     }
 }
 registerSubPageVisit();
-// END PASTE
 
 // --- FONT SIZE LOGIC ---
 function changeFontSize(size) {
