@@ -120,27 +120,15 @@ body {
     100% { transform: translate(-100%, 0); }
 }
 
-/* The new master layout */
 .layout-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Mobile default: 1 column */
+    grid-template-columns: 1fr;
     gap: 20px;
     width: 95%;
-    max-width: 1100px;
+    max-width: 1200px;
     margin-top: 30px;
 }
 
-/* Desktop upgrade: 2 columns top, 1 column bottom */
-@media (min-width: 900px) {
-    .layout-grid {
-        grid-template-columns: 2.2fr 0.8fr; /* Made the second column smaller */
-    }
-    .full-width {
-        grid-column: 1 / -1; /* Makes guestbook span both columns */
-    }
-}
-
-/* This is your original container look, but now it fits inside the grid */
 .container {
     width: 100%;
     background: var(--panel-bg);
@@ -185,7 +173,7 @@ h2 {
 
 .nav-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Tweaked minmax so 3 items fit in one row perfectly */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
 }
 
@@ -217,7 +205,7 @@ h2 {
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
-    margin-top: auto; /* Pushes the button to the exact bottom to align perfectly across the row */
+    margin-top: auto;
     cursor: pointer;
 }
 
@@ -258,30 +246,10 @@ h2 {
 
 <div class="header-section">
     <h1 class="title">Winds of Valen Wiki</h1>
-
     <div class="status-bar">
-
-        <span>
-            ⚔️ Game Server:
-            <span id="server-status" style="color: #4ade80;">
-                Active
-            </span>
-        </span>
-
-        <span>
-            👥 Visitors:
-            <span id="visit-count" style="color: #fbbf24;">
-                ...
-            </span>
-        </span>
-
-        <span>
-            🕒
-            <span id="game-time">
-                --:--
-            </span>
-        </span>
-
+        <span>⚔️ Game Server: <span id="server-status" style="color: #4ade80;">Active</span></span>
+        <span>👥 Visitors: <span id="visit-count" style="color: #fbbf24;">...</span></span>
+        <span>🕒 <span id="game-time">--:--</span></span>
     </div>
 </div>
 
@@ -303,63 +271,47 @@ h2 {
                 This live count is fetched directly from the Steam Web API for App ID 4135880.
             </div>
         </div>
-<div class="nav-grid">
-    <a href="checklist.html" class="nav-card">
-        <div>
-            <h3>✅ Starter Checklist</h3>
-            <p>New to the realm? Follow this step-by-step progression guide to know what to do first.</p>
+        
+        <div class="nav-grid">
+            <a href="checklist.html" class="nav-card">
+                <div>
+                    <h3>✅ Starter Checklist</h3>
+                    <p>New to the realm? Follow this step-by-step progression guide to know what to do first.</p>
+                </div>
+                <div class="btn" style="margin-top: auto;">View Checklist</div>
+            </a>
+            <a href="ai.html" class="nav-card">
+                <div>
+                    <h3>🔮 <span id="Wiki-Bot" style="color: #23FA23;">Wiki Bot</span></h3>
+                    <p>I have the full <strong>wiki</strong> in my memory. Ask me anything wiki related! I am your search encyclopedia for items recipes and more.</p>
+                </div>
+                <div class="btn" style="margin-top: auto;">Ask Bot Alice</div>
+            </a>
+            <a href="equipper.html" class="nav-card">
+                <div>
+                    <h3>⚔️ The Equipper</h3>
+                    <p>Plan your perfect build! Test gear sets and see your final stats.</p>
+                </div>
+                <div class="btn" style="margin-top: auto;">Optimize Gear</div>
+            </a>
+            <a href="videos.html" class="nav-card">
+                <div>
+                    <h3>📹 Community Videos</h3>
+                    <p>Watch/upload gameplay tips, Guides,Combat Info, Showcases and Walkthroughs for Winds of Valen.</p>
+                </div>
+                <div class="btn" style="margin-top: auto;">Watch Videos</div>
+            </a>
+            <a href="combat-practice.html" class="nav-card">
+                <div>
+                    <h3>🗡️ Combat Practice</h3>
+                    <p>Try your gear switching skills with this combat practice engine. Keybinding included!</p>
+                </div>
+                <div class="btn" style="margin-top: auto;">Combat Practice</div>
+            </a>
         </div>
-        <div class="btn" style="margin-top: auto;">View Checklist</div>
-    </a>
-    <a href="ai.html" class="nav-card">
-        <div>
-            <h3>🔮 <span id="Wiki-Bot" style="color: #23FA23;">Wiki Bot</span></h3>
-            <p>I have the full <strong>wiki</strong> in my memory. Ask me anything wiki related! I am your search encyclopedia for items recipes and more.</p>
-        </div>
-        <div class="btn" style="margin-top: auto;">Ask Bot Alice</div>
-    </a>
-    <a href="equipper.html" class="nav-card">
-        <div>
-            <h3>⚔️ The Equipper</h3>
-            <p>Plan your perfect build! Test gear sets and see your final stats.</p>
-        </div>
-        <div class="btn" style="margin-top: auto;">Optimize Gear</div>
-    </a>
-    </a>
-
-</div>
     </div>
 
-<div class="container" style="padding: 20px;">
-    <h2>Did you know ?</h2>
-
-    <p style="font-size: 12px; line-height: 1.5; margin: 0;">
-        • These pages are optimized for mobile 😮?<br>
-        • You can download the bot for offline use ?<br>
-        • This is NOT the official wiki ?<br>
-        • We keep a guestbook <strong>Friendly</strong> ?<br>
-        • Drop tables change almost every update ?<br>
-        • <strong>Excessive language</strong> and <strong>Disrespect</strong> will get this project stopped !<br>
-        • Winds of Valen is a 2 Developer team.<br>
-        • The AI bot has a little of "basic chat" haha.<br>
-        • Most people speak english only. Lets keep the guestbook that way.<br>
-    </p>
-
-<div class="nav-grid" style="margin-top: 60px;">
-    <a href="combat-practice.html" class="nav-card" style="min-height: 285px;">
-        <div>
-            <h3>🗡️ Combat Practice</h3>
-            <p>Try your gear switching skills with this combat practice engine. Keybinding included!</p>
-        </div>
-
-        <div class="btn">
-            Combat Practice
-        </div>
-    </a>
-</div>
-</div>
-
-    <div class="container full-width">
+    <div class="container">
         <h2>📜 Global Guestbook</h2>
         <input type="text" id="guest-name" class="guestbook-input" placeholder="Your Name...">
         <textarea id="guest-msg" class="guestbook-input" placeholder="Your Message..." rows="2"></textarea>
@@ -371,20 +323,32 @@ h2 {
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <h2>Did you know ?</h2>
+        <p style="font-size: 12px; line-height: 1.5; margin: 0;">
+            • These pages are optimized for mobile 😮?<br>
+            • You can download the bot for offline use ?<br>
+            • This is NOT the official wiki ?<br>
+            • We keep a guestbook <strong>Friendly</strong> ?<br>
+            • Drop tables change almost every update ?<br>
+            • <strong>Excessive language</strong> and <strong>Disrespect</strong> will get this project stopped !<br>
+            • Winds of Valen is a 2 Developer team.<br>
+            • The AI bot has a little of "basic chat" haha.<br>
+            • Most people speak english only. Lets keep the guestbook that way.<br>
+        </p>
+    </div>
 </div>
 
 <script>
-// --- CORE CONFIG ---
 const SUPABASE_URL = 'https://qiwstqpznabemqttivoa.supabase.co'; 
 const SUPABASE_KEY = 'sb_publishable_cDOxkol6uWGhuAg564EmdQ_v3uhSeYQ';
 const STEAM_APP_ID = '4135880'; 
 
 const _supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
-// --- 1. STEAM COUNTER (OPTIMIZED FOR SPEED) ---
 async function updateSteamCount() {
     const display = document.getElementById('steam-count');
-    // Using CorsProxy.io as it's generally faster than AllOrigins
     const steamUrl = `https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=${STEAM_APP_ID}&nocache=${Date.now()}`;
     const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(steamUrl)}`;
 
@@ -392,12 +356,10 @@ async function updateSteamCount() {
         const response = await fetch(proxyUrl);
         if (!response.ok) throw new Error();
         const data = await response.json();
-        
         if (data.response && typeof data.response.player_count !== 'undefined') {
             display.innerText = data.response.player_count.toLocaleString();
         }
     } catch (err) {
-        // Fallback to AllOrigins only if CorsProxy fails
         try {
             const altResponse = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(steamUrl)}&t=${Date.now()}`);
             const altData = await altResponse.json();
@@ -408,61 +370,33 @@ async function updateSteamCount() {
         } catch (e) {}
     }
 }
-// --- VISIT COUNTER ---
+
 async function registerVisit() {
-
     const counter = document.getElementById('visit-count');
-
     try {
-
-        // ADD VISIT
-        await _supabase
-            .from('page_visits')
-            .insert([{}]);
-
-        // GET TOTAL VISITS
-        const { count, error } = await _supabase
-            .from('page_visits')
-            .select('*', { count: 'exact', head: true });
-
+        await _supabase.from('page_visits').insert([{}]);
+        const { count, error } = await _supabase.from('page_visits').select('*', { count: 'exact', head: true });
         if (error) throw error;
-
         counter.innerText = count.toLocaleString();
-
     } catch (err) {
-
-        console.error(err);
-
         counter.innerText = 'Offline';
     }
 }
 
-// --- FETCH VISIT COUNTER (AUTO REFRESH LOGIC) ---
 async function refreshVisitCount() {
     const counter = document.getElementById('visit-count');
-
     try {
-        // GET TOTAL VISITS ONLY
-        const { count, error } = await _supabase
-            .from('page_visits')
-            .select('*', { count: 'exact', head: true });
-
+        const { count, error } = await _supabase.from('page_visits').select('*', { count: 'exact', head: true });
         if (error) throw error;
-
         counter.innerText = count.toLocaleString();
-
-    } catch (err) {
-        console.error(err);
-    }
+    } catch (err) {}
 }
 
-// --- 2. CLOCK LOGIC ---
 function updateClock() {
     const now = new Date();
     document.getElementById('game-time').innerText = now.getHours().toString().padStart(2, '0') + ":" + now.getMinutes().toString().padStart(2, '0') + " GMT";
 }
 
-// --- 3. GUESTBOOK LOGIC ---
 async function loadGuestbook() {
     const list = document.getElementById('guestbook-list');
     try {
@@ -497,16 +431,13 @@ async function addEntry() {
     btn.disabled = false;
 }
 
-// --- INITIAL STARTUP (PRIORITY ORDER) ---
-updateSteamCount(); // Priority 1: Fetch players immediately
-updateClock();      // Priority 2: Set clock
-loadGuestbook();    // Priority 3: Load logs
-registerVisit(); // Visit Counter
-
-// --- REFRESH LOOPS ---
+updateSteamCount();
+updateClock();
+loadGuestbook();
+registerVisit();
 setInterval(updateClock, 1000);
-setInterval(updateSteamCount, 10000); // Check every 10 seconds
-setInterval(refreshVisitCount, 1000); // Auto refresh visitor count every 1 second
+setInterval(updateSteamCount, 10000);
+setInterval(refreshVisitCount, 1000);
 </script>
 
 </body>
