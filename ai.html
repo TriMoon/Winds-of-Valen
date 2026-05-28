@@ -14661,21 +14661,22 @@ const xpTableData = {
   96: { total: 262143500, prev: 38980482, range: "262143500 → 301123982", hp: 1050 },
   97: { total: 301123982, prev: 38980482, range: "301123982 → 345900582", hp: 1060 },
   98: { total: 345900582, prev: 44776600, range: "345900582 → 397335504", hp: 1070 },
-  99: { total: 397335504, prev: 51434922, range: "397335504 → 456418846", hp: 1080 }
+  99: { total: 397335504, prev: 51434922, range: "397335504 → 456418846", hp: 1080 },
+  100: { total: 456418846, prev: 59083342, range: "456418846 → 524287324", hp: 1090 }
 };
 
 // Dynamically generate math for levels 100 to 2000 based on previous growth curves
-for (let i = 100; i <= 2000; i++) {
-    const prev = Math.floor((i === 100 ? 51434922 : xpTableData[i - 1].prev) * (51434922 / 44776600));
-    const total = (i === 100 ? 397335504 : xpTableData[i - 1].total) + prev;
-    if (i > 100) {
+for (let i = 101; i <= 2000; i++) {
+    const prev = Math.floor((i === 101 ? 59083342 : xpTableData[i - 1].prev) * (59083342 / 44776600));
+    const total = (i === 101 ? 456418846 : xpTableData[i - 1].total) + prev;
+    if (i > 101) {
         xpTableData[i - 1].range = `${xpTableData[i - 1].total} → ${total}`;
     }
     xpTableData[i] = {
         total: total,
         prev: prev,
         range: `${total} → MAX`,
-        hp: 1080 + (i - 99) * 10
+        hp: 1080 + (i - 100) * 10
     };
 }
 
@@ -14850,7 +14851,7 @@ function processInput(text, isAutomatic = false) {
                     
                     return {
                         type: 'text',
-                        content: `<strong>Item Requirement Calculator</strong><br><br>To get from <strong>Level ${lvlStart >= 100 ? 'Unknown' : lvlStart}</strong> to <strong>Level ${lvlEnd >= 100 ? 'Unknown' : lvlEnd}</strong> requires <strong>${xpNeeded.toLocaleString()} XP</strong>.<br><br>You will need to make/catch exactly <strong>${amountNeeded.toLocaleString()}x ${capitalizedName}</strong> (yielding ${bestItemMatch.xp} XP each).`
+                        content: `<strong>Item Requirement Calculator</strong><br><br>To get from <strong>Level ${lvlStart >= 101 ? 'Unknown' : lvlStart}</strong> to <strong>Level ${lvlEnd >= 101 ? 'Unknown' : lvlEnd}</strong> requires <strong>${xpNeeded.toLocaleString()} XP</strong>.<br><br>You will need to make/catch exactly <strong>${amountNeeded.toLocaleString()}x ${capitalizedName}</strong> (yielding ${bestItemMatch.xp} XP each).`
                     };
                 }
             }
@@ -14874,12 +14875,12 @@ function processInput(text, isAutomatic = false) {
                         const xpNeeded = xpTableData[lvlEnd].total - xpTableData[lvlStart].total;
                         return {
                             type: 'text',
-                            content: `<strong>XP Calculator - Level ${lvlStart >= 100 ? 'Unknown' : lvlStart} to ${lvlEnd >= 100 ? 'Unknown' : lvlEnd}</strong><br><br>To advance from <strong>Level ${lvlStart >= 100 ? 'Unknown' : lvlStart}</strong> to <strong>Level ${lvlEnd >= 100 ? 'Unknown' : lvlEnd}</strong>, you need to earn a total of <strong>${xpNeeded.toLocaleString()} XP</strong>.`
+                            content: `<strong>XP Calculator - Level ${lvlStart >= 101 ? 'Unknown' : lvlStart} to ${lvlEnd >= 101 ? 'Unknown' : lvlEnd}</strong><br><br>To advance from <strong>Level ${lvlStart >= 101 ? 'Unknown' : lvlStart}</strong> to <strong>Level ${lvlEnd >= 101 ? 'Unknown' : lvlEnd}</strong>, you need to earn a total of <strong>${xpNeeded.toLocaleString()} XP</strong>.`
                         };
                     } else if (lvlEnd === lvlStart) {
                         return {
                             type: 'text',
-                            content: `<strong>XP Calculator - Level ${lvlStart >= 100 ? 'Unknown' : lvlStart} to ${lvlEnd >= 100 ? 'Unknown' : lvlEnd}</strong><br><br>You are already at <strong>Level ${lvlStart >= 100 ? 'Unknown' : lvlStart}</strong>! No additional XP is needed.`
+                            content: `<strong>XP Calculator - Level ${lvlStart >= 101 ? 'Unknown' : lvlStart} to ${lvlEnd >= 101 ? 'Unknown' : lvlEnd}</strong><br><br>You are already at <strong>Level ${lvlStart >= 101 ? 'Unknown' : lvlStart}</strong>! No additional XP is needed.`
                         };
                     }
                 }
