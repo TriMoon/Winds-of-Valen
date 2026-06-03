@@ -2,31 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bioxyade-web.github.io/Winds-of-Valen/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://bioxyade-web.github.io/Winds-of-Valen/index.html</loc>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://bioxyade-web.github.io/Winds-of-Valen/ai.html</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://bioxyade-web.github.io/Winds-of-Valen/equipper.html</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+    <url>
+    <loc>https://bioxyade-web.github.io/Winds-of-Valen/Videos.html</loc>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bioxyade-web.github.io/Winds-of-Valen/checklist.html</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bioxyade-web.github.io/Winds-of-Valen/combat-practice.html</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
