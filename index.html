@@ -21,24 +21,17 @@
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <meta property="og:image" content="https://bioxyade-web.github.io/Winds-of-Valen/og-image.jpg">
 <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Winds of Valen Wiki | Gear Optimizer, Guides & AI Bot</title>
-    
-    <meta name="description" content="The ultimate fan-made hub for Winds of Valen. Access the interactive gear optimizer, player starter checklist, combat practice engine, and our AI Wiki Bot.">
-    
-    <meta name="keywords" content="Winds of Valen, Winds of Valen wiki, gear optimizer, Winds of Valen guide, MMO database, crafting recipes, Wiki game assistant, Wiki bot">
-
-    <link rel="canonical" href="https://bioxyade-web.github.io/Winds-of-Valen/index.html">
-
-    <meta property="og:title" content="Winds of Valen Wiki | Gear Optimizer, Guides & AI Bot">
-    <meta property="og:description" content="Interactive tools, gear optimization, and AI help for Winds of Valen players.">
-    <meta property="og:url" content="https://bioxyade-web.github.io/Winds-of-Valen/index.html">
-    <meta property="og:type" content="website">
-
-    <meta name="robots" content="index, follow">
-
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Winds of Valen Wiki | Gear Optimizer, Guides & AI Bot</title>
+<meta name="description" content="The ultimate fan-made hub for Winds of Valen. Access the interactive gear optimizer, player starter checklist, combat practice engine, and our AI Wiki Bot.">
+<meta name="keywords" content="Winds of Valen, Winds of Valen wiki, gear optimizer, Winds of Valen guide, MMO database, crafting recipes, Wiki game assistant, Wiki bot">
+<link rel="canonical" href="https://bioxyade-web.github.io/Winds-of-Valen/index.html">
+<meta property="og:title" content="Winds of Valen Wiki | Gear Optimizer, Guides & AI Bot">
+<meta property="og:description" content="Interactive tools, gear optimization, and AI help for Winds of Valen players.">
+<meta property="og:url" content="https://bioxyade-web.github.io/Winds-of-Valen/index.html">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
 <style>
 :root {
@@ -50,9 +43,7 @@
     --border-color: #78350f;
     --text-main: #fef3c7;
 }
-
 * { box-sizing: border-box; scroll-behavior: smooth; }
-
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -65,181 +56,39 @@ body {
     min-height: 100vh;
     padding-bottom: 50px; 
 }
+.header-section { width: 100%; background: rgba(0, 0, 0, 0.85); border-bottom: 4px solid var(--accent); padding: 25px 0; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.6); }
+.title { font-size: clamp(24px, 6vw, 42px); font-weight: bold; letter-spacing: 4px; text-shadow: 0 0 15px var(--gold); text-transform: uppercase; margin: 0; }
+.status-bar { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; font-size: 13px; color: var(--highlight); margin-top: 12px; text-transform: uppercase; font-weight: bold; }
+.ticker-wrap { width: 100%; background: rgba(180, 83, 9, 0.2); overflow: hidden; padding: 7px 0; border-bottom: 1px solid var(--border-color); backdrop-filter: blur(5px); }
+.ticker-content { display: inline-block; white-space: nowrap; padding-left: 100%; animation: ticker 45s linear infinite; font-size: 13px; font-style: italic; color: #ffd8a8; }
+@keyframes ticker { 0% { transform: translate(0, 0); } 100% { transform: translate(-100%, 0); } }
 
-.header-section {
-    width: 100%;
-    background: rgba(0, 0, 0, 0.85);
-    border-bottom: 4px solid var(--accent);
-    padding: 25px 0;
-    text-align: center;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.6);
-}
+.layout-grid { display: flex; flex-direction: column; gap: 20px; width: 95%; max-width: 1200px; margin-top: 30px; }
+.top-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.container { width: 100%; background: var(--panel-bg); border: 2px solid var(--border-color); border-radius: 12px; padding: clamp(20px, 5vw, 40px); box-shadow: 0 15px 50px rgba(0,0,0,0.9); }
 
-.title {
-    font-size: clamp(24px, 6vw, 42px);
-    font-weight: bold;
-    letter-spacing: 4px;
-    text-shadow: 0 0 15px var(--gold);
-    text-transform: uppercase;
-    margin: 0;
-}
-
-.status-bar {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    font-size: 13px;
-    color: var(--highlight);
-    margin-top: 12px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.ticker-wrap {
-    width: 100%;
-    background: rgba(180, 83, 9, 0.2);
-    overflow: hidden;
-    padding: 7px 0;
-    border-bottom: 1px solid var(--border-color);
-    backdrop-filter: blur(5px);
-}
-
-.ticker-content {
-    display: inline-block;
-    white-space: nowrap;
-    padding-left: 100%;
-    animation: ticker 45s linear infinite;
-    font-size: 13px;
-    font-style: italic;
-    color: #ffd8a8;
-}
-
-@keyframes ticker {
-    0% { transform: translate(0, 0); }
-    100% { transform: translate(-100%, 0); }
-}
-
-.layout-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    width: 95%;
-    max-width: 1200px;
-    margin-top: 30px;
-}
-
-.container {
-    width: 100%;
-    background: var(--panel-bg);
-    border: 2px solid var(--border-color);
-    border-radius: 12px;
-    padding: clamp(20px, 5vw, 40px);
-    box-shadow: 0 15px 50px rgba(0,0,0,0.9);
-}
-
-.hero-stat-card {
-    background: rgba(0,0,0,0.4);
-    border: 1px solid var(--accent);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+.hero-stat-card { background: rgba(0,0,0,0.4); border: 1px solid var(--accent); padding: 20px; border-radius: 10px; text-align: center; margin-bottom: 30px; display: flex; flex-direction: column; align-items: center; }
 .stat-label { font-size: 12px; color: var(--gold); text-transform: uppercase; letter-spacing: 2px; }
 .stat-value { font-size: 32px; font-weight: bold; color: white; text-shadow: 0 0 10px rgba(255,255,255,0.3); }
+.stat-description { font-size: 11px; color: #a1a1aa; margin-top: 10px; max-width: 400px; line-height: 1.4; font-style: italic; }
 
-.stat-description {
-    font-size: 11px;
-    color: #a1a1aa;
-    margin-top: 10px;
-    max-width: 400px;
-    line-height: 1.4;
-    font-style: italic;
-}
-
-h2 {
-    color: var(--highlight);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-bottom: 1px solid var(--accent);
-    padding-bottom: 10px;
-    margin-top: 0;
-}
-
-.nav-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px;
-}
-
-.nav-card {
-    background: rgba(0, 0, 0, 0.4);
-    border: 1px solid var(--accent);
-    padding: 25px;
-    border-radius: 8px;
-    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    flex-direction: column;
-}
-
-.nav-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--highlight);
-    background: rgba(180, 83, 9, 0.1);
-    box-shadow: 0 0 20px rgba(180, 83, 9, 0.2);
-}
-
-.btn {
-    background: linear-gradient(to bottom, #2d1b0e, #1a120b);
-    border: 1px solid var(--highlight);
-    color: var(--highlight);
-    padding: 12px 15px;
-    border-radius: 4px;
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: auto;
-    cursor: pointer;
-}
-
-.guestbook-input {
-    width: 100%;
-    background: rgba(0,0,0,0.5);
-    border: 1px solid var(--accent);
-    color: white;
-    padding: 15px;
-    margin-bottom: 12px;
-    border-radius: 6px;
-    font-family: inherit;
-}
-
-.guestbook-list {
-    max-height: 350px;
-    overflow-y: auto;
-    background: rgba(0,0,0,0.3);
-    padding: 15px;
-    border-radius: 8px;
-    border: 1px solid rgba(120, 53, 15, 0.4);
-}
-
-.entry {
-    border-bottom: 1px solid rgba(120, 53, 15, 0.3);
-    padding: 12px 0;
-    font-size: 15px;
-}
-
+h2 { color: var(--highlight); text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid var(--accent); padding-bottom: 10px; margin-top: 0; }
+.nav-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; }
+.nav-card { background: rgba(0, 0, 0, 0.4); border: 1px solid var(--accent); padding: 25px; border-radius: 8px; transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); text-decoration: none; color: inherit; display: flex; flex-direction: column; }
+.nav-card:hover { transform: translateY(-5px); border-color: var(--highlight); background: rgba(180, 83, 9, 0.1); box-shadow: 0 0 20px rgba(180, 83, 9, 0.2); }
+.btn { background: linear-gradient(to bottom, #2d1b0e, #1a120b); border: 1px solid var(--highlight); color: var(--highlight); padding: 12px 15px; border-radius: 4px; text-align: center; font-weight: bold; text-transform: uppercase; margin-top: auto; cursor: pointer; }
+.guestbook-input { width: 100%; background: rgba(0,0,0,0.5); border: 1px solid var(--accent); color: white; padding: 15px; margin-bottom: 12px; border-radius: 6px; font-family: inherit; }
+.guestbook-list { max-height: 350px; overflow-y: auto; background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; border: 1px solid rgba(120, 53, 15, 0.4); }
+.entry { border-bottom: 1px solid rgba(120, 53, 15, 0.3); padding: 12px 0; font-size: 15px; }
 .entry b { color: var(--highlight); }
 
-@media (max-width: 600px) {
-    .status-bar { flex-direction: column; align-items: center; gap: 10px; }
-}
+/* Table Styles */
+.update-table-container { max-height: 200px; overflow-y: auto; border: 1px solid var(--border-color); }
+table { width: 100%; border-collapse: collapse; font-size: 12px; }
+th { background: rgba(120, 53, 15, 0.3); text-align: left; padding: 8px; color: var(--highlight); }
+td { padding: 8px; border-bottom: 1px solid rgba(120, 53, 15, 0.2); }
+
+@media (max-width: 768px) { .top-row { grid-template-columns: 1fr; } .status-bar { flex-direction: column; align-items: center; gap: 10px; } }
 </style>
 </head>
 <body>
@@ -263,51 +112,52 @@ h2 {
     <div class="container">
         <h2>🛡️ Traveler's Dashboard</h2>
         <p>Hey there! I'm Alice. I spend most of my time exploring these lands and meeting fellow adventurers. Whether you're here to sharpen your gear or uncover new items, I've put together this website to help you find your way through <strong>Winds of Valen</strong>.</p>
-
         <div class="hero-stat-card">
             <span class="stat-label">Heroes Currently Adventuring</span>
             <span class="stat-value" id="steam-count">...</span>
-            <div class="stat-description">
-                This live count is fetched directly from the Steam Web API for App ID 4135880.
-            </div>
+            <div class="stat-description">This live count is fetched directly from the Steam Web API for App ID 4135880.</div>
         </div>
-        
         <div class="nav-grid">
-            <a href="checklist.html" class="nav-card">
-                <div>
-                    <h3>✅ Starter Checklist</h3>
-                    <p>New to the realm? Follow this step-by-step progression guide to know what to do first.</p>
-                </div>
-                <div class="btn" style="margin-top: auto;">View Checklist</div>
-            </a>
-            <a href="ai.html" class="nav-card">
-                <div>
-                    <h3>🔮 <span id="Wiki-Bot" style="color: #23FA23;">Wiki Bot</span></h3>
-                    <p>I have the full <strong>wiki</strong> in my memory. Ask me anything wiki related! I am your search encyclopedia for items recipes and more.</p>
-                </div>
-                <div class="btn" style="margin-top: auto;">Ask Bot Alice</div>
-            </a>
-            <a href="equipper.html" class="nav-card">
-                <div>
-                    <h3>⚔️ The Equipper</h3>
-                    <p>Plan your perfect build! Test gear sets and see your final stats.</p>
-                </div>
-                <div class="btn" style="margin-top: auto;">Optimize Gear</div>
-            </a>
-            <a href="Videos.html" class="nav-card">
-                <div>
-                    <h3>📹 Community Videos</h3>
-                    <p>Watch/upload gameplay tips, Guides,Combat Info, Showcases and Walkthroughs for Winds of Valen.</p>
-                </div>
-                <div class="btn" style="margin-top: auto;">Watch Videos</div>
-            </a>
-            <a href="combat-practice.html" class="nav-card">
-                <div>
-                    <h3>🗡️ Combat Practice</h3>
-                    <p>Try your gear switching skills with this combat practice engine. Keybinding included!</p>
-                </div>
-                <div class="btn" style="margin-top: auto;">Combat Practice</div>
-            </a>
+            <a href="checklist.html" class="nav-card"><div><h3>✅ Starter Checklist</h3><p>New to the realm? Follow this step-by-step progression guide to know what to do first.</p></div><div class="btn">View Checklist</div></a>
+            <a href="ai.html" class="nav-card"><div><h3>🔮 <span id="Wiki-Bot" style="color: #23FA23;">Wiki Bot</span></h3><p>I have the full <strong>wiki</strong> in my memory. Ask me anything wiki related! I am your search encyclopedia for items recipes and more.</p></div><div class="btn">Ask Bot Alice</div></a>
+            <a href="equipper.html" class="nav-card"><div><h3>⚔️ The Equipper</h3><p>Plan your perfect build! Test gear sets and see your final stats.</p></div><div class="btn">Optimize Gear</div></a>
+            <a href="Videos.html" class="nav-card"><div><h3>📹 Community Videos</h3><p>Watch/upload gameplay tips, Guides,Combat Info, Showcases and Walkthroughs for Winds of Valen.</p></div><div class="btn">Watch Videos</div></a>
+            <a href="combat-practice.html" class="nav-card"><div><h3>🗡️ Combat Practice</h3><p>Try your gear switching skills with this combat practice engine. Keybinding included!</p></div><div class="btn">Combat Practice</div></a>
+        </div>
+    </div>
+
+    <div class="top-row">
+        <div class="container">
+            <h2>Did you know ?</h2>
+            <p style="font-size: 12px; line-height: 1.5; margin: 0;">
+                • These pages are optimized for mobile 😮?<br>
+                • You can download the bot for offline use ?<br>
+                • This is NOT the official wiki ?<br>
+                • We keep a guestbook <strong>Friendly</strong> ?<br>
+                • Drop tables change almost every update ?<br>
+                • <strong>Excessive language</strong> and <strong>Disrespect</strong> will get this project stopped !<br>
+                • Winds of Valen is a 2 Developer team.<br>
+                • The AI bot has a little of "basic chat" haha.<br>
+                • Most people speak english only. Lets keep the guestbook that way.<br>
+            </p>
+        </div>
+        <div class="container">
+            <h2>Wiki Bot Updates</h2>
+            <div class="update-table-container">
+                <table>
+                    <thead><tr><th>Version</th><th>Update Details</th></tr></thead>
+                    <tbody>
+                        <tr><td>1.31</td><td>• Added images.<br>• Added Singular potion recipes to search.<br>• Changed potion icons.<br>• Added a more advanced suggestion system.<br>• Added more advanced spelling checking.<br>• Added extra search terms like example (egc, ofs, etc...).</td></tr>
+                        <tr><td>1.30</td><td>• Updated bot search engine.</td></tr>
+                        <tr><td>1.29</td><td>• Added more search terms.<br>• Added spelling checker.</td></tr>
+                        <tr><td>1.28</td><td>• Changed item values.</td></tr>
+                        <tr><td>1.27</td><td>• Added icons.</td></tr>
+                        <tr><td>1.26</td><td>• Added player buy values.</td></tr>
+                        <tr><td>1.25</td><td>• Added player buy values.</td></tr>
+                        <tr><td>1.24</td><td>• Added an expoint calculator.</td></tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
@@ -316,27 +166,11 @@ h2 {
         <input type="text" id="guest-name" class="guestbook-input" placeholder="Your Name...">
         <textarea id="guest-msg" class="guestbook-input" placeholder="Your Message..." rows="2"></textarea>
         <button onclick="addEntry()" id="submit-btn" class="btn" style="width: 100%; margin-top: 20px;">Sign the Guestbook</button>
-
         <div style="margin-top: 25px;">
             <div class="guestbook-list" id="guestbook-list">
                 <div class="entry">Reading tavern logs...</div>
             </div>
         </div>
-    </div>
-
-    <div class="container">
-        <h2>Did you know ?</h2>
-        <p style="font-size: 12px; line-height: 1.5; margin: 0;">
-            • These pages are optimized for mobile 😮?<br>
-            • You can download the bot for offline use ?<br>
-            • This is NOT the official wiki ?<br>
-            • We keep a guestbook <strong>Friendly</strong> ?<br>
-            • Drop tables change almost every update ?<br>
-            • <strong>Excessive language</strong> and <strong>Disrespect</strong> will get this project stopped !<br>
-            • Winds of Valen is a 2 Developer team.<br>
-            • The AI bot has a little of "basic chat" haha.<br>
-            • Most people speak english only. Lets keep the guestbook that way.<br>
-        </p>
     </div>
 </div>
 
@@ -344,14 +178,12 @@ h2 {
 const SUPABASE_URL = 'https://qiwstqpznabemqttivoa.supabase.co'; 
 const SUPABASE_KEY = 'sb_publishable_cDOxkol6uWGhuAg564EmdQ_v3uhSeYQ';
 const STEAM_APP_ID = '4135880'; 
-
 const _supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 async function updateSteamCount() {
     const display = document.getElementById('steam-count');
     const steamUrl = `https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=${STEAM_APP_ID}&nocache=${Date.now()}`;
     const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(steamUrl)}`;
-
     try {
         const response = await fetch(proxyUrl);
         if (!response.ok) throw new Error();
@@ -364,9 +196,7 @@ async function updateSteamCount() {
             const altResponse = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(steamUrl)}&t=${Date.now()}`);
             const altData = await altResponse.json();
             const steamData = JSON.parse(altData.contents);
-            if (steamData.response) {
-                display.innerText = steamData.response.player_count.toLocaleString();
-            }
+            if (steamData.response) display.innerText = steamData.response.player_count.toLocaleString();
         } catch (e) {}
     }
 }
@@ -378,9 +208,7 @@ async function registerVisit() {
         const { count, error } = await _supabase.from('page_visits').select('*', { count: 'exact', head: true });
         if (error) throw error;
         counter.innerText = count.toLocaleString();
-    } catch (err) {
-        counter.innerText = 'Offline';
-    }
+    } catch (err) { counter.innerText = 'Offline'; }
 }
 
 async function refreshVisitCount() {
@@ -409,19 +237,15 @@ async function loadGuestbook() {
             div.innerHTML = `<b>${e.name}:</b> ${e.message}`;
             list.appendChild(div);
         });
-    } catch (err) {
-        list.innerHTML = `<div class="entry">Logs temporarily offline.</div>`;
-    }
+    } catch (err) { list.innerHTML = `<div class="entry">Logs temporarily offline.</div>`; }
 }
 
 async function addEntry() {
     const name = document.getElementById('guest-name').value.trim();
     const message = document.getElementById('guest-msg').value.trim();
     if(!name || !message) return alert("Please fill in both fields!");
-    
     const btn = document.getElementById('submit-btn');
     btn.disabled = true;
-
     const { error } = await _supabase.from('guestbook').insert([{ name, message }]);
     if (!error) {
         document.getElementById('guest-name').value = '';
@@ -439,6 +263,5 @@ setInterval(updateClock, 1000);
 setInterval(updateSteamCount, 10000);
 setInterval(refreshVisitCount, 1000);
 </script>
-
 </body>
 </html>
