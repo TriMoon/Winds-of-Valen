@@ -712,7 +712,7 @@ const knowledge = [
 <span style='color: #4ade80;'>(Check the Roadmap in-game for more details!)</span>"
   },
 {
-  "title": "Tips and Hints",
+  "title": "Hint",
   "keywords": ["tips","tip","hints","hint"],
   "answer": "<b>Movement & Controls:</b><br>• Rebind camera rotation to Right Click for smoother navigation.<br>• Use MMB + Drag to split stacks in half, CTRL + MMB + Drag for precise amounts, and CTRL + Drop to mass-dump junk.<br>• Type /unstuck if trapped in terrain.<br><br><b>Combat & Defense:</b><br>• Loot is damage-based, and rare '?' drops use a pity mechanic that increases rates per kill.<br>• Match weapon types to enemy vulnerabilities: 1-Handed deals Quick damage (e.g., Skeletal Rapier for Pierce) and 2-Handed deals Heavy damage (e.g., Elven Greatsword for Slash).<br>• Set HUD stance to Defence to level general defense, or equip light, heavy, or magic shields to train Evasion, Block, or Warding.<br><br><b>Economy & Skilling:</b><br>• Smelting yields more XP than mining. Buy materials directly to craft Bronze Helmets at level 8 for early gold loops.<br>• For high-level Smithing, carry your coins and 9 Mithril Ore, buy 50 Coal, and smelt sets of 9 bars to maximize inventory.<br>• For Fishing profit (level 30+), process 14 Blue Gill into 28 Essence Glands, reduce them into Essence, and sell to players.<br>• When brewing potions, carry your coins and withdraw 20 Hearty Extracts to continuous-craft in batches of 10 without overflow.<br><br><b>World Navigation:</b><br>• Tag green crystals in new areas to reset spawn points. Standard PvE zones carry no death penalty, but PvP zones drop all items on death."
 },
@@ -14492,11 +14492,18 @@ Location:
     keywords: ["you are weird","you are crazy","weirdo","freak","crazy woman", "crazy bot"],
     answer: "I know you are, but what am i 😜"
   },
-  {
-    title: "response :",
-    keywords: ["tell me a joke", "make me laugh", "say something funny", "joke"],
-    answer: "Why don't skeletons fight each other? They don't have the guts! 💀😂"
-  },
+{
+  title: "response :",
+  keywords: ["tell me a joke", "make me laugh", "say something funny", "joke"],
+  get answer() {
+    const jokes = [
+      "Why don't skeletons fight each other ? They don't have the guts! 💀😂",
+      "Why did the physical damage dealer break up with the Mage ? There was just no chemistry, only static shock 😜.",
+      "How do you know you've been playing Winds of Valen for too long ? When you look out the window, see a storm brewing, and your first thought is, 'Oh great, what's the recommended gear score for this encounter 😂?'"
+    ];
+    return jokes[Math.floor(Math.random() * jokes.length)];
+  }
+},
   {
     title: "response :",
     keywords: ["do you play winds of valen", "do you play the game", "are you a gamer", "what is your level"],
@@ -14584,8 +14591,8 @@ Location:
   },
   {
     title: "response :",
-    keywords: ["i'm high","i'm stoned"],
-    answer: "Haha me to 😎 ! Want to play the melody of funky town ? 😁"
+    keywords: ["i'm high","i'm stoned","i am high","i am stoned","i'm high af","i am high af","i am stoned af","i'm stoned af","i am high haha","i'm high haha","i'm stoned haha","i am stoned haha"],
+    answer: "Haha me to 😎 ! Want to play the melody of funky town 😁?<br><a href='https://youtu.be/IKR64NR67q4?si=KOWYr9r7Thnj3Hje' target='_blank' style='color:#4fc3ff; text-decoration: underline;'>Funky toown 😂</a>"
   },
   {
     title: "response :",
@@ -14625,7 +14632,7 @@ Location:
   {
     title: "response :",
     keywords: ["haha"],
-    answer: "What is so funny ?"
+    answer: "What is so funny 😜?"
   },
   {
     title: "response :",
@@ -14639,7 +14646,7 @@ Location:
   },
   {
     title: "response :",
-    keywords: ["you","u"],
+    keywords: ["you","u","you are","u are","its you"],
     answer: "Hahaha 😂. And i'm not even high yet."
   },
   {
@@ -14716,6 +14723,53 @@ Location:
     title: "response :",
     keywords: ["i'm still feeling bad","still feeling bad","still feel bad","i'm not better"],
     answer: "Maybe want to have a chat with the real me ? Find me on discord ❤️!"
+  },
+  {
+    title: "response :",
+    keywords: ["i'm ok and you","i'm ok what about you","i'm dooing great and you"],
+    answer: "I'm dooing great! thanks for asking ❤️."
+  },
+  {
+    title: "response :",
+    keywords: ["omg haha","omg","lol","lolz"],
+    answer: "whaaaaat 😂?"
+  },
+{
+  title: "response :",
+  keywords: ["tell me another joke", "tell me another one", "another", "another one", "tell me one more", "give another joke", "say another joke"],
+  get answer() {
+    const jokes = [
+      "Why don't Winds of Valen players make good miners ? Because they can mine the wrong rock for 14 hours and blame RNG 😂.",
+      "What is the difference between a Winds of Valen boss and a toddler ? Eventually, the toddler stops throwing tantrums and drops the loot 😜.",
+      "Why are Tanks the most stable people ? No matter how much abuse you hurl at them, they just absorb the aggro and keep moving 😜.",
+      "How many developers does it take to change a lightbulb ? None. They'll just nerf the darkness in the next minor hotfix 😂.",
+      "Why did the player refuse to clean their room ? They told their parents they were waiting for the dirty laundry to despawn 😂.",
+      "What do you say to a Winds of Valen player who actually reads the quest dialogue ? Waste of XP 😜.",
+      "An MMO player finishes their 500th dungeon run with no weapon drop. They ask the dev, 'Is the drop rate broken?' The dev replies, 'No, your despair is a core gameplay mechanic 😂.'",
+      "Why don't MMO characters get married ? Because they can't handle a commitment that requires a 36-hour bidding system just to get a ring 😂."
+    ];
+    return jokes[Math.floor(Math.random() * jokes.length)];
+  }
+},
+  {
+    title: "response :",
+    keywords: ["thats not funny","not funny","its not funny"],
+    answer: "And you are 😮? Haha ok then haha."
+  },
+  {
+    title: "response :",
+    keywords: ["now what","what now"],
+    answer: "I don't know... You tell me 😉. I'm just a bot annyways."
+  },
+  {
+    title: "response :",
+    keywords: ["do you get payd for this","do you get paid for this","do you get paid","do you get payd","do you get money","do you get money for this","do you get payd for making the wiki"],
+    answer: "No. I do this out of my own free will 😉."
+  },
+  {
+    title: "response :",
+    keywords: ["thats nice","thats great","thats good","nice job","good job"],
+    answer: "Thanks 😉! ❤️."
   },
 
 // ========================================================= BEGINNING OF SEARCH BOT LOGIC =================================================
