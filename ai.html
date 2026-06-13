@@ -496,6 +496,56 @@ button:hover {
 }
 // ==================================== Sidebar & Layout End ====================================
 // ==================================== Buttons & bottom page info ====================================
+/* Smooth out transitions globally */
+button, input, .info-card, .chat-container, .sidebar, .message img {
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Glowing pulse for the online indicator */
+@keyframes statusPulse {
+    0% { opacity: 0.6; text-shadow: 0 0 4px rgba(46, 204, 113, 0.4); }
+    50% { opacity: 1; text-shadow: 0 0 12px rgba(46, 204, 113, 1); }
+    100% { opacity: 0.6; text-shadow: 0 0 4px rgba(46, 204, 113, 0.4); }
+}
+
+#status-indicator {
+    animation: statusPulse 2s infinite ease-in-out;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Micro-interactions for button hovers */
+button:hover, .suggestion-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+}
+
+button:active, .suggestion-btn:active {
+    transform: translateY(1px);
+}
+
+/* Cross-browser scrollbars */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) var(--bg-dark);
+}
+
+/* Style table headers inside responses */
+.message table th {
+    background: rgba(120, 53, 15, 0.4) !important;
+    color: var(--highlight);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/* Glow highlight for the input box when active */
+input[type="text"]:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.3);
+    background: rgba(0,0,0,0.8);
+}
 </style>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
 </script>
