@@ -9862,35 +9862,53 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       <strong style="font-size: 1.1em;">Tin Ore</strong> 
       <span style="color: #888;">(Ore)<img src='https://static.wikitide.net/windsofvalenwiki/thumb/c/c4/Tin_Ore.png/100px-Tin_Ore.png'</span>
     </div>
-    <strong>Tin Ore</strong> is a soft metal found in the <strong>Town Mine</strong> of <strong>Valen Gate</strong>. It is essential for producing Bronze.<br><br>
-    <strong>Locations:</strong><br>
-    • Tin Rock (Valen Gate)<br>
-    • Mining Stall (Valen Gate)<br><br>
-    <strong>Drops:</strong><br>
-    • Skeleton Miner<br><br>
-    <strong>Used for:</strong><br>
-    • Smelting into <strong>Bronze Bar</strong> (requires Copper Ore).<br><br>
-<strong>Loot Table:</strong><br>
-    • Weak Power Gem +20%<br><br>
-<strong>Mining:</strong><br>
-    • Requires level 1<br>
-    • 15 Exp<br><br>
-        <!-- Economy Table -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
+      <tr style="background: rgba(255,255,255,0.05);">
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold; width: 40%;">Requirement :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Mining Stall<br><br>Mining :<br>• Tin Rock<br><br>Dropped by:<br>• Skeleton Miner</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Valen Gate Town Mine<br>• Grave Town Graveyard</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Requires level 1 Mining<br>• 15 Exp</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Loot Table :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Weak Power Gem +20%</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #fbbf24;">USED FOR :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 4px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444;">Bronze Bar</td>
+      </tr>
+    </table>
+
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">2g</td>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">1g</td>
       </tr>
     </table>
-<div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
+
+    <div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
       "Could be smelted into something useful."
-    </div>`
-  },
+    </div>
+  `
+},
   {
     title: "Iron Ore",
     keywords: ["iron ore","mining","rock","iron rock","ore","iron"],
@@ -9899,35 +9917,53 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       <strong style="font-size: 1.1em;">Iron Ore</strong> 
       <span style="color: #888;">(Ore)<img src='https://static.wikitide.net/windsofvalenwiki/thumb/8/87/Iron_Ore.png/100px-Iron_Ore.png'</span>
     </div>
-    <strong>Iron Ore</strong> is a sturdy metal found in both <strong>West Mine</strong> and at the <strong>Forest Alcove</strong> entrance.<br><br>
-    <strong>Locations:</strong><br>
-    • Iron Rock (West Mine / Forest Alcove Entrance)<br>
-    • Mining Stall (Valen Gate / Grave Town)<br><br>
-    <strong>Drops:</strong><br>
-    • Skeleton Miner<br><br>
-    <strong>Used for:</strong><br>
-    • Smelting into <strong>Iron Bar</strong> and <strong>Steel Bar</strong>.<br><br>
-<strong>Loot Table:</strong><br>
-    • Power Gem +30%<br><br>
-<strong>Mining:</strong><br>
-    • Requires level 10<br>
-    • 30 Exp<br><br>
-        <!-- Economy Table -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
+      <tr style="background: rgba(255,255,255,0.05);">
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold; width: 40%;">Requirement :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Mining Stall<br><br>Mining :<br>• Iron Rock<br><br>Dropped by:<br>• Skeleton Miner</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Valen Gate Town Mine<br>• Grave Town Graveyard</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Requires level 10 Mining<br>• 30 Exp</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Loot Table :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Power Gem +30%</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #fbbf24;">USED FOR :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 4px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444;">• Iron Bar<br>• Steel Bar</td>
+      </tr>
+    </table>
+
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">4g</td>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">2g</td>
       </tr>
     </table>
-<div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
+
+    <div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
       "Could be smelted into something useful."
-    </div>`
-  },
+    </div>
+  `
+},
   {
     title: "Coal Ore",
     keywords: ["coal ore","mining","rock","coal rock","ore","coal"],
@@ -9936,24 +9972,42 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       <strong style="font-size: 1.1em;">Coal Ore</strong> 
       <span style="color: #888;">(Ore)<img src='https://static.wikitide.net/windsofvalenwiki/thumb/f/fe/Coal_Ore.png/100px-Coal_Ore.png'</span>
     </div>
-    <strong>Coal Ore</strong> is a vital fuel source found in <strong>Grave Town</strong>. It is required to smelt any bar higher than Iron.<br><br>
-    <strong>Locations:</strong><br>
-    • Coal Rock (West Mine / Forest Alcove Entrance)<br>
-    • Mining Stall (Grave Town)<br><br>
-    <strong>Used for:</strong><br>
-    • Smelting Steel and Mithril Bars.<br><br>
-<strong>Loot Table:</strong><br>
-    • Strong Power Gem +40%<br><br>
-<strong>Mining:</strong><br>
-    • Requires level 20<br>
-    • 80 Exp<br><br>      
-<!-- Economy Table -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
+      <tr style="background: rgba(255,255,255,0.05);">
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold; width: 40%;">Requirement :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Mining Stall<br><br>Mining :<br>• Coal Rock</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Requires level 20 Mining<br>• 80 Exp</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Loot Table :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Strong Power Gem +40%</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #fbbf24;">USED FOR :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 4px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444;">• Steel Bar<br>• Mithril Bar</td>
+      </tr>
+    </table>
+
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
         <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Sell Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Player Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Stall Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 40%;"><strong>Player Buy Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">8g</td>
@@ -9961,10 +10015,12 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">Between 15g - 20g</td>
       </tr>
     </table>
-<div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
+
+    <div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
       "Could be smelted into something useful."
-    </div>`
-  },
+    </div>
+  `
+},
   {
     title: "Mithril Ore",
     keywords: ["mithril ore","mining","rock","mithril rock","ore","mithril","mith ore"],
@@ -9973,23 +10029,42 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       <strong style="font-size: 1.1em;">Mithril Ore</strong> 
       <span style="color: #888;">(Ore)<img src='https://static.wikitide.net/windsofvalenwiki/thumb/e/ee/Mithril_Ore.png/100px-Mithril_Ore.png'</span>
     </div>
-    <strong>Mithril Ore</strong> is a rare and valuable mineral used for high-tier equipment.<br><br>
-    <strong>Locations:</strong><br>
-    • Mithril Rock (Elven Haven / West Mine)<br><br>
-    <strong>Used for:</strong><br>
-    • Smelting into <strong>Mithril Bar</strong> (requires Coal Ore).<br><br>
-<strong>Loot Table:</strong><br>
-    • Fishing Power Gem<br><br>
-<strong>Mining:</strong><br>
-    • Requires level 30<br>
-    • 150 Exp<br><br>   
-        <!-- Economy Table -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
+      <tr style="background: rgba(255,255,255,0.05);">
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold; width: 40%;">Requirement :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
+        <td style="padding: 5px; border: 1px solid #444;">Mining :<br>• Mithril Rock</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Requires level 30 Mining<br>• 150 Exp</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Loot Table :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Fishing Power Gem</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #fbbf24;">USED FOR :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 4px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444;">Mithril Bar</td>
+      </tr>
+    </table>
+
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
         <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Sell Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Player Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Stall Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 40%;"><strong>Player Buy Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
@@ -9997,10 +10072,12 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">Between 120g - 175g</td>
       </tr>
     </table>
-<div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
+
+    <div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
       "Could be smelted into something useful."
-    </div>`
-  },
+    </div>
+  `
+},
   {
     title: "Gold Ore",
     keywords: ["gold ore","mining","rock","gold rock","ore"],
@@ -10009,23 +10086,42 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       <strong style="font-size: 1.1em;">Gold Ore</strong> 
       <span style="color: #888;">(Ore)<img src='https://static.wikitide.net/windsofvalenwiki/thumb/f/f7/Gold_Ore.png/100px-Gold_Ore.png'</span>
     </div>
-    <strong>Gold Ore</strong> is a precious metal used to create highly valuable Gold Bars.<br><br>
-    <strong>Locations:</strong><br>
-    • Gold Rock (West Mine)<br><br>
-    <strong>Used for:</strong><br>
-    • Smelting into <strong>Gold Bar</strong> (requires Coal Ore).<br><br>
-<strong>Loot Table:</strong><br>
-    • Mining Power Gem<br><br>
-<strong>Mining:</strong><br>
-    • Requires level 40<br>
-    • 350 Exp<br><br>   
-        <!-- Economy Table -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
+      <tr style="background: rgba(255,255,255,0.05);">
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold; width: 40%;">Requirement :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
+        <td style="padding: 5px; border: 1px solid #444;">Mining :<br>• Gold Rock</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Requires level 40 Mining<br>• 350 Exp</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Loot Table :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Mining Power Gem</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #fbbf24;">USED FOR :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 4px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444;">Gold Bar</td>
+      </tr>
+    </table>
+
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
         <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Sell Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Player Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Stall Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 40%;"><strong>Player Buy Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
@@ -10033,10 +10129,12 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">Between 115g - 160g</td>
       </tr>
     </table>
-<div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
+
+    <div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
       "Could be smelted into something useful."
-    </div>`
-  },
+    </div>
+  `
+},
   {
     title: "Gold Dust",
     keywords: ["gold dust","dust","mining","volcanic","volcanic rock"],
@@ -10045,25 +10143,42 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       <strong style="font-size: 1.1em;">Gold Dust</strong> 
       <span style="color: #888;">(Ore)<img src='https://static.wikitide.net/windsofvalenwiki/thumb/4/43/Gold_Dust.png/100px-Gold_Dust.png'</span>
     </div>
-    <strong>Gold Dust</strong> is found in hazardous areas and can be refined into Gold Bars.<br><br>
-    <strong>Locations:</strong><br>
-    • Volcanic Gold Rock (Darklands PvP zone)<br><br>
-    <strong>Drops:</strong><br>
-    • Skeleton Knight (lvl 67)<br><br>
-    <strong>Used for:</strong><br>
-    • Smelting into <strong>Gold Bar</strong>.<br><br>
-<strong>Loot Table:</strong><br>
-    • Mining Power Gem<br><br>
-<strong>Mining:</strong><br>
-    • Requires level 40<br>
-    • 350 Exp<br><br>   
-        <!-- Economy Table -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
+      <tr style="background: rgba(255,255,255,0.05);">
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold; width: 40%;">Requirement :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
+        <td style="padding: 5px; border: 1px solid #444;">Mining :<br>• Volcanic Gold Rock<br><br>Dropped by:<br>• Darklands Skeleton Knight</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Darklands</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Requires level 40 Mining<br>• 350 Exp</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Loot Table :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Mining Power Gem</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #fbbf24;">USED FOR :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 4px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444;">Gold Bar</td>
+      </tr>
+    </table>
+
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
         <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Sell Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Player Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Stall Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 40%;"><strong>Player Buy Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
@@ -10071,10 +10186,12 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">Between 195g - 225g</td>
       </tr>
     </table>
-<div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
+
+    <div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
       "Could be smelted into something useful."
-    </div>`
-  },
+    </div>
+  `
+},
 
 // ========= ORES QUESTIONS =========
 {
