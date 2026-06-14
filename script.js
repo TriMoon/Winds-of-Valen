@@ -8578,16 +8578,18 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #fbbf24;">USED FOR :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 4px; text-align: center;">
       <tr>
-        <td style="padding: 5px; border: 1px solid #444;">Health Potions:<br>• Weak<br>• Normal<br>• Strong<br><br>Shield Potions:<br>• Normal<br>• Strong<br><br>Powerup Potions:<br>• Fishing Potion<br>• Mining Potion<br>• Attack Potion</td>
+        <td style="padding: 5px; border: 1px solid #444;">Health Potions:<br>• Weak<br>• Normal<br>• Strong<br></td>
+        <td style="padding: 5px; border: 1px solid #444;">Shield Potions:<br>• Normal<br>• Strong</td>
+        <td style="padding: 5px; border: 1px solid #444;">Powerup Potions:<br>• Fishing Potion<br>• Mining Potion<br>• Attack Potion</td>
       </tr>
     </table>
 
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Player Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Stall Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 40%;"><strong>Player Buy Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
@@ -8638,9 +8640,9 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Player Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Stall Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 40%;"><strong>Player Buy Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
@@ -8691,9 +8693,9 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Player Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Stall Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 40%;"><strong>Player Buy Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
@@ -8744,9 +8746,9 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Player Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Stall Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 40%;"><strong>Player Buy Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
@@ -8797,9 +8799,9 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Player Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Stall Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 40%;"><strong>Player Buy Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
@@ -8850,9 +8852,9 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Player Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Stall Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 40%;"><strong>Player Buy Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
@@ -8903,9 +8905,9 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Player Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Stall Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 40%;"><strong>Player Buy Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
@@ -8956,9 +8958,9 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Player Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Stall Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 40%;"><strong>Player Buy Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
@@ -9009,9 +9011,9 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Player Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Stall Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 40%;"><strong>Player Buy Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
@@ -9062,9 +9064,9 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Player Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Stall Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 40%;"><strong>Player Buy Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">75g</td>
@@ -9115,9 +9117,9 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Player Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Stall Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 40%;"><strong>Player Buy Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">75g</td>
@@ -9168,9 +9170,9 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Player Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Stall Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 40%;"><strong>Player Buy Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">1g</td>
@@ -9221,9 +9223,9 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Player Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Stall Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 40%;"><strong>Player Buy Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">10g</td>
@@ -9274,9 +9276,9 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Player Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Stall Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 40%;"><strong>Player Buy Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">50g</td>
@@ -9327,9 +9329,9 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Player Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Stall Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 40%;"><strong>Player Buy Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
@@ -9380,9 +9382,9 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Player Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Stall Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 40%;"><strong>Player Buy Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
@@ -9433,9 +9435,9 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Player Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Stall Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 40%;"><strong>Player Buy Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
@@ -9486,9 +9488,9 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Player Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Stall Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 40%;"><strong>Player Buy Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
