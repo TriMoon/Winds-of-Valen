@@ -3291,7 +3291,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">• Mercenary<br>•  Camp  Valen Port</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Mercenary Camp  <br>• Valen Port</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
