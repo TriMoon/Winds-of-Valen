@@ -13116,7 +13116,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
             <th colspan="2" style="padding: 5px; border: 1px solid #444;">Item Drops</th>
           </tr>
           <tr>
-            <td style="padding: 4px; border: 1px solid #444;">• Dwarven Pickaxe<span style="color: #888;"> (Smithing Tool)</span><br>• Mud Root<span style="color: #888;"> (Ingredient)</span><br>• Large Vial<span style="color: #888;"> (Container)</span><br>• Coins<span style="color: #888;"> (Currency)</span></td>
+            <td style="padding: 4px; border: 1px solid #444;">• Dwarven Pickaxe<span style="color: #888;"> (Smithing Tool)</span><br>• Steel Sword<span style="color: #888;"> (1-Handed Weapon)</span><br>• Mud Root<span style="color: #888;"> (Ingredient)</span><br>• Large Vial<span style="color: #888;"> (Container)</span><br>• Coins<span style="color: #888;"> (Currency)</span></td>
           </tr>
         </table>
         <table style="width: 100%; border-collapse: collapse; font-size: 0.82em; text-align: left;">
