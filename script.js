@@ -661,7 +661,7 @@ const knowledge = [
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Level 8 Smithing (4x Bronze Bar) / 6s Craft Duration / 60 Exp</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Level 8 Smithing (4x Bronze Bar)<br>• 6s Craft Duration<br>• 60 Exp</td>
       </tr>
     </table>
 
@@ -758,7 +758,7 @@ const knowledge = [
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Level 18 Smithing (4x Iron Bar) / 10s Craft Duration / 120 Exp</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Level 18 Smithing (4x Iron Bar)<br>• 10s Craft Duration<br>• 120 Exp</td>
       </tr>
     </table>
 
@@ -854,7 +854,7 @@ const knowledge = [
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Level 28 Smithing (4x Steel Bar) / 14s Craft Duration / 220 Exp</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Level 28 Smithing (4x Steel Bar)<br>• 14s Craft Duration<br>• 220 Exp</td>
       </tr>
     </table>
 
@@ -950,7 +950,7 @@ const knowledge = [
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Level 38 Smithing (4x Mithril Bar) / 18s Craft Duration / 620 Exp</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Level 38 Smithing (4x Mithril Bar)<br>• 18s Craft Duration<br>• 620 Exp</td>
       </tr>
     </table>
 
@@ -1342,7 +1342,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Level 6 Smithing (10x Bronze Bar) / 18s Craft Duration / 60 Exp</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Level 6 Smithing (10x Bronze Bar)<br>• 18s Craft Duration<br>• 60 Exp</td>
       </tr>
     </table>
 
@@ -1438,7 +1438,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Level 16 Smithing (10x Iron Bar) / 28s Craft Duration / 300 Exp</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Level 16 Smithing (10x Iron Bar)<br>• 28s Craft Duration<br>• 300 Exp</td>
       </tr>
     </table>
 
@@ -1534,7 +1534,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Level 26 Smithing (10x Steel Bar) / 38s Craft Duration / 550 Exp</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Level 26 Smithing (10x Steel Bar)<br>• 38s Craft Duration<br>• 550 Exp</td>
       </tr>
     </table>
 
@@ -1630,7 +1630,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Level 36 Smithing (10x Mithril Bar) / 48s Craft Duration / 1550 Exp</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Level 36 Smithing (10x Mithril Bar)<br>• 48s Craft Duration<br>• 1550 Exp</td>
       </tr>
     </table>
 
@@ -1925,7 +1925,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Level 2 Smithing (8x Bronze Bar) / 16s Craft Duration / 120 Exp</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Level 2 Smithing (8x Bronze Bar)<br>• 16s Craft Duration<br>• 120 Exp</td>
       </tr>
     </table>
 
@@ -2021,7 +2021,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Level 12 Smithing (8x Iron Bar) / 24s Craft Duration / 240 Exp</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Level 12 Smithing (8x Iron Bar)<br>• 24s Craft Duration<br>• 240 Exp</td>
       </tr>
     </table>
 
@@ -2117,7 +2117,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Level 22 Smithing (8x Steel Bar) / 32s Craft Duration / 440 Exp</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Level 22 Smithing (8x Steel Bar)<br>• 32s Craft Duration<br>• 440 Exp</td>
       </tr>
     </table>
 
@@ -2213,7 +2213,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Level 32 Smithing (8x Mithril Bar) / 40s Craft Duration / 1240 Exp</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Level 32 Smithing (8x Mithril Bar)<br>• 40s Craft Duration<br>• 1240 Exp</td>
       </tr>
     </table>
 
@@ -3001,7 +3001,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Level 21 Smithing (3x Steel Bar) / 14s Craft Duration / 165 Exp</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Level 21 Smithing (3x Steel Bar)<br>• 14s Craft Duration<br>• 165 Exp</td>
       </tr>
     </table>
 
@@ -3265,7 +3265,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Level 4 Smithing (6x Bronze Bar) / 8s Craft Duration / 90 Exp</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Level 4 Smithing (6x Bronze Bar)<br>• 8s Craft Duration<br>• 90 Exp</td>
       </tr>
     </table>
 
@@ -3331,7 +3331,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Level 14 Smithing (6x Iron Bar) / 12s Craft Duration / 180 Exp</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Level 14 Smithing (6x Iron Bar)<br>• 12s Craft Duration<br>• 180 Exp</td>
       </tr>
     </table>
 
@@ -3397,7 +3397,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Level 24 Smithing (6x Steel Bar) / 16s Craft Duration / 330 Exp</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Level 24 Smithing (6x Steel Bar)<br>• 16s Craft Duration<br>• 330 Exp</td>
       </tr>
     </table>
 
@@ -3463,7 +3463,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Level 34 Smithing (6x Mithril Bar) / 20s Craft Duration / 930 Exp</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Level 34 Smithing (6x Mithril Bar)<br>• 20s Craft Duration<br>• 930 Exp</td>
       </tr>
     </table>
 
