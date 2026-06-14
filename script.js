@@ -8099,7 +8099,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
     </div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
       <tr style="background: rgba(255,255,255,0.05);">
-        <td style="padding: 5px; border: 1px solid #444; font-weight: bold; width: 30%;">Requirement :</td>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold; width: 40%;">Requirement :</td>
         <td style="padding: 5px; border: 1px solid #444;">N/A</td>
       </tr>
       <tr>
@@ -8139,7 +8139,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
     </table>
 
     <div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
-      "Could be attached to jewellery. Gems are untradable."
+      "Glows with magical essence."
     </div>
   `
 },
