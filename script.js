@@ -555,11 +555,11 @@ const knowledge = [
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Dropped By Skeleton</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped By:<br>• Skeleton</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Wheat Fields Graveyard</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Wheat Fields Graveyard</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -1040,11 +1040,11 @@ const knowledge = [
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Dropped by Pirate Captain (Level 25)</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• Pirate Captain (Level 25)</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Valen Port</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Valen Port</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -1138,7 +1138,7 @@ const knowledge = [
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Archery Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Archery Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -1234,7 +1234,7 @@ const knowledge = [
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Temporary Seasonal Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Temporary Seasonal Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -1283,11 +1283,11 @@ The Seasonal stall is only available during the christmas season<br>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Dropped by all Enemies</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• All Enemies</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Entire World</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Entire World</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -1334,7 +1334,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Armour Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Armour Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -1430,7 +1430,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Armour Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Armour Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -1526,7 +1526,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Armour Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Armour Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -1721,7 +1721,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Archery Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Archery Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -1817,11 +1817,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Dropped by Pirate Corsair (Level 10)</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• Pirate Corsair</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Valen Port</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Valen Port</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -1917,7 +1917,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Armour Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Armour Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -2013,7 +2013,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Armour Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Armour Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -2109,7 +2109,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Armour Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Armour Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -2303,7 +2303,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Archery Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Archery Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -2399,11 +2399,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Dropped by Pirate Rigger (Level 10)</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by: <br>• Pirate Rigger</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Valen Port</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Valen Port</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -2499,11 +2499,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Dropped by Skeleton Miner (Level 13)</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• Skeleton Miner</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Valen Gate Town Mine / Grave Town Graveyard</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Valen Gate Town Mine<br>• Grave Town Graveyard</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -2597,11 +2597,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Dropped by Bandit Mercenary (Level 30)</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• Bandit Mercenary</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Mercenary Camp</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Mercenary Camp</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -2697,7 +2697,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Archery Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Archery Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -2793,11 +2793,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Pirate Deckhand (Level 10)</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• Pirate Deckhand</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Valen Port</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Valen Port</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -2893,11 +2893,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Elf Scholar (Level 37)</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• Elf Scholar</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Elven Haven</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Elven Haven</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -3089,11 +3089,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Goblin Villager (Level 15)</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• Goblin Villager</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Goblin Village</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Goblin Village</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -3191,7 +3191,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Sword Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Sword Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -3257,7 +3257,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Sword Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Sword Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -3323,7 +3323,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Sword Stall <br><br> Dropped by:<br>• Bandit Mercenary<br>• Pirate Deckhand <br>• Pirate Corsair</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Sword Stall <br><br> Dropped by:<br>• Bandit Mercenary<br>• Pirate Deckhand <br>• Pirate Corsair</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -3389,11 +3389,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">•Sword Stall<br><br> Dropped by:<br>• Bandit Mercenary Boss</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Sword Stall<br><br> Dropped by:<br>• Bandit Mercenary Boss</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Mercenary Camp</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Mercenary Camp</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -3523,11 +3523,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Dropped by Skeleton Pioneer (Level 90)</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• Skeleton Pioneer</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Deep inside West Mine</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Deep inside West Mine</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -3595,11 +3595,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Dropped by Goblin Berserker (Level 9)</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• Goblin Berserker</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Broken Village</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Broken Village</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -3663,11 +3663,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Dropped by Bandit Leader (Level 25)</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• Bandit Leader</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Forest Alcove Bandit Camp</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Forest Alcove Bandit Camp</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -3731,11 +3731,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Dropped by Skeleton Knight (Level 26)</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• Skeleton Knight</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">West Mine</td>
+        <td style="padding: 5px; border: 1px solid #444;">• West Mine</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -3799,11 +3799,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Dropped by Elf Warden (Level 120)</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• Elf Warden</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Elven Haven</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Elven Haven</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -3870,7 +3870,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Archery Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Archery Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -3934,7 +3934,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Archery Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Archery Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -3998,11 +3998,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Dropped by Goblin Watcher (Level 9)</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• Goblin Watcher</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Goblin Cave</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Goblin Cave</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -4064,7 +4064,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Archery Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Archery Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -4128,7 +4128,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Archery Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Archery Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -4192,11 +4192,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Pirate Captain (Level 25)</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• Pirate Captain</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Valen Port</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Valen Port</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -4259,7 +4259,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Archery Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Archery Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -4317,7 +4317,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Archery Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Archery Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -4375,11 +4375,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Archery Stall <br><br> Dropped by:<br>• Pirate Corsair<br>•  Pirate Rigger<br>•  Pirate Deckhand</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Archery Stall <br><br> Dropped by:<br>• Pirate Corsair<br>•  Pirate Rigger<br>•  Pirate Deckhand</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Valen Port</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Valen Port</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -4433,11 +4433,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Archery Stall <br><br> Dropped by: <br>• Pirate Captain (Level25)</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Archery Stall <br><br> Dropped by: <br>• Pirate Captain (Level25)</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Valen Port</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Valen Port</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -4491,7 +4491,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Wand Stall in Valen Gate</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Wand Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -4555,7 +4555,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Wand Stall in Valen Gate</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Wand Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -4619,7 +4619,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Wand Stall in Valen Gate</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Wand Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -4683,7 +4683,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Wand Stall in Valen Gate</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Wand Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -4748,7 +4748,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Wand Stall in Valen Gate</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Wand Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -4813,7 +4813,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Wand Stall in Valen Gate</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Wand Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -4878,7 +4878,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Wand Stall in Valen Gate</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Wand Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -4943,11 +4943,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Dropped by Fire Lich (Level 120)</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• Fire Lich</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Grave Town Graveyard</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Grave Town Graveyard</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -5010,11 +5010,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
       <tr style="background: rgba(255,255,255,0.05);">
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold; width: 40%;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Fire Lich (Lvl 120)</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• Fire Lich</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Grave town graveyard</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Grave town graveyard</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -5067,11 +5067,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
       <tr style="background: rgba(255,255,255,0.05);">
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold; width: 40%;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Hen (Level 1) / Rooster (Level 1)</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• Hen<br>• Rooster</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Farmlands / Valen Gate / Valen Port</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Farmlands<br>• Valen Gate<br>• Valen Port</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -5131,11 +5131,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Dropped by Skeleton (Level 6)</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• Skeleton</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Wheat Fields Graveyard</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Wheat Fields Graveyard</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -5193,7 +5193,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Armour Stall / Shield Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Armour Stall<br>• Shield Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -5253,7 +5253,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Shield Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Shield Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -5313,7 +5313,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Shield Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Shield Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -5373,7 +5373,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Armour Stall / Shield Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Armour Stall<br>• Shield Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -5433,7 +5433,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Shield Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Shield Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -5493,7 +5493,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Shield Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Shield Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -5553,11 +5553,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Dropped by Highwayman (Level 28)</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• Highwayman</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Path at West Mine</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Path at West Mine</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -5615,7 +5615,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Shield Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Shield Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -5680,7 +5680,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Broken Village / Goblin Cave / Wheat Fields Graveyard</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Broken Village<br>• Goblin Cave<br>• Wheat Fields Graveyard</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -5740,11 +5740,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Dropped by Cow</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• Cow</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Farmlands</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Farmlands</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -5804,11 +5804,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Dropped by Bandit</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• Bandit</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Forest Alcove Bandit Camp</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Forest Alcove Bandit Camp</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -5932,11 +5932,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Dropped by Elf (Level 37)</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• Elf</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Elven Haven</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Elven Haven</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -6000,7 +6000,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Jewellery Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Jewellery Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -6062,7 +6062,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Jewellery Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Jewellery Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -6124,7 +6124,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Jewellery Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Jewellery Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -6186,7 +6186,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Jewellery Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Jewellery Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -6249,7 +6249,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Mining Stall Valen Gate</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Mining Stall Valen Gate</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -6307,7 +6307,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Mining Stall Valen Gate <br><br> Dropped by: <br>• Skeleton Miner</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Mining Stall Valen Gate <br><br> Dropped by: <br>• Skeleton Miner</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -6367,7 +6367,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Mining Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Mining Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -6425,7 +6425,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Mining Stall Grave Town</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Mining Stall Grave Town</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -6483,11 +6483,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Dropped by Bandit Mercenary Boss (Level 74)</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• Bandit Mercenary Boss</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Mercenary Camp</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Mercenary Camp</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -6545,7 +6545,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Blacksmith Stall / Mining Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Blacksmith Stall<br>• Mining Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -6603,11 +6603,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Dropped by Goblin Chieftain (Level 40)</td>
+        <td style="padding: 5px; border: 1px solid #444;">Dropped by:<br>• Goblin Chieftain</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Goblin Village</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Goblin Village</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -6665,7 +6665,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Fishing Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Fishing Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -6723,7 +6723,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Fishing Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Fishing Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -6781,7 +6781,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Fishing Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Fishing Stall</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -6844,7 +6844,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Darklands</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Darklands</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -6888,7 +6888,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Cauldron</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Cauldron</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -6933,7 +6933,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Cauldron</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Cauldron</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -6977,7 +6977,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Cauldron</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Cauldron</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -7021,7 +7021,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Cauldron</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Cauldron</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -7069,7 +7069,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Darklands</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Darklands</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -7111,7 +7111,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Cauldron</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Cauldron</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -7155,7 +7155,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Cauldron</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Cauldron</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -7199,7 +7199,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Cauldron</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Cauldron</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -7247,7 +7247,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Darklands</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Darklands</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -7289,7 +7289,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Cauldron</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Cauldron</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -7333,7 +7333,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Cauldron</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Cauldron</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -7377,7 +7377,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Cauldron</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Cauldron</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -7425,7 +7425,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Darklands</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Darklands</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -7469,7 +7469,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Cauldron</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Cauldron</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -7517,7 +7517,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Darklands</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Darklands</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
@@ -7564,7 +7564,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Mining Tin Rock or Copper Rock</td>
+        <td style="padding: 5px; border: 1px solid #444;">Mining :<br>• Tin Rock<br>• Copper Rock</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -7621,7 +7621,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Mining Iron Rock</td>
+        <td style="padding: 5px; border: 1px solid #444;">Mining :<br>• Iron Rock</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -7672,7 +7672,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Mining Coal Rock</td>
+        <td style="padding: 5px; border: 1px solid #444;">Mining :<br>• Coal Rock</td>
       </tr>
     </table>
 
@@ -7884,7 +7884,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Mining Mithril Rock</td>
+        <td style="padding: 5px; border: 1px solid #444;">Mining :<br>• Mithril Rock</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
@@ -8049,7 +8049,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Mining Gold Rock or Volcanic Gold Rock</td>
+        <td style="padding: 5px; border: 1px solid #444;">Mining :<br>• Gold Rock<br>• Volcanic Gold Rock</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
