@@ -9807,36 +9807,53 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       <strong style="font-size: 1.1em;">Copper Ore</strong> 
       <span style="color: #888;">(Ore)<img src='https://static.wikitide.net/windsofvalenwiki/thumb/7/78/Copper_Ore.png/100px-Copper_Ore.png'</span>
     </div>
-    <strong>Copper Ore</strong> is a basic mineral used for low-level smelting. It is primarily found in the <strong>Town Mine</strong> of <strong>Valen Gate</strong>.<br><br>
-    <strong>Locations:</strong><br>
-    • Copper Rock (Valen Gate)<br>
-    • Mining Stall (Valen Gate)<br><br>
-    <strong>Drops:</strong><br>
-    • Skeleton Miner<br><br>
-    <strong>Used for:</strong><br>
-    • Smelting into <strong>Bronze Bar</strong> (requires Tin Ore).<br><br>
-<strong>Loot Table:</strong><br>
-    • Weak Power Gem +20%<br><br>
-<strong>Mining:</strong><br>
-    • Requires level 1<br>
-    • 15 Exp<br><br>
-        <!-- Economy Table -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
+      <tr style="background: rgba(255,255,255,0.05);">
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold; width: 40%;">Requirement :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Mining Stall<br><br>Mining :<br>• Copper Rock<br><br>Dropped by:<br>• Skeleton Miner</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Valen Gate Town Mine<br>• Grave Town Graveyard</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Requires level 1 Mining<br>• 15 Exp</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Loot Table :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Weak Power Gem +20%</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #fbbf24;">USED FOR :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 4px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444;">Bronze Bar</td>
+      </tr>
+    </table>
+
     <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
-        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">2g</td>
         <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">1g</td>
       </tr>
     </table>
-<div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
+
+    <div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
       "Could be smelted into something useful."
     </div>
-`
-  },
+  `
+},
   {
     title: "Tin Ore",
     keywords: ["tin ore","mining","rock","tin rock","ore","tin"],
@@ -10154,16 +10171,52 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       <strong style="font-size: 1.1em;">Bronze Bar</strong> 
       <span style="color: #888;">(Bar)<img src='https://static.wikitide.net/windsofvalenwiki/thumb/4/4c/Bronze_Bar.png/100px-Bronze_Bar.png'</span>
     </div>
-    <strong>Bronze Bar</strong> is used for smithing basic equipment at the <strong>Anvil</strong>. It can be purchased from the <strong>Blacksmith Stall</strong> in <strong>Valen Gate</strong>.<br><br>
-    <strong>Stall Prices:</strong><br>
-    • Valen Gate : 8g<br><br>
-    <strong>Crafting:</strong><br>
-    • 1 Copper Ore + 1 Tin Ore at the <strong>Furnace</strong>.<br>• Requires: Smithing level 1.<br>• Duration: 3s.<br>• 15 exp<br><br>
-    <strong>Used for:</strong><br>
-    • Bronze Helmet, Bronze Platebody, Bronze Platelegs, Bronze Sword<br><br><div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
+      <tr style="background: rgba(255,255,255,0.05);">
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold; width: 40%;">Requirement :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Blacksmith Stall</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
+        <td style="padding: 5px; border: 1px solid #444;">•Requires level 1 Smithing (1x Copper Ore + 1x Tin Ore)<br>• 3s Craft Duration<br>• 15 Exp</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #fbbf24;">USED FOR :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 4px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444;">Bronze Helmet</td>
+        <td style="padding: 5px; border: 1px solid #444;">Bronze Platebody</td>
+        <td style="padding: 5px; border: 1px solid #444;">Bronze Platelegs</td>
+        <td style="padding: 5px; border: 1px solid #444;">Bronze Sword</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">8g</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">4g</td>
+      </tr>
+    </table>
+
+    <div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
       "Could be smithed into something useful at an anvil."
-    </div>`
-  },
+    </div>
+  `
+},
   {
     title: "Iron Bar",
     keywords: ["iron", "bar", "smithing"],
@@ -10172,22 +10225,52 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       <strong style="font-size: 1.1em;">Iron Bar</strong> 
       <span style="color: #888;">(Bar)<img src='https://static.wikitide.net/windsofvalenwiki/thumb/6/6c/Iron_Bar.png/100px-Iron_Bar.png'</span>
     </div>
-    <strong>Iron Bar</strong> is used for mid-tier smithing. It can be purchased from the <strong>Blacksmith Stall</strong> in <strong>Valen Gate</strong> or the <strong>Mining Stall</strong> in <strong>Grave Town</strong>.<br><br>
-    <strong>Stall Prices:</strong><br>
-    • Valen Gate : 24g<br>
-    • Grave Town : 20g<br><br>
-    <strong>Drops:</strong><br>
-    • Goblin Villager<br>
-    • Goblin Chieftain<br><br>
-    <strong>Crafting:</strong><br>
-    • 2 Iron Ore at the <strong>Furnace</strong>.<br>• Requires: Smithing level 10.<br>• Duration: 4s.<br>• 30 exp<br><br>
-    <strong>Used for:</strong><br>
-    • Iron Helmet, Iron Platebody, Iron Platelegs, Iron Sword<br><br>
-    <strong>Drop Chance:</strong><br>
-    • 28%-75%<br><br><div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
+      <tr style="background: rgba(255,255,255,0.05);">
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold; width: 40%;">Requirement :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Blacksmith Stall<br>• Mining Stall<br><br>Dropped by:<br>• Goblin Villager<br>• Goblin Chieftain</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Goblin Village</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
+        <td style="padding: 5px; border: 1px solid #444;">•Requires level 10 Smithing (2x Iron Ore)<br>• 4s Craft Duration<br>• 30 Exp</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #fbbf24;">USED FOR :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 4px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444;">Iron Helmet</td>
+        <td style="padding: 5px; border: 1px solid #444;">Iron Platebody</td>
+        <td style="padding: 5px; border: 1px solid #444;">Iron Platelegs</td>
+        <td style="padding: 5px; border: 1px solid #444;">Iron Sword</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">• Valen Gate 24g<br>• Grave Town 20g</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">14g</td>
+      </tr>
+    </table>
+
+    <div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
       "Could be smithed into something useful at an anvil."
-    </div>`
-  },
+    </div>
+  `
+},
   {
     title: "Steel Bar",
     keywords: ["steel", "bar", "smithing"],
@@ -10196,21 +10279,53 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       <strong style="font-size: 1.1em;">Steel Bar</strong> 
       <span style="color: #888;">(Bar)<img src='https://static.wikitide.net/windsofvalenwiki/thumb/2/20/Steel_Bar.png/100px-Steel_Bar.png'</span>
     </div>
-    <strong>Steel Bar</strong> is a refined metal used for durable equipment and tools. It is available at the <strong>Mining Stall</strong> in <strong>Grave Town</strong>.<br><br>
-    <strong>Stall Prices:</strong><br>
-    • Grave Town : 40g<br><br>
-    <strong>Drops:</strong><br>
-    • Goblin Villager<br>
-    • Goblin Chieftain<br><br>
-    <strong>Crafting:</strong><br>
-    • 1 Iron Ore + 1 Coal Ore at the <strong>Furnace</strong>.<br>• Requires: Smithing level 20.<br>• Duration: 5s.<br>• 55 exp<br><br>
-    <strong>Used for:</strong><br>
-    • Steel Helmet, Steel Platebody, Steel Platelegs, Steel Sword, Mining Gloves<br><br>
-    <strong>Drop Chance:</strong><br>
-    • 10%-61%<br><br><div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
+      <tr style="background: rgba(255,255,255,0.05);">
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold; width: 40%;">Requirement :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Mining Stall<br><br>Dropped by:<br>• Goblin Chieftain</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Goblin Village</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
+        <td style="padding: 5px; border: 1px solid #444;">•Requires level 20 Smithing (1x Iron Ore + 1x Coal Ore)<br>• 5s Craft Duration<br>• 55 Exp</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #fbbf24;">USED FOR :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 4px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444;">Steel Helmet</td>
+        <td style="padding: 5px; border: 1px solid #444;">Steel Platebody</td>
+        <td style="padding: 5px; border: 1px solid #444;">Steel Platelegs</td>
+        <td style="padding: 5px; border: 1px solid #444;">Steel Sword</td>
+        <td style="padding: 5px; border: 1px solid #444;">Mining Gloves</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">40g</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">28g</td>
+      </tr>
+    </table>
+
+    <div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
       "Could be smithed into something useful at an anvil."
-    </div>`
-  },
+    </div>
+  `
+},
   {
     title: "Mithril Bar",
     keywords: ["mithril","bar","smithing","mith bar"],
@@ -10219,22 +10334,54 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       <strong style="font-size: 1.1em;">Mithril Bar</strong> 
       <span style="color: #888;">(Bar)<img src='https://static.wikitide.net/windsofvalenwiki/thumb/6/65/Mithril_Bar.png/100px-Mithril_Bar.png'</span>
     </div>
-    <strong>Mithril Bar</strong> is a high-tier metal with great community trade value, used for crafting powerful Mithril equipment at the <strong>Anvil</strong>.<br><br>
-    <strong>Crafting:</strong><br>
-    • 1 Mithril Ore + 2 Coal Ore at the <strong>Furnace</strong>.<br>• Requires: Smithing level 30.<br>• Duration: 6s.<br>• 155 exp<br><br>
-    <strong>Used for:</strong><br>
-    • Mithril Helmet, Mithril Platebody, Mithril Platelegs, Mithril Sword<br><br><div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
+      <tr style="background: rgba(255,255,255,0.05);">
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold; width: 40%;">Requirement :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Crafting</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
+        <td style="padding: 5px; border: 1px solid #444;">•Requires level 30 Smithing (1x Mithril Ore + 2x Coal Ore)<br>• 6s Craft Duration<br>• 155 Exp</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #fbbf24;">USED FOR :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 4px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444;">Mithril Helmet</td>
+        <td style="padding: 5px; border: 1px solid #444;">Mithril Platebody</td>
+        <td style="padding: 5px; border: 1px solid #444;">Mithril Platelegs</td>
+        <td style="padding: 5px; border: 1px solid #444;">Mithril Sword</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Stall Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 40%;"><strong>Player Buy Price</strong></td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">28g</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">Between 195g - 225g</td>
+      </tr>
+    </table>
+
+    <div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
       "Could be smithed into something useful at an anvil."
     </div>
-<table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
-      <tr>
-        <td style="padding: 5px; border: 1px solid #444; width: 80%;"><strong>Player Buy Price</strong></td>
-      </tr>
-      <tr>
-        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;"><span style="color: #fbbf24;">Between 195g - 225g</span></td>
-      </tr>
-    </table>`
-  },
+  `
+},
   {
     title: "Gold Bar",
     keywords: ["gold", "bar", "smithing"],
@@ -10243,24 +10390,51 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       <strong style="font-size: 1.1em;">Gold Bar</strong> 
       <span style="color: #888;">(Bar)<img src='https://static.wikitide.net/windsofvalenwiki/thumb/4/4e/Gold_Bar.png/100px-Gold_Bar.png'</span>
     </div>
-    <strong>Gold Bar</strong> is a very valuable and heavy resource primarily used for high-level smithing and wealth storage.<br><br>
-    <strong>Drops:</strong><br>
-    • Skeleton Knight (lvl 67) - Darklands<br><br>
-    <strong>Crafting:</strong><br>
-    • 8 Gold Ore or 8 Gold Dust at the <strong>Furnace</strong>.<br>• Requires: Smithing level 40.<br>• Duration: 15s.<br>• 800 exp<br><br>
-    <strong>Drop Chance:</strong><br>
-    • 1%<br><br><div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
-      "Very valuable. Also very heavy."
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
+      <tr style="background: rgba(255,255,255,0.05);">
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold; width: 40%;">Requirement :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Crafting<br><br>Dropped by:<br>• Darklands Skeleton Knight</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Darklands</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
+        <td style="padding: 5px; border: 1px solid #444;">•Requires level 40 Smithing (8x Gold Ore or 8x Gold Dust)<br>• 15s Craft Duration<br>• 800 Exp</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #fbbf24;">USED FOR :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 4px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 30%;"><strong>Stall Sell Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 40%;"><strong>Player Buy Price</strong></td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">700g</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">Between 750g - 900g</td>
+      </tr>
+    </table>
+
+    <div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
+      "Could be smithed into something useful at an anvil."
     </div>
-<table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
-      <tr>
-        <td style="padding: 5px; border: 1px solid #444; width: 80%;"><strong>Player Buy Price</strong></td>
-      </tr>
-      <tr>
-        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;"><span style="color: #fbbf24;">Between 750g - 900g</span></td>
-      </tr>
-    </table>`
-  },
+  `
+},
 
 // ==================================== ENEMIES ====================================
 {
