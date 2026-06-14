@@ -9109,8 +9109,8 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
         <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
       </tr>
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">75g</td>
-        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">17g</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">60g</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">42g</td>
       </tr>
     </table>
 
