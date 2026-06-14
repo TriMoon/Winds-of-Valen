@@ -8116,13 +8116,10 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
     </table>
 
-    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #fbbf24;">Ingredient Output :</div>
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #fbbf24;">INGREDIENT OUTPUT :</div>
     <table style="width: 100%; border-collapse: collapse; margin-bottom: 4px; text-align: center;">
       <tr>
-        <td style="padding: 5px; border: 1px solid #444; background: rgba(255,255,255,0.05); font-weight: bold;">Essence</td>
-      </tr>
-      <tr>
-        <td style="padding: 5px; border: 1px solid #444;">x2</td>
+        <td style="padding: 5px; border: 1px solid #444;">2 x Essence</td>
       </tr>
     </table>
 
