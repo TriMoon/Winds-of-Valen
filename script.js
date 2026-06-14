@@ -8148,18 +8148,49 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       <strong style="font-size: 1.1em;">Essence Gland</strong> 
       <span style="color: #888;">(Ingredient)<img src='https://static.wikitide.net/windsofvalenwiki/thumb/6/69/Essence_Gland.png/100px-Essence_Gland.png'</span>
     </div>
-    <strong>Essence Gland</strong> can be processed to essence.<br><br>
-    <strong>Crafting:</strong><br>
-    • Duration: 0.5s.<br>• 10 Exp.<br>• Requires Potion Making Level 30.<br><br>
-    <strong>Ingredient Output:</strong><br>
-    • 10x Essencep<br><br>
-    <strong>Source:</strong><br>
-    • Obtained from <strong>Blue Gill</strong> or <strong>Elder Trout</strong> at the <strong>Cutting Table</strong>.<br><br>
-    <strong>Used for:</strong><br>
-    • 10x Essence<br><br><div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
+      <tr style="background: rgba(255,255,255,0.05);">
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold; width: 40%;">Requirement :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
+        <td style="padding: 5px; border: 1px solid #444;">Cutting table :<br>• Blue Gill<br>• Elder Trout</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Requires Potion Making level 30<br>• 10 Exp<br>• Duration 0.5s</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #fbbf24;">INGREDIENT OUTPUT :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 4px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444;">10 x Essence</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+      </tr>
+    </table>
+
+    <div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
       "Glows with magical essence."
-    </div>`
-  },
+    </div>
+  `
+},
   {
     title: "Large Essence Gland",
     keywords: ["large essence gland","gland","essence","large"],
@@ -8168,18 +8199,49 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       <strong style="font-size: 1.1em;">Large Essence Gland</strong> 
       <span style="color: #888;">(Ingredient)<img src='https://static.wikitide.net/windsofvalenwiki/thumb/a/ae/Large_Essence_Gland.png/100px-Large_Essence_Gland.png'</span>
     </div>
-    <strong>Large Essence Gland</strong> can be processed to essence.<br><br>
-    <strong>Crafting:</strong><br>
-    • Duration: 0.5s.<br>• ? Exp.<br>• Requires Potion Making Level 60.<br><br>
-    <strong>Ingredient Output:</strong><br>
-    • 20x Essencep<br><br>
-    <strong>Source:</strong><br>
-    • Obtained from <strong>Carp</strong> at the <strong>Cutting Table</strong>.<br><br>
-    <strong>Used for:</strong><br>
-    • 20x Essence<br><br><div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
+      <tr style="background: rgba(255,255,255,0.05);">
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold; width: 40%;">Requirement :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
+        <td style="padding: 5px; border: 1px solid #444;">Cutting table :<br>• Carp</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Requires Potion Making level 60<br>• 20 Exp<br>• Duration 0.5s</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #fbbf24;">INGREDIENT OUTPUT :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 4px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444;">20 x Essence</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+      </tr>
+    </table>
+
+    <div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
       "Glows with magical essence."
-    </div>`
-  },
+    </div>
+  `
+},
   {
     title: "Scrap Fish Flesh",
     keywords: ["scrap fish flesh","scrap flesh","potion making scrap flesh"],
@@ -8188,16 +8250,49 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       <strong style="font-size: 1.1em;">Scrap Fish Flesh</strong> 
       <span style="color: #888;">(Ingredient)<img src='https://static.wikitide.net/windsofvalenwiki/thumb/1/15/Scrap_Fish_Flesh.png/100px-Scrap_Fish_Flesh.png'</span>
     </div>
-    <strong>Scrap Fish Flesh</strong> looks ready for a potion.<br><br>
-    <strong>Crafting:</strong><br>
-    • Duration: 2s.<br>• 10 Exp.<br>• Requires Potion Making Level 10.<br><br>
-    <strong>Source:</strong><br>
-    • Obtained from <strong>Common Trout</strong> at the <strong>Cutting Table</strong>.<br><br>
-    <strong>Used for:</strong><br>
-    • Weak Health Potion Brew<br><br><div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
+      <tr style="background: rgba(255,255,255,0.05);">
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold; width: 40%;">Requirement :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
+        <td style="padding: 5px; border: 1px solid #444;">Cutting table :<br>• Common Trout</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Requires Potion Making level 10<br>• 10 Exp<br>• Duration 2s</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #fbbf24;">USED FOR :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 4px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444;">Weak Health Potion Brew</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+      </tr>
+    </table>
+
+    <div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
       "Looks ready for a potion."
-    </div>`
-  },
+    </div>
+  `
+},
   {
     title: "Plain Fish Flesh",
     keywords: ["plain fish flesh","plain flesh","potion making plain flesh"],
@@ -8206,16 +8301,49 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       <strong style="font-size: 1.1em;">Plain Fish Flesh</strong> 
       <span style="color: #888;">(Ingredient)<img src='https://static.wikitide.net/windsofvalenwiki/thumb/d/db/Plain_Fish_Flesh.png/100px-Plain_Fish_Flesh.png'</span>
     </div>
-    <strong>Plain Fish Flesh</strong> could use crushing up.<br><br>
-    <strong>Crafting:</strong><br>
-    • Duration: 2s.<br>• 20 Exp.<br>• Requires Potion Making Level 20.<br><br>
-    <strong>Source:</strong><br>
-    • Obtained from <strong>Bass</strong> at the <strong>Cutting Table</strong>.<br><br>
-    <strong>Used for:</strong><br>
-    • Fish Mash<br><br><div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
+      <tr style="background: rgba(255,255,255,0.05);">
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold; width: 40%;">Requirement :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
+        <td style="padding: 5px; border: 1px solid #444;">Cutting table :<br>• Bass</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Requires Potion Making level 20<br>• 20 Exp<br>• Duration 2s</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #fbbf24;">INGREDIENT OUTPUT :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 4px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444;">Fish Mash</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+      </tr>
+    </table>
+
+    <div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
       "Could use crushing up."
-    </div>`
-  },
+    </div>
+  `
+},
   {
     title: "Hearty Fish Flesh",
     keywords: ["hearty fish flesh","hearty flesh","potion making hearty flesh"],
@@ -8224,16 +8352,49 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       <strong style="font-size: 1.1em;">Hearty Fish Flesh</strong> 
       <span style="color: #888;">(Ingredient)<img src='https://static.wikitide.net/windsofvalenwiki/thumb/7/71/Hearty_Fish_Flesh.png/100px-Hearty_Fish_Flesh.png'</span>
     </div>
-    <strong>Hearty Fish Flesh</strong> could use grounding up.<br><br>
-    <strong>Crafting:</strong><br>
-    • Duration: 2s.<br>• 70 Exp.<br>• Requires Potion Making Level 40.<br><br>
-    <strong>Source:</strong><br>
-    • Obtained from <strong>Elder Trout</strong> at the <strong>Cutting Table</strong>.<br><br>
-    <strong>Used for:</strong><br>
-    • Hearty Fish Mash<br><br><div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
+      <tr style="background: rgba(255,255,255,0.05);">
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold; width: 40%;">Requirement :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
+        <td style="padding: 5px; border: 1px solid #444;">Cutting table :<br>• Elder Trout</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Requires Potion Making level 40<br>• 70 Exp<br>• Duration 2s</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #fbbf24;">INGREDIENT OUTPUT :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 4px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444;">Hearty Fish Mash</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+      </tr>
+    </table>
+
+    <div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
       "Could use grounding up."
-    </div>`
-  },
+    </div>
+  `
+},
   {
     title: "Fish Scales",
     keywords: ["fish scales","scales","potion making fish scales"],
@@ -8242,16 +8403,49 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       <strong style="font-size: 1.1em;">Fish Scales</strong> 
       <span style="color: #888;">(Ingredient)<img src='https://static.wikitide.net/windsofvalenwiki/thumb/c/c5/Fish_Scales.png/100px-Fish_Scales.png'</span>
     </div>
-    <strong>Fish Scales</strong> could use crushing up.<br><br>
-    <strong>Crafting:</strong><br>
-    • Duration: 2s.<br>• 30 Exp.<br>• Requires Potion Making Level 10.<br><br>
-    <strong>Source:</strong><br>
-    • Obtained from <strong>Perch</strong> at the <strong>Cutting Table</strong>.<br><br>
-    <strong>Used for:</strong><br>
-    • Crushed Fish Scales<br><br><div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
+      <tr style="background: rgba(255,255,255,0.05);">
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold; width: 40%;">Requirement :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
+        <td style="padding: 5px; border: 1px solid #444;">Cutting table :<br>• Perch</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Requires Potion Making level 10<br>• 30 Exp<br>• Duration 2s</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #fbbf24;">INGREDIENT OUTPUT :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 4px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444;">Crushed Fish Scales</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+      </tr>
+    </table>
+
+    <div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
       "Could use crushing up."
-    </div>`
-  },
+    </div>
+  `
+},
   {
     title: "Hardened Fish Scales",
     keywords: ["hardened fish scales","scales","hardened","potion making hardened scales"],
@@ -8260,14 +8454,49 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       <strong style="font-size: 1.1em;">Hardened Fish Scales</strong> 
       <span style="color: #888;">(Ingredient)<img src='https://static.wikitide.net/windsofvalenwiki/thumb/f/ff/Hardened_Fish_Scales.png/100px-Hardened_Fish_Scales.png'</span>
     </div>
-    <strong>Hardened Fish Scales</strong> could use crushing up.<br><br>
-    <strong>Crafting:</strong><br>
-    • Duration: 2s.<br>• ? Exp.<br>• Requires Potion Making Level 50.<br><br>
-    <strong>Source:</strong><br>
-    • Obtained from <strong>Carp</strong> at the <strong>Cutting Table</strong>.<br><br>
-    <strong>Used for:</strong><br>
-    • Polished Fish Scales`
-  },
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
+      <tr style="background: rgba(255,255,255,0.05);">
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold; width: 40%;">Requirement :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
+        <td style="padding: 5px; border: 1px solid #444;">Cutting table :<br>• Carp</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Requires Potion Making level 50<br>• ? Exp<br>• Duration 2s</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #fbbf24;">INGREDIENT OUTPUT :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 4px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444;">Polished Fish Scales</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+      </tr>
+    </table>
+
+    <div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
+      "Could use crushing up."
+    </div>
+  `
+},
   {
     title: "Polished Fish Scales",
     keywords: ["polished fish scales","scales","polished","potion making polished scales"],
