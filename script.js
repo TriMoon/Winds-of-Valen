@@ -9,19 +9,55 @@ function toggleWindowedFullscreen() {
     changeFontSize(currentSliderValue);
 }
 
-function downloadFile() {
-    const htmlContent = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
-    const blob = new Blob([htmlContent], { type: 'text/html' });
-    const url = URL.createObjectURL(blob);
-    
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'Alice_Wiki_Bot.html'; 
-    document.body.appendChild(a);
-    a.click();
-    
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+async function downloadFile() {
+    try {
+        // 1. Fetch the styling rules from your CSS file
+        const cssResponse = await fetch('style.css');
+        const cssContent = cssResponse.ok ? await cssResponse.text() : '';
+
+        // 2. Fetch the logic and knowledge base from your JS file
+        const jsResponse = await fetch('script.js');
+        let jsContent = jsResponse.ok ? await jsResponse.text() : '';
+
+        // 3. Clone the current HTML structure so we can manipulate it safely
+        const docClone = document.documentElement.cloneNode(true);
+
+        // 4. Strip out the external file links from the download copy
+        const externalStyle = docClone.querySelector('link[href="style.css"]');
+        if (externalStyle) externalStyle.remove();
+
+        const externalScript = docClone.querySelector('script[src="script.js"]');
+        if (externalScript) externalScript.remove();
+
+        // 5. Inject the styling directly into a <style> block inside <head>
+        const styleTag = document.createElement('style');
+        styleTag.textContent = cssContent;
+        docClone.querySelector('head').appendChild(styleTag);
+
+        // 6. Inject the javascript logic directly into a <script> block at the bottom
+        const scriptTag = document.createElement('script');
+        scriptTag.textContent = jsContent;
+        docClone.querySelector('body').appendChild(scriptTag);
+
+        // 7. Compile everything together and trigger the download
+        const finalHtmlContent = "<!DOCTYPE html>\n" + docClone.outerHTML;
+        const blob = new Blob([finalHtmlContent], { type: 'text/html' });
+        const url = URL.createObjectURL(blob);
+
+        const downloadLink = document.createElement('a');
+        downloadLink.href = url;
+        downloadLink.download = 'Alice_Wiki_Bot_Offline.html';
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+
+        // Clean up memory
+        document.body.removeChild(downloadLink);
+        URL.revokeObjectURL(url);
+
+    } catch (error) {
+        console.error('Failed to bundle offline file layout:', error);
+        alert('An error occurred while generating your download. Please try again!');
+    }
 }
 // ==================================== END OF Fullscreen ====================================
 // ==================================== START OF WIKI INFORMATION TABLE ====================================
