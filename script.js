@@ -8097,18 +8097,52 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       <strong style="font-size: 1.1em;">Small Essence Gland</strong> 
       <span style="color: #888;">(Ingredient)<img src='https://static.wikitide.net/windsofvalenwiki/thumb/3/3d/Small_Essence_Gland.png/100px-Small_Essence_Gland.png'</span>
     </div>
-    <strong>Small Essence Gland</strong> can be processed to essence.<br><br>
-    <strong>Crafting:</strong><br>
-    • Duration: 0.5s.<br>• 4 Exp.<br>• Requires Potion Making Level 1.<br><br>
-    <strong>Ingredient Output:</strong><br>
-    • 2x Essencep<br><br>
-    <strong>Source:</strong><br>
-    • Obtained from <strong>Minnow</strong> at the <strong>Cutting Table</strong>.<br>• Obtained from <strong>Common Trout</strong> at the <strong>Cutting Table</strong>.<br>• Obtained from <strong>Perch</strong> at the <strong>Cutting Table</strong>.<br>• Obtained from <strong>Bass</strong> at the <strong>Cutting Table</strong>.<br><br>
-    <strong>Used for:</strong><br>
-    • 2x Essence<br><br><div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
-      "Glows with magical essence."
-    </div>`
-  },
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
+      <tr style="background: rgba(255,255,255,0.05);">
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold; width: 30%;">Requirement :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
+        <td style="padding: 5px; border: 1px solid #444;">Cutting table :<br>• Minnow<br>• Common Trout<br>• Perch<br>• Bass</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Requires Potion Making level 1<br>• 4 Exp<br>• Duration 0.5s</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #fbbf24;">Ingredient Output :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 4px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; background: rgba(255,255,255,0.05); font-weight: bold;">Essence</td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444;">x2</td>
+      </tr>
+    </table>
+
+    <div style="font-size: 0.9em; font-weight: bold; margin-bottom: 4px; color: #00FF36;">ECONOMY STATS :</div>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; text-align: center;">
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Buy Price</strong></td>
+        <td style="padding: 5px; border: 1px solid #444; width: 50%;"><strong>Stall Sell Price</strong></td>
+      </tr>
+      <tr>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444; color: #fbbf24;">N/A</td>
+      </tr>
+    </table>
+
+    <div style="color: #4ade80; font-style: italic; font-size: 0.9em;">
+      "Could be attached to jewellery. Gems are untradable."
+    </div>
+  `
+},
   {
     title: "Essence Gland",
     keywords: ["essence gland","gland","essence"],
