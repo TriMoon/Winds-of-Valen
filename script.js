@@ -1319,7 +1319,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
 // ========= ITEMS CHESTS =========
 {
   title: "Bronze Platebody",
-  keywords: ["bronze platebody","chest","body armor","smithing","bronze","plate","armour"],
+  keywords: ["bronze platebody","chest","body armor","smithing","bronze","plate","armour","bronze chestplate"],
   answer: `
     <div style="margin-bottom: 12px;">
       <strong style="font-size: 1.1em;">Bronze Platebody</strong> 
@@ -1415,7 +1415,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
   },
 {
   title: "Iron Platebody",
-  keywords: ["iron platebody","chest","body armor","smithing","iron","plate","armour"],
+  keywords: ["iron platebody","chest","body armor","smithing","iron","plate","armour","iron chestplate"],
   answer: `
     <div style="margin-bottom: 12px;">
       <strong style="font-size: 1.1em;">Iron Platebody</strong> 
@@ -1511,7 +1511,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
   },
 {
   title: "Steel Platebody",
-  keywords: ["steel platebody","chest","body armor","smithing","steel","plate","armour"],
+  keywords: ["steel platebody","chest","body armor","smithing","steel","plate","armour","steel chestplate"],
   answer: `
     <div style="margin-bottom: 12px;">
       <strong style="font-size: 1.1em;">Steel Platebody</strong> 
@@ -1607,7 +1607,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
   },
 {
   title: "Mithril Platebody",
-  keywords: ["mithril platebody","chest","body armor","smithing","mithril","plate","armour"],
+  keywords: ["mithril platebody","chest","body armor","smithing","mithril","plate","armour","mithril chestplate"],
   answer: `
     <div style="margin-bottom: 12px;">
       <strong style="font-size: 1.1em;">Mithril Platebody</strong> 
@@ -1706,7 +1706,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
   },
 {
   title: "Leather Armour",
-  keywords: ["leather armour","chest","body armor","evasion","leather","armour"],
+  keywords: ["leather armour","chest","body armor","evasion","leather","armour","leather chestplate"],
   answer: `
     <div style="margin-bottom: 12px;">
       <strong style="font-size: 1.1em;">Leather Armour</strong> 
@@ -1802,7 +1802,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
   },
 {
   title: "Pirate Armour",
-  keywords: ["pirate armour","chest","body armor","evasion","armour","pirate"],
+  keywords: ["pirate armour","chest","body armor","evasion","armour","pirate","pirate chestplate"],
   answer: `
     <div style="margin-bottom: 12px;">
       <strong style="font-size: 1.1em;">Pirate Armour</strong> 
