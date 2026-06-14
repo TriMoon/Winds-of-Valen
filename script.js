@@ -3389,11 +3389,11 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Source :</td>
-        <td style="padding: 5px; border: 1px solid #444;">Sword Stall</td>
+        <td style="padding: 5px; border: 1px solid #444;">•Sword Stall<br><br> Dropped by:<br>• Bandit Mercenary Boss</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Enemy location :</td>
-        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
+        <td style="padding: 5px; border: 1px solid #444;">Mercenary Camp</td>
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
