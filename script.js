@@ -8571,7 +8571,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
-        <td style="padding: 5px; border: 1px solid #444;">• Processed at the Reduction Station from cut up fish<br>• Small Essence Glands yield 2 Essence<br>• Essence Glands yield 10 Essence<br>• Large Essence Glands yield 20 Essence</td>
+        <td style="padding: 5px; border: 1px solid #444;">• Processed at the Reduction Station from cut up fish<br>• Small Essence Glands yield 2 Essence 4Exp<br>• Essence Glands yield 10 Essence 10Exp<br>• Large Essence Glands yield 20 Essence 20Exp</td>
       </tr>
     </table>
 
@@ -9040,7 +9040,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
       </tr>
       <tr>
         <td style="padding: 5px; border: 1px solid #444; font-weight: bold;">Crafting :</td>
-        <td style="padding: 5px; border: 1px solid #444;">• Requires Potion Making level 45<br>• ? Exp<br>• Duration 4s</td>
+        <td style="padding: 5px; border: 1px solid #444;">N/A</td>
       </tr>
     </table>
 
