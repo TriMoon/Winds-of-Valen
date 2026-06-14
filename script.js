@@ -8817,7 +8817,7 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
 <strong>— Gloves —</strong><br>\
 • Mining Gloves<br>• Artisan Gloves<br>• Berserker Gloves<br><br>\
 <strong>— Boots —</strong><br>\
-• Leather Boots<br>• Pirate Boots<br>• Miner Boots<br>• Berserker Boots<br><br>\
+• Leather Boots<br>• Pirate Boots<br>• Mining Boots<br>• Berserker Boots<br><br>\
 <span style='color: #4ade80;'>(Ask about a specific one for details !)</span>"
   },
   {
