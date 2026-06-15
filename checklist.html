@@ -388,25 +388,31 @@ kbd {
 </head>
 <body>
 
-<div class="title">Alice's Starters Checklist</div>
+<div class="title" id="main-title">Alice's Starters Checklist</div>
 
 <div class="main-layout">
     <div class="sidebar">
-        <h3>Navigation</h3>
+        <h3 id="nav-header">Navigation</h3>
         <div class="sidebar-nav">
-            <a href="index.html" style="text-decoration: none;"><button>🏠 Back to Mainpage</button></a>
-            <a href="ai.html" style="text-decoration: none;"><button>🔮 Ask Alice AI</button></a>
-            <a href="equipper.html" style="text-decoration: none;"><button>⚔️ Go to Equipper</button></a>
-            <a href="combat-practice.html" style="text-decoration: none;"><button>🗡️ Go to Combat Practice</button></a>
-            <a href="Videos.html" style="text-decoration: none;"><button>📹 Go to Community Videos</button></a>
+            <a href="index.html" style="text-decoration: none;"><button id="nav-btn-main">🏠 Back to Mainpage</button></a>
+            <a href="ai.html" style="text-decoration: none;"><button id="nav-btn-ai">🔮 Ask Alice AI</button></a>
+            <a href="equipper.html" style="text-decoration: none;"><button id="nav-btn-equip">⚔️ Go to Equipper</button></a>
+            <a href="combat-practice.html" style="text-decoration: none;"><button id="nav-btn-combat">🗡️ Go to Combat Practice</button></a>
+            <a href="Videos.html" style="text-decoration: none;"><button id="nav-btn-videos">📹 Go to Community Videos</button></a>
         </div>
     </div>
 
     <div class="main-content">
         <div class="checklist-container">
             <div class="checklist-header">
-                <h2>Getting Started Checklist</h2>
-                <div style="color: #cbd5e1; font-size: 14px;">Things you must certainly do before doing anything else!</div>
+                <div class="translation-bar" style="position: absolute; top: 20px; right: 20px; display: flex; gap: 8px; z-index: 110;">
+                    <button class="lang-btn active" onclick="changeLanguage('EN')" style="background: var(--accent); color: white; border: 1px solid var(--highlight); padding: 4px 10px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 12px; transition: 0.2s;">EN</button>
+                    <button class="lang-btn" onclick="changeLanguage('DE')" style="background: var(--gem-slot); color: var(--highlight); border: 1px solid var(--border-color); padding: 4px 10px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 12px; transition: 0.2s;">DE</button>
+                    <button class="lang-btn" onclick="changeLanguage('FR')" style="background: var(--gem-slot); color: var(--highlight); border: 1px solid var(--border-color); padding: 4px 10px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 12px; transition: 0.2s;">FR</button>
+                </div>
+
+                <h2 id="checklist-heading">Getting Started Checklist</h2>
+                <div id="checklist-subheading" style="color: #cbd5e1; font-size: 14px;">Things you must certainly do before doing anything else!</div>
                 
                 <div class="progress-bar-container">
                     <div id="progress-fill" class="progress-bar-fill"></div>
@@ -417,7 +423,7 @@ kbd {
             <div class="checklist-body">
                 
                 <div class="checklist-section">
-                    <h3>🕹️ Interface & Core Controls</h3>
+                    <h3 class="section-title">🕹️ Interface & Core Controls</h3>
                     
                     <label class="task-item" data-id="task1">
                         <div class="task-checkbox-wrapper">
@@ -469,7 +475,7 @@ kbd {
                 </div>
 
                 <div class="checklist-section">
-                    <h3>⌨️ Key Combinations & Interaction Mechanics</h3>
+                    <h3 class="section-title">⌨️ Key Combinations & Interaction Mechanics</h3>
                     
                     <label class="task-item" data-id="task6">
                         <div class="task-checkbox-wrapper">
@@ -537,7 +543,7 @@ kbd {
                 </div>
 
                 <div class="checklist-section">
-                    <h3>⛏️ Gathering & Crafting Profession Progression</h3>
+                    <h3 class="section-title">⛏️ Gathering & Crafting Profession Progression</h3>
                     
                     <label class="task-item" data-id="task15">
                         <div class="task-checkbox-wrapper">
@@ -605,7 +611,7 @@ kbd {
                 </div>
 
                 <div class="checklist-section">
-                    <h3>⚔️ Combat Training & Tactical Stances</h3>
+                    <h3 class="section-title">⚔️ Combat Training & Tactical Stances</h3>
                     
                     <label class="task-item" data-id="task_green_crystal">
                         <div class="task-checkbox-wrapper">
@@ -680,12 +686,12 @@ kbd {
                     </label>
                 </div>
 
-                <div class="motivation-panel">
+                <div id="motivation-box" class="motivation-panel">
                     🏆 Goal: Play the game and become the best!
                 </div>
 
                 <div class="reset-container">
-                    <button class="reset-btn" onclick="clearProgress()">🔄 Reset All Progress</button>
+                    <button id="reset-button-label" class="reset-btn" onclick="clearProgress()">🔄 Reset All Progress</button>
                 </div>
 
             </div>
@@ -705,7 +711,6 @@ function playSoundEffect(type) {
     const now = audioCtx.currentTime;
     
     if (type === 'check') {
-        // Quick subtle click/pop sound effect for simple checkbox marking
         const osc = audioCtx.createOscillator();
         const gainNode = audioCtx.createGain();
         
@@ -723,7 +728,6 @@ function playSoundEffect(type) {
         osc.stop(now + 0.05);
         
     } else if (type === 'chapter') {
-        // Crisp, short retro chime sequence for completing individual chapters
         const osc1 = audioCtx.createOscillator();
         const osc2 = audioCtx.createOscillator();
         const gainNode = audioCtx.createGain();
@@ -731,11 +735,10 @@ function playSoundEffect(type) {
         osc1.type = 'triangle';
         osc2.type = 'sine';
         
-        // Quick upward arpeggio
-        osc1.frequency.setValueAtTime(523.25, now); // C5
-        osc1.frequency.setValueAtTime(659.25, now + 0.08); // E5
-        osc1.frequency.setValueAtTime(783.99, now + 0.16); // G5
-        osc1.frequency.setValueAtTime(1046.50, now + 0.24); // C6
+        osc1.frequency.setValueAtTime(523.25, now); 
+        osc1.frequency.setValueAtTime(659.25, now + 0.08); 
+        osc1.frequency.setValueAtTime(783.99, now + 0.16); 
+        osc1.frequency.setValueAtTime(1046.50, now + 0.24); 
         
         osc2.frequency.setValueAtTime(1046.50, now + 0.24);
         
@@ -752,13 +755,11 @@ function playSoundEffect(type) {
         osc2.stop(now + 0.5);
         
     } else if (type === 'grand_party') {
-        // Massive multi-tone level-up fanfare for completing EVERY single task on the checklist
         for (let i = 0; i < 4; i++) {
             const osc = audioCtx.createOscillator();
             const gainNode = audioCtx.createGain();
             
-            // Layered voices for a rich chords explosion
-            const baseFreqs = [261.63, 329.63, 392.00, 523.25]; // C major chord
+            const baseFreqs = [261.63, 329.63, 392.00, 523.25]; 
             const targetFreqs = [523.25, 659.25, 783.99, 1046.50];
             
             osc.type = i % 2 === 0 ? 'square' : 'triangle';
@@ -809,12 +810,10 @@ function toggleTask(checkbox) {
         taskItem.classList.add("completed");
         localStorage.setItem(`vChecklist_${id}`, "true");
         
-        // Evaluate if entire document is fully completed first
         const allCheckboxes = Array.from(document.querySelectorAll(".task-item input[type='checkbox']"));
         const completelyFinishedEverything = allCheckboxes.every(cb => cb.checked);
         
         if (completelyFinishedEverything) {
-            // GRAND PARTY CELEBRATION! Multi-stage confetti barrage from sides
             playSoundEffect('grand_party');
             
             let duration = 3 * 1000;
@@ -840,26 +839,20 @@ function toggleTask(checkbox) {
             }());
             
         } else if (section) {
-            // Dynamic Chapter Completion check
             const sectionCheckboxes = section.querySelectorAll("input[type='checkbox']");
             const allSectionCompleted = Array.from(sectionCheckboxes).every(cb => cb.checked);
             
             if (allSectionCompleted) {
-                // Fire off visual confetti party explosion
                 confetti({
                     particleCount: 150,
                     spread: 80,
                     origin: { y: 0.6 }
                 });
-                
-                // Play individual chapter sound
                 playSoundEffect('chapter');
             } else {
-                // Play simple single task check sound
                 playSoundEffect('check');
             }
         } else {
-            // Play simple single task check sound if section is not found
             playSoundEffect('check');
         }
     } else {
@@ -868,6 +861,7 @@ function toggleTask(checkbox) {
     }
     updateProgressBar();
 }
+
 // START PASTE: BACKGROUND VISITOR TRACKER
 const SUPABASE_URL = 'https://qiwstqpznabemqttivoa.supabase.co'; 
 const SUPABASE_KEY = 'sb_publishable_cDOxkol6uWGhuAg564EmdQ_v3uhSeYQ';
@@ -882,6 +876,7 @@ async function registerSubPageVisit() {
 }
 registerSubPageVisit();
 // END PASTE
+
 // Refresh visual counters and bar graphs
 function updateProgressBar() {
     const checkboxes = document.querySelectorAll(".task-item input[type='checkbox']");
@@ -895,12 +890,17 @@ function updateProgressBar() {
     const percentage = total > 0 ? Math.round((completedCount / total) * 100) : 0;
     
     document.getElementById("progress-fill").style.width = `${percentage}%`;
-    document.getElementById("progress-label").textContent = `${completedCount}/${total} Tasks Completed (${percentage}%)`;
+    
+    const labelElement = document.getElementById("progress-label");
+    if (labelElement) {
+        const textLabel = translations[currentLanguage].progressText;
+        labelElement.textContent = `${completedCount}/${total} ${textLabel} (${percentage}%)`;
+    }
 }
 
 // Complete removal tool for LocalStorage states
 function clearProgress() {
-    if (confirm("Are you sure you want to clear your checklist progress?")) {
+    if (confirm(translations[currentLanguage].confirmReset)) {
         const checkboxes = document.querySelectorAll(".task-item input[type='checkbox']");
         checkboxes.forEach(cb => {
             cb.checked = false;
@@ -911,6 +911,221 @@ function clearProgress() {
         });
         updateProgressBar();
     }
+}
+
+// --- TRANSLATION SYSTEM CONFIGURATION ---
+const translations = {
+    EN: {
+        title: "Alice's Starters Checklist",
+        headerTitle: "Getting Started Checklist",
+        headerSubtitle: "Things you must certainly do before doing anything else!",
+        navTitle: "Navigation",
+        navMain: "🏠 Back to Mainpage",
+        navAi: "🔮 Ask Alice AI",
+        navEquip: "⚔️ Go to Equipper",
+        navCombat: "🗡️ Go to Combat Practice",
+        navVideos: "📹 Go to Community Videos",
+        sec1: "🕹️ Interface & Core Controls",
+        sec2: "⌨️ Key Combinations & Interaction Mechanics",
+        sec3: "⛏️ Gathering & Crafting Profession Progression",
+        sec4: "⚔️ Combat Training & Tactical Stances",
+        goal: "🏆 Goal: Play the game and become the best!",
+        reset: "🔄 Reset All Progress",
+        confirmReset: "Are you sure you want to clear your checklist progress?",
+        progressText: "Tasks Completed"
+    },
+    DE: {
+        title: "Alices Anfänger-Checkliste",
+        headerTitle: "Erste Schritte Checkliste",
+        headerSubtitle: "Dinge, die du unbedingt tun musst, bevor du etwas anderes machst!",
+        navTitle: "Navigation",
+        navMain: "🏠 Zurück zur Hauptseite",
+        navAi: "🔮 Frage Alice KI",
+        navEquip: "⚔️ Zum Ausrüster",
+        navCombat: "🗡️ Zum Kampftraining",
+        navVideos: "📹 Zu den Community-Videos",
+        sec1: "🕹️ Benutzeroberfläche & Grundsteuerung",
+        sec2: "⌨️ Tastenkombinationen & Interaktionsmechaniken",
+        sec3: "⛏️ Sammeln & Handwerk Berufsfortschritt",
+        sec4: "⚔️ Kampftraining & Taktische Haltungen",
+        goal: "🏆 Ziel: Spiele das Spiel und werde der Beste!",
+        reset: "🔄 Gesamten Fortschritt zurücksetzen",
+        confirmReset: "Bist du sicher, dass du deinen Checklisten-Fortschritt löschen möchtest?",
+        progressText: "Aufgaben abgeschlossen"
+    },
+    FR: {
+        title: "Liste de Contrôle du Débutant d'Alice",
+        headerTitle: "Guide de Démarrage",
+        headerSubtitle: "Ce que vous devez absolument faire avant tout le reste !",
+        navTitle: "Navigation",
+        navMain: "🏠 Retour à la Page Principale",
+        navAi: "🔮 Demander à l'IA Alice",
+        navEquip: "⚔️ Aller à l'Équipeur",
+        navCombat: "🗡️ Aller à l'Entraînement au Combat",
+        navVideos: "📹 Voir les Vidéos de la Communauté",
+        sec1: "🕹️ Interface & Commandes de Base",
+        sec2: "⌨️ Combinaisons de Touches & Mécaniques d'Interaction",
+        sec3: "⛏️ Collecte & Artisanat Progression de Métier",
+        sec4: "⚔️ Entraînement au Combat & Postures Tactiques",
+        goal: "🏆 Objectif : Jouez au jeu et devenez le meilleur !",
+        reset: "🔄 Réinitialiser toute la progression",
+        confirmReset: "Êtes-vous sûr de vouloir effacer votre progression ?",
+        progressText: "Tâches terminées"
+    }
+};
+
+const itemTranslations = {
+    DE: [
+        "Versuche, den Charakter mit der mit der [LMB] Linken Maustaste zu bewegen",
+        "Versuche, die [LMB] Linke Maustaste gedrückt zu halten, um eine dauerhafte Wegfindung zu nutzen",
+        "Versuche, die Kamera mit der [MMB] Mittleren Maustaste zu bewegen. (Es wird empfohlen, dies in den Einstellungen auf Rechtsklick zu ändern!)",
+        "Drücke [M], um die Karte zu öffnen",
+        "Schreibe deine erste Chat-Nachricht sowohl im globalen [Global] als auch im lokalen [Local] Tab",
+        "Klicke auf die Ecke der Chat-Leiste, um sie zu öffnen/schließen oder zu minimieren",
+        "[Mittlere Maustaste gedrückt halten + Ziehen]: Gegenstandsstapel gleichmäßig aufteilen",
+        "[Rechtsklick auf einen Gegenstand]: Automatisches Verschieben beim Verkaufen, Handeln oder Lagern",
+        "[CTRL] + [Mittlere Maustaste] + Ziehen – [X-Aufteilung]: Bestimme eine genaue benutzerdefinierte Aufteilungsmenge für Gegenstände",
+        "[CTRL] + Gegenstand ablegen – Lässt jeden einzelnen Gegenstand desselben Typs fallen. (Beispiel: Leere ein ganzes Inventar voller Erze auf einmal!)",
+        "Klicke auf ein Statistik-Symbolfeld, um genutzte Waffen einzusehen und zu lernen, wie man sie aufstuft",
+        "Gib [/commands] in das Chatfenster ein, um die verfügbaren Systemfunktionen anzuzeigen",
+        "Sieh dir die Marktstände an und finde den wichtigen Bankstand",
+        "Kaufe und verkaufe deinen ersten Gegenstand an/von einem Marktstand (Shop)",
+        "Rüste die erhaltene Kupfer-Spitzhacke als Startwerkzeug aus, baue dein erstes volles Inventar an [Kupfererz] ab und lagere es ein",
+        "Baue dein erstes volles Inventar an [Zinnerz] ab und lagere es sicher in deinem Bankstand",
+        "[Ziehe einen Edelstein auf ein Amulett oder einen Ring]: Setze den Edelstein in dieses Schmuckstück ein",
+        "[Klicken, Halten + Edelstein ziehen]: Entferne ihn sicher aus einer Gegenstandsfassung",
+        "Schmelze und stelle deine allerersten [Bronzebarren] im erhitzten Schmelzofen her",
+        "Schmiede dein erstes Ausrüstungsteil am Amboss (Vergiss nicht, vorher einen Schmiedehammer am Blacksmith-Stand zu kaufen und auszurüsten!)",
+        "Wirf deine Leine aus und hole deinen allerersten Fisch ein",
+        "Mische Ressourcen an einem Kessel und braue deinen ersten Trank",
+        "Klicke zum ersten Mal auf den grünen Kristall in der Stadt, um dich zu heilen",
+        "Rüste deine Startwaffe aus (Kupferschwert, Einfacher Bogen oder Anfänger-Zauberstab) oder stelle ein sauberes Bronzeschwert her/kaufe eines",
+        "Stürze dich in den Kampf und besiege dein erstes feindliches Wesen",
+        "Sammle deine erste Beute auf [Linksklick]",
+        "Stufe deine Fertigkeit [Angriff] auf (Angriffshaltung mit einer Nahkampfwaffe)",
+        "Stufe deine Fertigkeit [Verteidigung] auf (Blocken mit einem Schild oder Halten einer Zweihandwaffe in Verteidigungshaltung)",
+        "Stufe deine Fertigkeit [Abwehr] auf (Rüste einen Abwehrschild oder eine magische Waffe in einer defensiven Haltungsposition aus)",
+        "Trainiere weiter und verbessern deine Kampfwerte, bis du stark genug bist, um einen [Wegelagerer] zu besiegen",
+        "Erhalte einen einzigartigen Wegelagerer-Schild als Beutedrop und beginne, deine Fertigkeit [Ausweichen] aufzustufen (Rüste einen Parrierschild oder einen Bogen in Verteidigungshaltung aus)"
+    ],
+    FR: [
+        "Essayez de déplacer le personnage en utilisant le [LMB] Bouton Gauche de la Souris",
+        "Essayez de maintenir le [LMB] Bouton Gauche de la Souris enfoncé pour un déplacement continu",
+        "Essayez de déplacer la caméra avec le [MMB] Bouton Central de la Souris. (Conseillé de changer pour le clic droit dans les paramètres !)",
+        "Appuyez sur [M] pour ouvrir la carte",
+        "Écrivez votre premier message de chat dans les onglets [Global] et [Local]",
+        "Cliquez sur le coin de la barre de chat pour l'ouvrir/la fermer ou la réduire",
+        "[Maintenir le clic central + Glisser] : Diviser les piles d'objets de manière égale",
+        "[Clic droit sur un objet] : Déplacement automatique instantané lors de la vente, de l'échange ou du stockage",
+        "[CTRL] + [Bouton Central de la Souris] + Glisser – [Division X] : Spécifier une quantité exacte personnalisée pour diviser les objets",
+        "[CTRL] + Déposer l'objet – Dépose absolument tous les objets du même type. (Exemple : vider tout un inventaire du même minerai d'un coup !)",
+        "Cliquez sur l'icône de statistiques de l'interface pour voir les armes utilisées et apprendre à les faire progresser",
+        "Tapez [/commands] dans la barre de chat pour voir les fonctions système disponibles",
+        "Découvrez les étals des magasins et localisez l'étal essentiel de la banque",
+        "Achetez et vendez votre premier objet vers/depuis un étal (magasin)",
+        "Équipez la pioche en cuivre obtenue comme outil de départ, minez votre premier inventaire complet de [Minerai de Cuivre], et déposez-le à la banque",
+        "Minez votre premier inventaire complet de [Minerai d'Étain] et stockez-le en toute sécurité dans votre étal de banque",
+        "[Glisser une gemme sur un amulette ou une bague] : Sertir la gemme dans ce bijou",
+        "[Cliquer et maintenir + Glisser la gemme] : Retirez-la en toute sécurité de la châsse de l'objet",
+        "Fondez et produisez votre toute première série de [Barres de Bronze] en utilisant le fourneau chauffé",
+        "Forgez votre première pièce d'équipement sur l'enclume (N'oubliez pas d'acheter et d'équiper un marteau de forge à l'étal du forgeron d'abord !)",
+        "Lancez votre ligne et remontez votre tout premier poisson",
+        "Mélangez des ressources dans un chaudron et préparez votre première potion",
+        "Cliquez sur le cristal vert pour la première fois en ville pour vous soigner",
+        "Équipez votre arme de départ (Épée en cuivre, Arc rudimentaire ou Baguette de débutant), ou fabriquez/achetez une épée en bronze propre",
+        "Engagez le combat et éliminez votre première créature ennemie",
+        "Ramassez votre premier butin [clic gauche]",
+        "Augmentez le niveau de votre compétence [Attaque] (Posture d'attaque avec une arme de mêlée)",
+        "Augmentez le niveau de votre compétence [Défense] (Bloquer avec un bouclier ou tenir une arme à 2 mains en posture défensive)",
+        "Augmentez le niveau de votre compétence [Protection] (Équipez un bouclier de protection ou une arme magique en position de posture défensive)",
+        "Continuez à vous entraîner et à augmenter vos statistiques de combat jusqu'à ce que vous soyez assez fort pour vaincre un [Grand-cheminier]",
+        "Obtenez un bouclier unique de Grand-cheminier en récompense et commencez à augmenter votre compétence [Évasion] (Équipez un bouclier de parade ou un arc en posture défensive)"
+    ]
+};
+
+let currentLanguage = "EN";
+
+function changeLanguage(lang) {
+    currentLanguage = lang;
+    const dictionary = translations[lang];
+    
+    // Explicit ID and target element modifications
+    document.getElementById("main-title").textContent = dictionary.title;
+    document.getElementById("nav-header").textContent = dictionary.navTitle;
+    
+    document.getElementById("nav-btn-main").textContent = dictionary.navMain;
+    document.getElementById("nav-btn-ai").textContent = dictionary.navAi;
+    document.getElementById("nav-btn-equip").textContent = dictionary.navEquip;
+    document.getElementById("nav-btn-combat").textContent = dictionary.navCombat;
+    document.getElementById("nav-btn-videos").textContent = dictionary.navVideos;
+    
+    document.getElementById("checklist-heading").textContent = dictionary.headerTitle;
+    document.getElementById("checklist-subheading").textContent = dictionary.headerSubtitle;
+    
+    const sectionHeaders = document.querySelectorAll(".checklist-section .section-title");
+    sectionHeaders[0].textContent = dictionary.sec1;
+    sectionHeaders[1].textContent = dictionary.sec2;
+    sectionHeaders[2].textContent = dictionary.sec3;
+    sectionHeaders[3].textContent = dictionary.sec4;
+    
+    document.getElementById("motivation-box").textContent = dictionary.goal;
+    document.getElementById("reset-button-label").textContent = dictionary.reset;
+    
+    const tasks = document.querySelectorAll(".task-item");
+    tasks.forEach((task, index) => {
+        const textSpan = task.querySelector(".task-text");
+        
+        if (lang === "EN") {
+            if (index === 0) textSpan.innerHTML = 'Try moving the character using <kbd>Left Mouse Button</kbd>';
+            if (index === 1) textSpan.innerHTML = 'Try moving holding the <kbd>Left Mouse Button</kbd> for permanent pathing';
+            if (index === 2) textSpan.innerHTML = 'Try moving the camera with <kbd>Middle Mouse Button</kbd>. <em>(Best advised to change to right click in settings!)</em>';
+            if (index === 3) textSpan.innerHTML = 'Press <kbd>M</kbd> to open the map';
+            if (index === 4) textSpan.innerHTML = 'Write your first chat message in both <strong>Global</strong> and <strong>Local</strong> tabs';
+            if (index === 5) textSpan.innerHTML = 'Click the chat bar corner to open/close or minimize it';
+            if (index === 6) textSpan.innerHTML = '<strong>Hold Middle Mouse + Drag:</strong> Split item stacks evenly';
+            if (index === 7) textSpan.innerHTML = '<strong>Right-Click an Item:</strong> Auto-move it instantly when selling, trading, or storing';
+            if (index === 8) textSpan.innerHTML = '<kbd>CTRL</kbd> + <kbd>Middle Mouse Button</kbd> + Drag – <strong>X Splitting:</strong> specify exact custom split amount for items';
+            if (index === 9) textSpan.innerHTML = '<kbd>CTRL</kbd> + Drop item – Drops every single item of the same type. <em>(Example: empty an entire inventory of the same ores at once!)</em>';
+            if (index === 10) textSpan.innerHTML = 'Click a stats icon interface panel to look up weapons used and learn how to level it up';
+            if (index === 11) textSpan.innerHTML = 'Type <kbd>/commands</kbd> into the chat bar window to view available system functions';
+            if (index === 12) textSpan.innerHTML = 'Check out the shop stalls and locate the essential bank stall';
+            if (index === 13) textSpan.innerHTML = 'Buy and sell your first item to/from a stall (shop)';
+            if (index === 14) textSpan.innerHTML = 'Equip the copper pickaxe gained as a starting tool, mine your first full inventory of <strong>Copper Ore</strong>, and bank it';
+            if (index === 15) textSpan.innerHTML = 'Mine your first full inventory of <strong>Tin Ore</strong> and safely store it in your bank stall';
+            if (index === 16) textSpan.innerHTML = '<strong>Drag a Gem onto an Amulet or Ring:</strong> Socket the gem into that jewelry piece';
+            if (index === 17) textSpan.innerHTML = '<strong>Click and hold + Drag the gem:</strong> Remove it safely from an item socket';
+            if (index === 18) textSpan.innerHTML = 'Smelt and produce your very first set of <strong>Bronze Bars</strong> using the heated furnace';
+            if (index === 19) textSpan.innerHTML = 'Forge your first piece of gear at the anvil <em>(Don\'t forget to buy and equip a smithing hammer at the blacksmith stall first!)</em>';
+            if (index === 20) textSpan.innerHTML = 'Cast out your line and reel in your very first fish';
+            if (index === 21) textSpan.innerHTML = 'Mix resources at a cauldron and brew your first potion';
+            if (index === 22) textSpan.innerHTML = 'Click the green crystal for your first time in town to heal';
+            if (index === 23) textSpan.innerHTML = 'Equip your starting weapon <em>(Copper Sword, Crude Bow, or Beginner Wand)</em>, or craft/buy a clean bronze sword';
+            if (index === 24) textSpan.innerHTML = 'Engage in battle and dispatch your first enemy creature';
+            if (index === 25) textSpan.innerHTML = 'Pick up your first loot <kbd>(left click)</kbd>';
+            if (index === 26) textSpan.innerHTML = 'Level up your <strong>Attack skill</strong> <em>(Attack stance using a melee weapon)</em>';
+            if (index === 27) textSpan.innerHTML = 'Level up your <strong>Defence skill</strong> <em>(Block with a shield or hold a 2-handed weapon in a defensive stance)</em>';
+            if (index === 28) textSpan.innerHTML = 'Level up your <strong>Warding skill</strong> <em>(Equip a warding shield or a magic weapon in a defensive stance position)</em>';
+            if (index === 29) textSpan.innerHTML = 'Keep training and leveling up your combat stats until you are strong enough to defeat a <strong>Highwayman</strong>';
+            if (index === 30) textSpan.innerHTML = 'Obtain a unique Highwayman shield drop reward and begin leveling up your <strong>Evasion</strong> skill <em>(Equip a parry shield or a bow in a defensive stance)</em>';
+        } else {
+            textSpan.innerHTML = itemTranslations[lang][index];
+        }
+    });
+
+    updateProgressBar();
+
+    const buttons = document.querySelectorAll(".lang-btn");
+    buttons.forEach(btn => {
+        if (btn.textContent === lang) {
+            btn.style.background = "var(--accent)";
+            btn.style.color = "white";
+            btn.style.borderColor = "var(--highlight)";
+        } else {
+            btn.style.background = "var(--gem-slot)";
+            btn.style.color = "var(--highlight)";
+            btn.style.borderColor = "var(--border-color)";
+        }
+    });
 }
 </script>
 
