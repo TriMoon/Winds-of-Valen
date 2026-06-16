@@ -3028,8 +3028,8 @@ This drop is a Seasonal drop only, and is only available during the easter seaso
         <td style="padding: 5px; border: 1px solid #444; background: rgba(255,255,255,0.05); font-weight: bold;">Fishing Power</td>
       </tr>
       <tr>
-        <td style="padding: 5px; border: 1px solid #444;">0</td>
         <td style="padding: 5px; border: 1px solid #444;">15</td>
+        <td style="padding: 5px; border: 1px solid #444;">0</td>
         <td style="padding: 5px; border: 1px solid #444;">0</td>
         <td style="padding: 5px; border: 1px solid #444;">0</td>
       </tr>
