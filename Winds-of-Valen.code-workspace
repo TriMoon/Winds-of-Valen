@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.eol": "\n",
+		"files.trimFinalNewlines": true,
+		"files.trimTrailingWhitespace": true,
+		"json.schemaDownload.trustedDomains": {
+			"https://raw.githubusercontent.com/denoland/deno/main/cli/schemas/": true
+		},
+		"workbench.editor.highlightModifiedTabs": true,
+		"workbench.browser.dataStorage": "workspace",
+		"[typescript]": {
+			"editor.defaultFormatter": "denoland.vscode-deno",
+			"editor.formatOnSave": true
+		},
+		"[javascript]": {
+			"editor.defaultFormatter": "denoland.vscode-deno",
+			"editor.formatOnSave": true
+		},
+	},
+	"extensions": {
+		"recommendations": [
+			"editorconfig.editorconfig",
+			"timheuer.econfigedit",
+			"denoland.vscode-deno"
+		]
+	}
+}
