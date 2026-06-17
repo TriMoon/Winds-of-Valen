@@ -24,7 +24,7 @@ function loadGuestbook() {
 			inputName.style.display =
 				inputMsg.style.display =
 				btn.style.display =
-					undefined
+					"initial"
 			if (!data.length) {
 				// If there are no entries, show a message instead of an empty list.
 				list.innerHTML = `<div class="entry">No visitor messages yet.</div>`
