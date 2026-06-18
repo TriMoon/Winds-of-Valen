@@ -1,34 +1,38 @@
 import { SupaBaseClient } from "./SupaBase.js"
 
-async function registerVisit() {
+function registerVisit() {
 	const counter = document.getElementById("visit-count")
 
-	try {
-		await SupaBaseClient.from("page_visits").insert([{}])
-		const { count, error } = await SupaBaseClient.from("page_visits")
-			.select("*", {
+	SupaBaseClient.from("page_visits")
+		.insert([{}])
+		.then(() =>
+			SupaBaseClient.from("page_visits").select("*", {
 				count: "exact",
 				head: true,
 			})
-		if (error) throw error
-		counter.innerText = count.toLocaleString()
-	} catch (_err) {
-		counter.innerText = "Offline"
-	}
+		)
+		.then(({ count, error }) => {
+			if (error) throw error
+			counter.innerText = count.toLocaleString()
+		})
+		.catch(() => {
+			counter.innerText = "Offline"
+		})
 }
 
-async function refreshVisitCount() {
+function refreshVisitCount() {
 	const counter = document.getElementById("visit-count")
 
-	try {
-		const { count, error } = await SupaBaseClient.from("page_visits")
-			.select("*", {
-				count: "exact",
-				head: true,
-			})
-		if (error) throw error
-		counter.innerText = count.toLocaleString()
-	} catch (_err) {}
+	SupaBaseClient.from("page_visits")
+		.select("*", {
+			count: "exact",
+			head: true,
+		})
+		.then(({ count, error }) => {
+			if (error) throw error
+			counter.innerText = count.toLocaleString()
+		})
+		.catch(() => {})
 }
 
 export function init() {
