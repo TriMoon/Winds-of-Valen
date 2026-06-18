@@ -33,6 +33,6 @@ async function refreshVisitCount() {
 
 export function init() {
 	registerVisit()
-	const refresh = 1 // Refresh every 1 second
+	const refresh = 60 // Refresh every 60 seconds
 	setInterval(refreshVisitCount, refresh * 1000)
 }
